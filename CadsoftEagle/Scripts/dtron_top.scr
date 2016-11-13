@@ -1,0 +1,6 @@
+# Print top of layout
+
+errors clear;
+display none 1 17 18 20 49;
+ratsnest;
+print 1 black solid mirror

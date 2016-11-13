@@ -1,0 +1,9 @@
+#This program prints the component plan
+
+#Top section
+DISPLAY NONE 20 21 25 45 46 48 49 51 -23 -27;
+PRINT 1 - black solid
+
+#Bottom section
+DISPLAY NONE 20 22 26 45 46 48 49 52 -21 -24 -28;
+PRINT 1 - mirror black solid

@@ -1,0 +1,6 @@
+# Print a plan of the drills including the drill legend.
+
+run drillegend-stack.ulp;
+display none 20 47 49 144 145;
+mark (0 0);
+print 1 - black solid
