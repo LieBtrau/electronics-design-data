@@ -4466,16 +4466,16 @@ Source: www.st.com, BAT60J.pdf</description>
 <pin name="C" x="2.54" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
 </symbol>
 <symbol name="HY_DCDC">
-<pin name="VIN" x="-7.62" y="2.54" length="middle"/>
-<pin name="GND" x="-7.62" y="-2.54" length="middle"/>
-<pin name="GND2" x="20.32" y="-2.54" length="middle" rot="R180"/>
-<pin name="VOUT" x="20.32" y="2.54" length="middle" rot="R180"/>
-<wire x1="-2.54" y1="5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-5.08" x2="15.24" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-5.08" x2="15.24" y2="5.08" width="0.254" layer="94"/>
-<wire x1="15.24" y1="5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
-<text x="-2.54" y="5.08" size="1.778" layer="95">&gt;NAME</text>
-<text x="-2.54" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="VIN" x="-12.7" y="2.54" visible="pin" length="middle"/>
+<pin name="GND" x="-12.7" y="-2.54" visible="pin" length="middle"/>
+<pin name="GND2" x="15.24" y="-2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="VOUT" x="15.24" y="2.54" visible="pin" length="middle" rot="R180"/>
+<wire x1="-7.62" y1="5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<text x="-7.62" y="5.08" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="SW_MOM">
 <wire x1="-2.54" y1="0" x2="-1.5875" y2="0" width="0.3048" layer="94"/>
@@ -4823,37 +4823,6 @@ Source: www.st.com, BAT60J.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="FR_FRAME_A4" prefix="FR">
-<gates>
-<gate name="G$1" symbol="FR_FRAME_A4" x="0" y="0"/>
-</gates>
-<devices>
-<device name="A5" package="FR_FRAME_A5">
-<technologies>
-<technology name="">
-<attribute name="REV" value="R0" constant="no"/>
-<attribute name="TITLE" value="Give title" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="FR_FRAME_A5" prefix="FR">
-<description>A5L LOC</description>
-<gates>
-<gate name="G$1" symbol="FR_FRAME_A5" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="FR_FRAME_A5">
-<technologies>
-<technology name="">
-<attribute name="REV" value="" constant="no"/>
-<attribute name="TITLE" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="CN_2P" prefix="CN">
 <gates>
 <gate name="G$1" symbol="CN_2P" x="0" y="0"/>
@@ -5100,6 +5069,18 @@ Source: www.st.com, BAT60J.pdf</description>
 <attribute name="ORDERCODE" value="455-2271-ND"/>
 <attribute name="VALUE" value="JST XH"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SY_FRAMEA4">
+<gates>
+<gate name="G$1" symbol="FR_FRAME_A4" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
