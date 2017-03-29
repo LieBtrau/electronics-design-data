@@ -1,7 +1,7 @@
 #This program prints the component plan
 
 #Top section
-DISPLAY NONE 20 21 25 45 46 48 49 51 -23 -27;
+DISPLAY NONE 20 21 25 45 46 47 48 49 51 -23 -27;
 PRINT 1 - black solid
 
 #Bottom section
