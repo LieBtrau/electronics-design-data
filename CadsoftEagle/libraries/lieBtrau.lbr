@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -3254,6 +3254,9 @@ male, 48 pins, type F, rows BDZ, grid 2.54</description>
 <text x="-8.5" y="-6.5" size="1.27" layer="21" rot="R90">IN+</text>
 <text x="10" y="-7.5" size="1.27" layer="21" rot="R90">OUT+</text>
 <rectangle x1="-11.43" y1="-8.89" x2="11.43" y2="8.89" layer="39"/>
+<rectangle x1="-6.985" y1="-8.89" x2="6.985" y2="8.89" layer="41"/>
+<rectangle x1="-11.43" y1="-1.905" x2="-6.985" y2="1.905" layer="41"/>
+<rectangle x1="6.985" y1="-1.905" x2="11.43" y2="1.905" layer="41"/>
 </package>
 <package name="SC_SO6_P4">
 <description>&lt;b&gt;SOP 04 - 4.3x4.4mm RM 2.54mm&lt;/b&gt; AQY21, AQY22, AQY61 Series NAiS&lt;p&gt;Source: http://www.mew-europe.com/..  pti_en.pdf</description>
