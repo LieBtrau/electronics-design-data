@@ -8,5 +8,5 @@ placeholder of libraries and info about electronics used over several repositori
 # PCB manufacturers
 * [PCBShopper](http://pcbshopper.com/): Compare PCB manufacturers and get the best prices and delivery terms
 
-# STM32
-* [STM32F103 Blue Pill debugging](../../wiki/Step-by-step-OpenOCD-debugging-on-STM32-Blue-Pill)
+# STM32 & AVR
+* [MCU Boards](../../wiki)
