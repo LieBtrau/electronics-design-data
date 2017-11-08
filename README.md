@@ -6,6 +6,9 @@ placeholder of libraries and info about electronics used over several repositori
 * [Dangerous Prototypes Best Practices](http://dangerousprototypes.com/docs/Dangerous_Prototypes_Cadsoft_Eagle_style_guide_and_best_practices)
 
 # Commonly used parts
+## Electronic standard parts
+* [Connectors](../../wiki/Electronic-standard-parts-:-Connectors)
+* [Switches](../../wiki/Electronic-standard-parts-:-switches)
 * [Octopart Common Parts library](https://octopart.com/common-parts-library)
 
 # PCB manufacturers
