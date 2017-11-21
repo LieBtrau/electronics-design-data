@@ -8,6 +8,7 @@ placeholder of libraries and info about electronics used over several repositori
 # Commonly used parts
 ## Electronic standard parts
 * [Audio Products](../../wiki/Electronic-standard-parts-:-Audio-Products)
+* [Battery Products](../../wiki/Electronic-standard-parts-:--Battery-Products)
 * [Connectors](../../wiki/Electronic-standard-parts-:-Connectors)
 * [Power Supplies - Board Mount](../../wiki/Electronic-standard-parts-:--Power-Supplies---Board-Mount)
 * [Switches](../../wiki/Electronic-standard-parts-:-switches)
