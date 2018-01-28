@@ -24,5 +24,18 @@ placeholder of libraries and info about electronics used over several repositori
 # PCB manufacturers
 * [PCBShopper](http://pcbshopper.com/): Compare PCB manufacturers and get the best prices and delivery terms
 
+# PCB Design rules
+| Parameter            | Eurocircuits 6C | Sparkfun | Seeed |
+|----------------------|-----------------|----------|-------|
+| Track width          |  0.15           | 0.20     | 0.15  |
+| Track to track       |  0.15           | 0.20     | 0.15  |
+| Track to pad         |  0.15           | 0.20     | 0.15  |
+| Pad to pad           |  0.15           | 0.20     | 0.15  |
+| Hole to hole         |  0.15           | 0.20     | 0.15  |
+| Via hole size        |  0.35           | 0.50     | 0.30  |     
+| Min. annular ring    |  0.175          | 0.30     | 0.25  |
+| Min. dist. Cu to dim.|  0.25           | 0.25     | 0.25  |
+| Min. hole-hole dist. |  0.35           | 0.20     | 0.25  |
+
 # STM32 & AVR
 * [MCU Boards](../../wiki)
