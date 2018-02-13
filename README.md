@@ -25,7 +25,7 @@ placeholder of libraries and info about electronics used over several repositori
 * [PCBShopper](http://pcbshopper.com/): Compare PCB manufacturers and get the best prices and delivery terms
 
 # PCB Design rules
-| Parameter            | Eurocircuits 6C | Sparkfun | Seeed |
+| Parameter            | Eurocircuits 6C | Sparkfun | [Seeed](http://support.seeedstudio.com/knowledgebase/articles/447362-fusion-pcb-specification) |
 |----------------------|-----------------|----------|-------|
 | Track width          |  0.15           | 0.20     | 0.15  |
 | Track to track       |  0.15           | 0.20     | 0.15  |
