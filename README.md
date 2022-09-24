@@ -23,17 +23,6 @@ placeholder of libraries and info about electronics used over several repositori
 
 # PCB manufacturers
 * [PCBShopper](http://pcbshopper.com/): Compare PCB manufacturers and get the best prices and delivery terms
-<<<<<<< HEAD
-
-# Jelly-bean opamps
-LM358/LM2904 & LMV358
-LM324
-LM741
-RC4558
-OP07
-TL071/72/74 
-||||||| 3fbaad3
-=======
 
 # PCB Design rules
 * [Mouse Bites](https://blogs.mentor.com/tom-hausherr/blog/tag/mouse-bite/)
@@ -51,4 +40,3 @@ TL071/72/74
 
 # STM32 & AVR
 * [MCU Boards](../../wiki)
->>>>>>> bd447dc5b7face98558defd925ee6666634a87df
