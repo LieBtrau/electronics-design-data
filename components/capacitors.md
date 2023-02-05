@@ -1,5 +1,6 @@
 # Parameter measurement
 * [Measure capacitance with DC-offset](https://www.youtube.com/watch?v=Wo7E__AifQg)
+ * Alternatively, build relaxation oscillator.  As capacitor, use two caps in series.  Add a dc voltage to the interconnection of the two caps.
 * ESR measurement :
     * Select test frequency f, Xc should be <1% of expected ESR at that frequency : e.g. 100kHz
     * Use function generator to apply a frequency f sine wave with a DC-offset of half the rated voltage of the capacitor.

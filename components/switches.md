@@ -7,9 +7,9 @@
 ## Connection type 2 : Common in the middle (preferable) : better & cheaper distribution
 * Farnell/Multicomp
 * Wuerth
+* CUI RDS-16S-74385-SMT
 
 ## Connection type 1 : Common on the outside
 * LCSC SDAR-10S
-* CUI RDS-16S-74385-SMT
 * Omron A6KS-162RF
-* APEM P25
+* APEM P25SMT103
