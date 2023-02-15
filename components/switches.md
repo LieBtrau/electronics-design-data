@@ -13,3 +13,19 @@
 * LCSC SDAR-10S
 * Omron A6KS-162RF
 * APEM P25SMT103
+
+# Slide switch 
+## Right-angle SMD, SPDT
+### Characteristics
+* Switch function : on-on
+* Current rating : 300mA
+* Voltage rating DC : 4V
+* Actuator length : 1.50mm
+* Termination style : gull wing
+* Switch travel : 1.50mm
+
+### Component choices
+* Nidec Copal CUS-12TB
+* C&K PCM12SMTR (Farnell €8.98 / 10 pcs)
+* C&K SK-12C0405-SG 1.5 RT
+* E-switch EG1257
