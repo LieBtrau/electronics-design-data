@@ -6,3 +6,16 @@
   * SOIC-8 : ATtiny202, ATtiny402
   * SOIC-14 : ATtiny404, ATtiny414, ATtiny804, ATtiny814, ATtiny1604, ATtiny1614
 * Holtek HT66 family has equal low power, is cheaper, but lacks software support.
+
+# MCU with LoRa/FSK/OOK radio
+* [Heltec CubeCell – Module (V2)](https://heltec.org/project/htcc-am01-v2/)
+  * platformio support
+  * €10/pce
+  * 18x18mm
+  * limited documentation
+* [RAK RK3172](https://store.rakwireless.com/products/wisduo-lpwan-module-rak3172)
+  * no platformio support
+  * €6/pce
+* [Wio-E5 STM32WLE5JC Module](https://wiki.seeedstudio.com/LoRa-E5_STM32WLE5JC_Module/)
+  * no platformio support
+  * 12x12mm
