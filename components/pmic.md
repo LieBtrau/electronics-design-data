@@ -1,9 +1,24 @@
 # LDO
 ## SOT23-5
-Output current > 500mA (for ESP32 builds)
-| Part number | Order nr. | Price \[€\] | Alternatives |
-| ------------|-----------|-------|--------------|
-| XC6220 | LCSC C86534 | 0.68 | AP7347DQ, AP2112-3.3, MIC5219, RT9080-33J5, XC6210, XC6503
+### 3V3, high Iout, low Iq
+XC6220 : LCSC C86534
+* Price : €0.68
+* Vinmax : 6.5V
+* Ioutmax : 1A
+* Iq : 8µA
+* Dropout :  0.655V @ 1A
+* Alternatives : 
+  * RT9080-33GJ5 : low Iq
+  * AP7347DQ : Iq = 60µA
+  * AP2112-3.3 : Iq = 55µA
+  * MIC5219, , XC6210, XC6503
+
+### 5V, with enable, high input voltage (>15V), Ioutmax = 100mA
+* NCP730 : 150mA, 38V, 2µA Iq
+* TPS709  : 150mA, 30V, 1μA Iq
+* LDK320AM50R : 200mA, 18V, 60µA Iq
+* MCP1755 : 300mA, 16V, 68µA Iq
+* RT9069  : 200mA, 36V, 2µA Iq (enable on pin 4)
 
 # Voltage supervisor
 Check if your MCU has an internal brownout-detector.  
