@@ -8,7 +8,7 @@ XC6220 : LCSC C86534
 * Iq : 8µA
 * Dropout :  0.655V @ 1A
 * Alternatives : 
-  * RT9080-33GJ5 : low Iq
+  * RT9080-33GJ5 : Iq = 4µA, 600mA, 6.5Vmax
   * AP7347DQ : Iq = 60µA
   * AP2112-3.3 : Iq = 55µA
   * MIC5219, , XC6210, XC6503
@@ -19,6 +19,13 @@ XC6220 : LCSC C86534
 * LDK320AM50R : 200mA, 18V, 60µA Iq
 * MCP1755 : 300mA, 16V, 68µA Iq
 * RT9069  : 200mA, 36V, 2µA Iq (enable on pin 4)
+
+### 5V, with enable, high input voltage (>15V), Ioutmax = 500mA
+#### Parts
+* R1500H050B-T1-FE (SOT89-5 package), 500mA/24V, 130µA Iq, 900mW
+
+#### Application
+* Pre-Regulator for use with 4xAA batteries and ESP32 with WiFi.
 
 # Voltage supervisor
 Check if your MCU has an internal brownout-detector.  
