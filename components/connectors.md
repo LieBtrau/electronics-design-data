@@ -1,11 +1,9 @@
 # Wire to board
 
-## 2.5mm pitch SMD, right angle
-JST-PH not available, parts are from EDAC 140-series.  Wuerth WR-WTB is close, but not fully compatible
-
-| Pin count | Part number | Order number | Price \[€\] | Remark|
-| --- | --- | --- | --- | --- | 
-| 3 | S3B-PH-SM4-TB(LF)(SN) | 151-140-503-417-060CT-ND | 0.48 |  |
+## 2.0mm pitch SMD, right angle
+* Wuerth WR-WTB range : 620 1xx 131 822
+* JST SxB-PH-SM4-TB(LF)(SN)
+* Also from TE, CviLux and EDAC
 
 # Modular jack
 ## Through hole, right angle

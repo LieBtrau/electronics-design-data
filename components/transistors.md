@@ -23,3 +23,9 @@
 * DMG3414U-7 : 20V/4.2A, Vgsth: 0.9V @250µA
 * AO3434A : 30V/4A, Vgsth: 2.5V @250µA
 * TSM320N03CX RFG : 30V/5.5A, Vgsth: 0.9V @250µA
+
+# PMOS
+## Low voltage, medium current
+* SI3401A : 30V/4A, Vgsth = 1.3V, Igss = 100nA
+* DMG3401LSN
+* TSM650P02CX

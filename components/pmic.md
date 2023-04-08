@@ -14,7 +14,7 @@ XC6220 : LCSC C86534
   * MIC5219, , XC6210, XC6503
 
 ### 5V, with enable, high input voltage (>15V), Ioutmax = 100mA
-* NCP730 : 150mA, 38V, 2µA Iq
+* NCP730ASN500T1G : 150mA, 38V, 2µA Iq
 * TPS709  : 150mA, 30V, 1μA Iq
 * LDK320AM50R : 200mA, 18V, 60µA Iq
 * MCP1755 : 300mA, 16V, 68µA Iq
