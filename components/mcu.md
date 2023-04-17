@@ -19,3 +19,7 @@
 * [Wio-E5 STM32WLE5JC Module](https://wiki.seeedstudio.com/LoRa-E5_STM32WLE5JC_Module/)
   * no platformio support
   * 12x12mm
+
+# MCU with BLE
+* nRF52840 
+  * supported by PlatformIO
