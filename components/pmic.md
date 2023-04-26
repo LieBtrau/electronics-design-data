@@ -11,7 +11,7 @@ XC6220 : LCSC C86534
   * RT9080-33GJ5 : Iq = 4µA, 600mA, 6.5Vmax
   * AP7347DQ : Iq = 60µA
   * AP2112-3.3 : Iq = 55µA
-  * MIC5219, , XC6210, XC6503
+  * MIC5219, XC6210, XC6503
 
 ### 5V, with enable, high input voltage (>15V), Ioutmax = 100mA
 * NCP730ASN500T1G : 150mA, 38V, 2µA Iq
