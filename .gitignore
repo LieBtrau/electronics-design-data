@@ -1,4 +1,5 @@
 /CadsoftEagle
+*.IntLib
 *.pdf
 *.plt
 *.SchDotPreview
