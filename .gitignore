@@ -1,2 +1,5 @@
 /CadsoftEagle
 *.pdf
+*.plt
+*.SchDotPreview
+*.Zip
