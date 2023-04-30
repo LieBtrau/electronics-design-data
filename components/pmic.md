@@ -24,8 +24,9 @@ XC6220 : LCSC C86534
 #### Parts
 * R1500H050B-T1-FE (SOT89-5 package), 500mA/24V, 130µA Iq, 900mW
 
-#### Application
-* Pre-Regulator for use with 4xAA batteries and ESP32 with WiFi.
+# Boost/SEPIC converter
+* LM2731YMFX/NOPB
+* [AN-1484 Designing A SEPIC Converter](https://www.ti.com/lit/an/snva168e/snva168e.pdf)
 
 # Voltage supervisor
 Check if your MCU has an internal brownout-detector.  
@@ -39,7 +40,7 @@ Instead of a supervisor, a clean power-on reset signal can be generated using : 
 VIN > 24V, Iout > 1A
 
 Pin compatible parts:
-* TPS54231 (AGND=SS)
+* TPS54231 (AGND=SS, external compensation network needed)
 * AP64501 (synchronous switcher)
 * TPS54233 (AGND=SS)
 * TPS5403 (EN=ROSC)
