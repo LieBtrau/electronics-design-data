@@ -10,6 +10,16 @@
 
 # Ceramic 1210
 General parameters : value±10%, X7R
-| Value | Voltage | Ordernr.|
-|-------|---------|---------|
-| 47µF  |10V      |GRM32ER71A476KE15L |
+| Value | Voltage |Package | Part number | Remark |
+|-------|---------|--------|-------------|--------| 
+| 100p  |         | 0603   | | |
+| 1nF   |         | 0603   | | |
+| 10nF  | 100V    | 0603   | | |
+| 100nF | 25V     | 0603   |  | for 10V, 0402 is more common |
+| 100nF | 250V    | 1206   | | |
+| 470nF | 10V     |        | | |
+| 1µF   | 10V     | 0805   | CL21B105KPFNNNE | |
+| 1µF   | 100V    | 1206   |                 | | 
+| 10µF  | 10V     | 0805   | CL21B106KPQNFNE | |
+| 10µF  | 25V     | 1210   |
+| 47µF  | 10V     | 1210   | GRM32ER71A476KE15L | |

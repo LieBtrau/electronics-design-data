@@ -9,7 +9,7 @@
 
 ## Sources
 ### Very similar register set
-* Diodes PT7C4337WEX
+* [Diodes PT7C4337WEX](https://www.diodes.com/assets/Datasheets/PT7C4337.pdf)
 * Analog DS1337S+T&R
 
 ### Pin compatible parts with other register set
