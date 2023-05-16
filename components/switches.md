@@ -25,7 +25,13 @@
 * Switch travel : 1.50mm
 
 ### Component choices
+* Wuerth 450404015514
 * Nidec Copal CUS-12TB
 * C&K PCM12SMTR (Farnell €8.98 / 10 pcs)
 * C&K SK-12C0405-SG 1.5 RT
 * E-switch EG1257
+
+## Straight THT, SPDT
+* Nidec CL-SB-22C-01
+* Wuerth 452404020202
+* E-switch EG1271
