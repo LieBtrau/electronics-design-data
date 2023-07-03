@@ -2,6 +2,10 @@
 ## Low voltage, low current
 * BC846B : 65V/100mA, LCSC C87062, Higher Vceo and Vcbo than BC847B
 
+# BJT PNP
+## Low voltage, low current
+* BC856B : 65V/100mA, no direct LCSC equivalent in their Basic category.
+
 # NMOS
 ## Depletion
 * BSS169 : 100V/170mA
