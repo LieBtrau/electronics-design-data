@@ -18,3 +18,6 @@ AsyncDelay
 
 # Debouncing
 Bounce2
+
+# Bit manipulation
+[Encoding bit fields istead of using masks](https://github.com/LieBtrau/chickenguard-2019-upgrade/blob/main/firmware/chickenguard/include/bit_manipulation.h)
