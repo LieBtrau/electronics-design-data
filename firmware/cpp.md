@@ -19,5 +19,9 @@ AsyncDelay
 # Debouncing
 Bounce2
 
+# Rotary encoder
+  paulstoffregen/Encoder @ ^1.4.2 ; alternative rotary encoder library : mathertel/RotaryEncoder (used on https://github.com/LieBtrau/better-alarm-clock/blob/master/firmware/full-application/lib/TactileElements/RotaryEncoder_Tactiles.cpp)
+
+
 # Bit manipulation
 [Encoding bit fields istead of using masks](https://github.com/LieBtrau/chickenguard-2019-upgrade/blob/main/firmware/chickenguard/include/bit_manipulation.h)
