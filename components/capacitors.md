@@ -22,4 +22,10 @@ General parameters : value±10%, X7R
 | 1µF   | 100V    | 1210   |                 | | 
 | 10µF  | 10V     | 0805   | CL21B106KPQNFNE | |
 | 10µF  | 25V     | 1210   |
-| 47µF  | 10V     | 1210   | GRM32ER71A476KE15L | |
+| 47µF  | 10V     | 1210   | GRM32ER71A476KE15L | €0.8/pce |
+
+# Electrolytic
+Aluminium Polymer has lower ESR than Aluminium.
+| Value | Voltage |Package | Part number | Remark |
+|-------|---------|--------|-------------|--------| 
+| 100µF | 10V     | ⌀6.3mmx8mm,SMD   | WE  | €0.3/pce |
