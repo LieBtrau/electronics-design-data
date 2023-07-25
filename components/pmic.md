@@ -3,7 +3,7 @@
 ### 3V3, high Iout, low Iq
 XC6220 : LCSC C86534
 * Price : €0.68
-* Vinmax : 6.5V
+* Vinmax : 6.5V -> unsuitable to be connected directly to a a USB-port, because TVS diodes will have clamping voltages > 6.5V
 * Ioutmax : 1A
 * Iq : 8µA
 * Dropout :  0.655V @ 1A
@@ -21,12 +21,17 @@ XC6220 : LCSC C86534
 * RT9069  : 200mA, 36V, 2µA Iq (enable on pin 4)
 
 ### 5V, with enable, high input voltage (>15V), Ioutmax = 500mA
+Given enough PCB area, it might be better to use a boost converter in SEPIC topology.
+
 #### Parts
 * R1500H050B-T1-FE (SOT89-5 package), 500mA/24V, 130µA Iq, 900mW
 
 # Boost/SEPIC converter
+An LED driver might be used instead.  The [AP3031 is much cheaper and there are many second sources](https://hackaday.io/project/182940-urban-edc-flashlight/log/201518-led-driver).
+
 * LM2731YMFX/NOPB
 * [AN-1484 Designing A SEPIC Converter](https://www.ti.com/lit/an/snva168e/snva168e.pdf)
+* [Small Buck-Boost Powering Solutions for IoT Devices](https://ww1.microchip.com/downloads/en/DeviceDoc/TB3274-Small-Buck-Boost-Powering-Solutions-for-IoT-Devices-DS90003274A.pdf)
 
 # Voltage supervisor
 Check if your MCU has an internal brownout-detector.  
