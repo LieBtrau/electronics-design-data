@@ -24,17 +24,17 @@
 
 ## Low voltage, medium current
 * NXV55UN : 30V/2.3A, Vgsth: 0.6V @250µA
-* BSS806NH6327XTSA1 : 20V/2.3A, 0.55V @11µA (?)
+* BSS806NH6327XTSA1 : 20V/2.3A, 0.55V @11µA (very low gate charge, use in ultra low power LED driver)
 
 ## Low voltage, high current
 * DMG3414U-7 : 20V/4.2A, Vgsth: 0.9V @250µA
-* AO3434A : 30V/4A, Vgsth: 2.5V @250µA
+* AO3434A : 30V/4A, Vgsth: 2.5V @250µA (<€0.1/pce at LCSC)
 * TSM320N03CX RFG : 30V/5.5A, Vgsth: 0.9V @250µA
 * [JLCPCB Basic Part](https://www.lcsc.com/product-detail/MOSFETs_Alpha-%26-Omega-Semicon-Alpha-%26-Omega-Semicon-AO3400A_C20917.html) AO3400A : 30V/5.7A, Vgsth: 1.05V @250µA
 
 # PMOS
 ## Low voltage, medium current
-* SI3401A : 30V/4A, Vgsth = 1.3V, Igss = 100nA
+* SI3401A : 30V/4A, Vgsth = 1.3V, Igss = 100nA (€0.04/pce at LCSC)
 * [JLCPBC Basic Part](https://www.lcsc.com/product-detail/MOSFETs_LRC-LRC-LBSS84LT1G_C8492.html) : AO3401A : 30V/4.0A, Vgsth = -0.9V, Igss = 100nA
 * DMG3401LSN
 * TSM650P02CX
