@@ -25,7 +25,16 @@ General parameters : value±10%, X7R
 | 47µF  | 10V     | 1210   | GRM32ER71A476KE15L | €0.8/pce |
 
 # Electrolytic
-Aluminium Polymer has lower ESR than Aluminium.
+## Aluminium
+* high temperature
+
+## Polymer
+* high RMS current
+
+## Aluminium Polymer
+* lower ESR than Aluminium
+* higher temperatures.
+
 | Value | Voltage |Package | Part number | Remark |
 |-------|---------|--------|-------------|--------| 
 | 100µF | 10V     | ⌀6.3mmx8mm,SMD   | WE  | €0.3/pce |
