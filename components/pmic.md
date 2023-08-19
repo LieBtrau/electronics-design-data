@@ -3,7 +3,7 @@
 ### 3V3, high Iout, low Iq
 XC6220 : LCSC C86534
 * Price : €0.68
-* Vinmax : 6.5V -> unsuitable to be connected directly to a a USB-port, because TVS diodes will have clamping voltages > 6.5V
+* Vinmax : 6.5V -> see [surge protection](../circuits/SurgeTest/SurgeGenerator_IEC%2061000-4-5.asc) when powering from USB
 * Ioutmax : 1A
 * Iq : 8µA
 * Dropout :  0.655V @ 1A
