@@ -36,5 +36,6 @@
 ## Low voltage, medium current
 * SI3401A : 30V/4A, Vgsth = 1.3V, Igss = 100nA (€0.04/pce at LCSC)
 * [JLCPBC Basic Part](https://www.lcsc.com/product-detail/MOSFETs_LRC-LRC-LBSS84LT1G_C8492.html) : AO3401A : 30V/4.0A, Vgsth = -0.9V, Igss = 100nA
+* DMP3098L
 * DMG3401LSN
 * TSM650P02CX
