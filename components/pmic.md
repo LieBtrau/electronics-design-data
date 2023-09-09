@@ -56,4 +56,19 @@ Other pin standard:
 
 # Battery Protection
 [Lithium-Ion Battery Circuitry Is Simple](https://hackaday.com/2022/10/10/lithium-ion-battery-circuitry-is-simple/)
-* DW01A 2.5V -> replace by FS312 for 3.0V
+
+## DW01A
+* Doesn't do what it's supposed to do : 
+  * [DW01A overdischarge protection](https://hackaday.io/project/182940-urban-edc-flashlight/log/201518-led-driver)
+  * [ESP32 controller](https://github.com/LieBtrau/esp32-bluetooth-rc-car/tree/main/hardware/NewBrightCo_2015_Corvette)
+  * Pin compatible alternative (to be tested): S-8240ADQ-M6T1U
+
+## Standard part
+* BQ29700DSER, also available from JLCPCB
+* Alternatives: 
+  * Mitsumi MM3825: SON-6C package
+  * Ablic S-8240A, S-8240B: SNT-6A package
+  * TI BQ297xx: 6-WSON package
+
+## AP9101CAK6-ANTRG1
+* obsolete, but still available
