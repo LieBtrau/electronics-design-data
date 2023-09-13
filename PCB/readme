@@ -1,1 +1,13 @@
 mouse bites, see IPC_7351, Figure 3-21
+
+# Layer stackup
+## 6 Layer stackup
+6 layers (3 signal layers, 2 ground, 1 power)
+1. top : low speed signals
+2. layer 1 : gnd
+3. layer 2 : high speed signals : stripline
+  * high speed components on top, changing between top & layer2 keeps layer 1 as reference plane (no decoupling cap or via needed near the layer change)
+  * high speed signals on inner layer reduces risk of radiated emissions
+4. layer 3 : power
+5. layer 4 : gnd
+6. bottom : signals : microstrip
