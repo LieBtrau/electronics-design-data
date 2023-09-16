@@ -44,6 +44,8 @@ Instead of a supervisor, a clean power-on reset signal can be generated using : 
 ## Adjustable voltage supervisor
 * TPS3808G01DBVR (JLCPCB C19653 : €0.38)
 * PT7M3808G01TAEX (JLCPCB C780887 : €0.50)
+* MIC2790N-04VD6
+* MP6400DJ-01
 
 # SOIC8 Buck converters
 VIN > 24V, Iout > 1A
