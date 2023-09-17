@@ -67,7 +67,7 @@ Other pin standard:
 * Doesn't do what it's supposed to do : 
   * [DW01A overdischarge protection](https://hackaday.io/project/182940-urban-edc-flashlight/log/201518-led-driver)
   * [ESP32 controller](https://github.com/LieBtrau/esp32-bluetooth-rc-car/tree/main/hardware/NewBrightCo_2015_Corvette)
-  * Pin compatible alternative (to be tested): S-8240ADQ-M6T1U
+  * Pin compatible alternative (to be tested): S-8240ADQ-M6T1U (requires charger to be connected after overdischarge event)
 
 ## Standard part
 * BQ29700DSER, also available from JLCPCB
