@@ -35,11 +35,17 @@ An LED driver might be used instead.  The [AP3031 is much cheaper and there are 
 
 # Voltage supervisor
 Check if your MCU has an internal brownout-detector.  
-Instead of a supervisor, a clean power-on reset signal can be generated using : (R||D) / C.  These three components are cheaper, but might use up more space than a single super isor and don't react well to power dips.
+Instead of a supervisor, a clean power-on reset signal can be generated using : (R||D) / C.  These three components are cheaper, but might use up more space than a single supervisor and don't react well to power dips.
 
 | Part number | Order nr. | Iq | Timeout | Package | Price \[€\] | Alternatives |
 | ---------------|-------------------------|-------|-------|---------|-------|--------------|
 | TLV803EA30DBZR | 296-TLV803EA30DBZRCT-ND | 250nA | 200ms | SOT23-3 | €0.68 | AOE : xxx803 or xxx809 from many manufacturers <br/>CAT853TTBI-GT3OSCT-ND, 6µA |
+
+## Adjustable voltage supervisor
+* TPS3808G01DBVR (JLCPCB C19653 : €0.38)
+* PT7M3808G01TAEX (JLCPCB C780887 : €0.50)
+* MIC2790N-04VD6
+* MP6400DJ-01
 
 # SOIC8 Buck converters
 VIN > 24V, Iout > 1A
