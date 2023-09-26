@@ -5,6 +5,9 @@
 
 [Reference](https://spiceman.net/ltspice-command-lib-inc/)
 
+# Using third party model for NMOS/PMOS
+[](https://www.analog.com/en/technical-articles/ltspice-using-an-intrinsic-symbol-for-a-third-party-model.html)
+
 # Consumed power by component in LTSpice
 1. Run transient simulation
 2. Mouse on component, hold ALT-key and left click
