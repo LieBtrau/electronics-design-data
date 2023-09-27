@@ -8,6 +8,9 @@
   * cheap and available on JLCPCB
 * Toshiba TB67H450AFNG,EL
   * 4.5V to 44V
+* Allegro A4950ELJTR-T
+  * 8V to 40V
+  * 3.5A
 
 * TI DRV8231ADDAR
   * with assembly option, can be made footprint compatible with DRV8870DDA
