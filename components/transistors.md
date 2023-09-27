@@ -1,5 +1,6 @@
 # BJT NPN
 ## Low voltage, low current
+* S9013 J3 : 25V/500mA, LCSC C6749 (basic part, €00.013): hfe = 300 - 400
 * BC846B : 65V/100mA, LCSC C87062, Higher Vceo and Vcbo than BC847B
 
 # BJT PNP
