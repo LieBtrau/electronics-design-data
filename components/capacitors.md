@@ -27,13 +27,17 @@ General parameters : value±10%, X7R
 # Electrolytic
 ## Aluminium
 * high temperature
-
-## Polymer
-* high RMS current
+* high voltage
+* low leakage
 
 ## Aluminium Polymer
-* lower ESR than Aluminium
-* higher temperatures.
+* low ESR = higher ripple currents
+* less likely to dry out
+
+## Aluminium Polymer Hybrid
+* low ESR = higher ripple currents
+* low leakage
+* less likely to dry out
 
 | Value | Voltage |Package | Part number | Remark |
 |-------|---------|--------|-------------|--------| 
