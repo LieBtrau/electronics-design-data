@@ -48,7 +48,12 @@ Instead of a supervisor, a clean power-on reset signal can be generated using : 
 * MP6400DJ-01
 
 # Buck converter
-## Module
+## Low power Module
+* Vin = 6.5V → 36V, Vout = 5V (trimmable), Iout = 500mA
+* Mornsun K7805MT-1000R4
+* Gaptec LMTM78_05-0.5
+
+## High power Module
 * Vin = 4.5V → 28V, Vout = 1.2V → 6V, Iout = 2.5A
   * TI TPSM84209RKH (€2.96/pce)
   * Recom RPX-2.5 (€4.94/pce)
