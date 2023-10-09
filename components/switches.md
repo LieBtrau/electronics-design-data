@@ -30,6 +30,7 @@
 * C&K PCM12SMTR (Farnell €8.98 / 10 pcs)
 * C&K SK-12C0405-SG 1.5 RT
 * E-switch EG1257
+* G-Switch MK-12C02-G025 (JLCPCB C778186)
 
 ## Straight THT, SPDT
 * Nidec CL-SB-22C-01
