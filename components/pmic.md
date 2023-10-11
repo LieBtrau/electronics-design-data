@@ -90,3 +90,8 @@ Other pin standard:
 
 ## AP9101CAK6-ANTRG1
 * obsolete, but still available
+
+# Battery Charger
+* Microchip MCP73833T-AMI/MF (0h timer) (JLCPCB ok)
+* Microchip MCP73833T-FCI/MF (6h timer) (JLCPCB ok)
+* TI BQ24010DRCR
