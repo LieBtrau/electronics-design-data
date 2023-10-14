@@ -50,6 +50,7 @@ Instead of a supervisor, a clean power-on reset signal can be generated using : 
 # Buck converter
 ## Low power Module
 * Vin = 6.5V → 36V, Vout = 5V (trimmable), Iout = 500mA
+* Positive or negative output voltages by simply connecting differently.
 * Mornsun K7805MT-1000R4
 * Gaptec LMTM78_05-0.5
 
