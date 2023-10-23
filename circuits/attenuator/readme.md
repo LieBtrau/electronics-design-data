@@ -1,0 +1,1 @@
+Use integrated circuit, will have less crosstalk on higher frequencies.
