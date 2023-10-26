@@ -28,6 +28,7 @@ Given enough PCB area, it might be better to use a boost converter in SEPIC topo
 
 # Boost/SEPIC converter
 An LED driver might be used instead.  The [AP3031 is much cheaper and there are many second sources](https://hackaday.io/project/182940-urban-edc-flashlight/log/201518-led-driver).
+* AP3031KTR-G1 : LCSC C82636 (€0.12/pce)
 
 * LM2731YMFX/NOPB
 * [AN-1484 Designing A SEPIC Converter](https://www.ti.com/lit/an/snva168e/snva168e.pdf)
