@@ -20,3 +20,16 @@
   * How the heck can you route the traces to the pins closest to the PCB edge?  The pads are only 0.3mm wide, and the pins are 0.5mm apart.  Microvias will be needed..
   * More than 3 sources on JLCPCB
   
+# Battery holders
+## 1x18650
+* Avoid the [MPD BH-18650-PC](https://www.trustedparts.com/en/search/BH-18650-PC)
+  * expensive
+  * cheap clones melt far too easily
+  * not possible to mount a temperature sensor close by
+  * doesn't prevent wrong polarity insertion
+## SMD
+* Keystone 254TR / Myoung MY-18650-02
+  * Can be SMD soldered
+  * Allows for different battery lengths
+  * Leaves metal connections open, so only for closed spaces.
+  * Leaves more space for a temperature sensor or PTC-fuse.
