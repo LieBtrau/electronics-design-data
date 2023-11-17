@@ -1,6 +1,6 @@
 # RTC
 ## Characteristics
-* Package : SOIC-8 (smaller alternative might be TSSOP-8)
+* Package : SOIC-8 (smaller alternative is TSSOP-8 3.00mm wide (aka MSOP8))
   * pin 3 : /INT
   * pin 7 : FOUT
 * Interface : I²C
