@@ -42,3 +42,8 @@ General parameters : value±10%, X7R
 | Value | Voltage |Package | Part number | Remark |
 |-------|---------|--------|-------------|--------| 
 | 100µF | 10V     | ⌀6.3mmx8mm,SMD   | WE  | €0.3/pce |
+
+# EDLC / Supercap
+## RTC backup
+* [CDA LIC0813Q3R8106]() : LC=0.1µA/F €2/pce digikey, LCSC C2826888
+* [Eaton PHVL-3R9V505-R]() : LC=1µA/F, €6/pce digikey
