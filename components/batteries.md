@@ -14,7 +14,8 @@ Use low-self discharge types (Varta Ready2Use, ...) : comparison
 * (e.g. Xeno XL-060F AA)
 * wide temperature range
 * low self-discharge
-* high internal resistance, not suitable for high current draw
+* high internal resistance, not suitable for high current draw.  Can be fixed with supercap, see  [A Long-Lifetime, Cost-Competitive Solution in Smart
+Meters Based on the TPS61094](https://www.ti.com/lit/an/slvaf41a/slvaf41a.pdf?ts=1700888594827)
 
 # Alkaline : 1.5V
 
