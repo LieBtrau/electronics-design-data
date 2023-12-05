@@ -22,6 +22,9 @@ Bounce2
 # Rotary encoder
   paulstoffregen/Encoder @ ^1.4.2 ; alternative rotary encoder library : mathertel/RotaryEncoder (used on https://github.com/LieBtrau/better-alarm-clock/blob/master/firmware/full-application/lib/TactileElements/RotaryEncoder_Tactiles.cpp)
 
+# Macros
+* Replace `#define` for register definitions with scoped enum class as done [here](https://github.com/LieBtrau/esp32-web-radio/tree/main/firmware/esp32/platformio/thieu-b55/lib/ES8388).
+
 # Bit manipulation
 [Encoding bit fields istead of using masks](https://github.com/LieBtrau/chickenguard-2019-upgrade/blob/main/firmware/chickenguard/include/bit_manipulation.h)
 
