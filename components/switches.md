@@ -36,3 +36,21 @@
 * Nidec CL-SB-22C-01
 * Wuerth 452404020202
 * E-switch EG1271
+
+# Rotary Encoder
+## Parameters
+* Metal shaft
+* 20mm shaft length
+* M7x0.75mm thread bushing
+* 24 pulses per revolution (ppr)
+* with detent
+* with switch
+* vertical orientation
+* mounting : panel & through hole
+* actuator 6mm diameter flatted end
+
+## Sources
+* Bourns PEC11R-4220F-S0024
+* WE 482020514001 (only 20ppr)
+* CTS 11CEH20F243B
+* Alps EC11E18244AU (JLCPCB C202365)
