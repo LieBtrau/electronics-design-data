@@ -19,6 +19,12 @@
   * Looks like it's SMT, so this wouldn't require a special fixture for straddle mounting.
   * How the heck can you route the traces to the pins closest to the PCB edge?  The pads are only 0.3mm wide, and the pins are 0.5mm apart.  Microvias will be needed..
   * More than 3 sources on JLCPCB
+
+# SATA
+## 7p plug right angle SMT
+* Molex 0470804001
+* Adam-Tech SATA-A-PL-SMT-K
+* HYCW02-SATA07-250B (JLCPCB C2926811)
   
 # Battery holders
 ## 1x18650
