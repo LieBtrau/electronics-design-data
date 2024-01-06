@@ -39,3 +39,12 @@
   * Allows for different battery lengths
   * Leaves metal connections open, so only for closed spaces.
   * Leaves more space for a temperature sensor or PTC-fuse.
+
+## FFC
+### 0.5mm pitch, 24p, bottom contact, right angle
+* Amphenol F33Z-1A7Q1-E8C24
+* JLCPCB C262669
+Make footprint compatible to:
+* GCT FFC2B35-24-G
+* Hirose FH12-24S-0.5SH(55)
+* Molex 5051102491
