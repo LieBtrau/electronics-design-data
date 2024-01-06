@@ -54,3 +54,8 @@
 * WE 482020514001 (only 20ppr)
 * CTS 11CEH20F243B
 * Alps EC11E18244AU (JLCPCB C202365)
+
+# Tactile switch
+## Vertical SMD, 9.5mm height, 6x6mm
+* Wuerth 430182095816
+* C&K PTS645SL95SMTR92LFS
