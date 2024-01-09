@@ -6,8 +6,23 @@
 # Test hardware
 
 ## Power supply
+### Power the test system
 TFX form factor (smaller than ATX) : 12V, 5V, 3.3V, -12V, 5VSB
 * [TFX-300W-e](https://www.inter-tech.de/files/images/psu/88882144/TFX-300W-e.pdf)
+
+### Power the DUT
+Variable power supply with adjustable current control is very fancy, but not necessary.  A fixed power supply (or multiple fixed power supplies that can be switched) is sufficient.
+Current control and measurement can be done with a power monitor.
+
+### Power monitor
+* ISL28022
+* INA238
+
+They have the following features:
+* Measure current
+* Measure voltage
+* Alert on overcurrent, which can be used to shut down the power supply (and save the DUT)
+* I²C interface to read measurements and configure alerts
 
 ## Data acquisition
 * [Pi-Plates DAQC2plate](https://pi-plates.com/daqc2r1/)
