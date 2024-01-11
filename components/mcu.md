@@ -6,6 +6,7 @@
   * SOIC-8 : ATtiny202, ATtiny402
   * SOIC-14 : ATtiny404, ATtiny414, ATtiny804, ATtiny814, ATtiny1604, ATtiny1614
 * Holtek HT66 family has equal low power, is cheaper, but lacks software support.
+* Simple UPDI programmer (UART and a few discrete components), unlike Holtek, which needs a relatively expensive programmer.
 
 # MCU with LoRa/FSK/OOK radio
 * [Heltec CubeCell – Module (V2)](https://heltec.org/project/htcc-am01-v2/)
@@ -17,7 +18,7 @@
   * no platformio support
   * €6/pce
 * [Wio-E5 STM32WLE5JC Module](https://wiki.seeedstudio.com/LoRa-E5_STM32WLE5JC_Module/)
-  * no platformio support
+  * platformio support for SeeedStudio LoRa E5 Dev Board and SeeedStudio LoRa-E5 mini
   * 12x12mm
 
 # MCU with BLE
