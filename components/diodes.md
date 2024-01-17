@@ -14,7 +14,8 @@
 ## Western components
 | Max. current | Max. voltage |Package | Part number |  Properties | Sources | Remark |
 |--------------|--------------|--------|-------------|-------------|---------|--------|
-| 30mA       | 30V          | SOD323 = 0603 | RB751 | Ct = 2.0pF<br/><=500nA leakage @ 30V | JLCPCB C154819 | replacement for BAT54 types |
+| 30mA       | 30V          | SOD323 | RB751 | Ct = 2.0pF<br/><=500nA leakage @ 30V | JLCPCB C154819 | very low capacitance |
+| 200mA        | 40V          | SOD523 = 0603 | 1PS79SB30,115 | <=600mV @ 200mA<br/><=500nA leakage @ 25V | * 1PS79SB30,135<br/>* PMEG4002EB,115<br/>* 1PS79SB30YL<br/>| replacement for BAT54 types|
 | 2A           | 40V          | SMA    | B340AF-13   |  <=500mV @ 2A <br/><=200µA leakage <br/><=100pF |* B240AE-13S<br/>* B24AFC_R1_00001<br/>* SR24-AU_R1_000A1 | for non-synchronous SMPS | 
 | 2A           | 100V         | SOD123F | Diodes SDM2100S1F-7 | <=830mV @2A <br/>Max leakage @ 100V : 400nA | * Rohm RB068MM100TR<br/>* Nexperia PMEG10020ELRX<br/>* Nexperia PMEG10020ELR-QX<br/>* Nexperia PMEG10020AELRX<br/>* Nexperia PMEG10020AELR-QX<br/> | rectification |
 
