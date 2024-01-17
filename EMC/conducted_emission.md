@@ -3,6 +3,7 @@
 [Tekbox TBCP1 25mm RF current probe](https://eleshop.eu/tekbox-tbcp1-25mm-rf-current-probe.html):
 * €321.49
 * Can not be opened, so when the connector is big, you'll have to cut the cable and use terminal blocks to put it back together.
+* Without AMN (artificial mains network), there's no known source impedance.  A second hand surge generator can be used as AMN.
 
 ### References
 * [The HF Current Probe: Theory and Application](https://interferencetechnology.com/the-hf-current-probe-theory-and-application/)
