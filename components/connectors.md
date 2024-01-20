@@ -48,3 +48,11 @@ Make footprint compatible to:
 * GCT FFC2B35-24-G
 * Hirose FH12-24S-0.5SH(55)
 * Molex 5051102491
+
+### 0.5mm pitch, 24p, top contact, right angle
+* CviLux CF20241U0R0-NH
+* Amphenol F32Q-1A7H1-11024
+* WE 68712414022
+* FH12A-24S-0.5SH(55)
+* JLCPCB C262643
+* JLCPCB C2858299
