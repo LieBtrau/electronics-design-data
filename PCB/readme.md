@@ -13,3 +13,6 @@ mouse bites, see IPC_7351, Figure 3-21
 6. SIG : bottom : microstrip
 
 More stackups on [High-Speed Layout Guidelines for Signal Conditioners and USB Hubs](https://www.ti.com/lit/an/slla414/slla414.pdf)
+
+# Clearance according to IPC-2221
+[Using an IPC-2221 PCB Clearance Calculator for High Voltage Design](https://resources.altium.com/p/using-an-ipc-2221-calculator-for-high-voltage-design)
