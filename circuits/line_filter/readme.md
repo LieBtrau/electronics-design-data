@@ -6,3 +6,10 @@ CM-noise :
 DM-noise :
 * noise source has low source impedance : T filter is used to reduce the noise
 * high load impedance : 100ohm load impedance of LISN
+
+# Filter topology
+<img src="./CM-current-path.png" width="750" />
+
+1. Y-caps (CY1, CY2) : close to the noise source to keep that loop small
+2. DM-filter : CX1, Ldm, CX2
+3. Final X-cap (CX1) : close to the device terminals.  This will equalize (and share) the CM-currents in L1 and L2.  CX1 avoids that Ldm worsens the CM-noise, see [EMC-tutorials CM/DM filters](https://youtu.be/lZUXPiDt89I?t=841)
