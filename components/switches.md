@@ -41,13 +41,13 @@
 ## Parameters
 * Metal shaft
 * 20mm shaft length
+* actuator 6mm diameter flatted end
 * M7x0.75mm thread bushing
 * 24 pulses per revolution (ppr)
 * with detent
 * with switch
 * vertical orientation
 * mounting : panel & through hole
-* actuator 6mm diameter flatted end
 
 ## Sources
 * Bourns PEC11R-4220F-S0024
