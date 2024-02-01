@@ -5,6 +5,11 @@
 
 # Test hardware
 
+## PC
+Fanless box mini-PC inside the test fixture, as used in digital signage
+* [ASRock iBOX-420-DL](https://www.asrockind.com/en-gb/iBOX-420-DL)
+* [VNOPN Mini PC Intel N3150 Quad Core,Fanless Mini Computer]()
+
 ## Power supply
 ### Power the test system
 TFX form factor (smaller than ATX) : 12V, 5V, 3.3V, -12V, 5VSB
@@ -15,6 +20,8 @@ Variable power supply with adjustable current control is very fancy, but not nec
 Current control and measurement can be done with a power monitor.
 
 ### Power monitor
+* [Power Supply with Programmable Output Voltage and Protection for Position Encoder Interfaces](https://www.ti.com/lit/ug/tidu533/tidu533.pdf?ts=1706793796290)
+* [Reference Design MagI³C Power Supply](https://www.we-online.com/en/components/products/VDRM_POWERSUPPLY)
 * ISL28022
 * INA238
 
