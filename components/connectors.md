@@ -1,3 +1,7 @@
+# Galvanic compatibility
+* [The Tin Commandments: Guidelines For The Use Of Tin On Connector Contacts](https://www.ramoem.com/uploads/4/4/0/7/44075859/tin_commandments.pdf)
+  * Don't mix tin and gold
+
 # Wire to board
 
 ## 2.0mm pitch SMD, right angle
@@ -33,6 +37,7 @@
   * cheap clones melt far too easily
   * not possible to mount a temperature sensor close by
   * doesn't prevent wrong polarity insertion
+
 ## SMD
 * Keystone 254TR / Myoung MY-18650-02
   * Can be SMD soldered
@@ -44,15 +49,18 @@
 ### 0.5mm pitch, 24p, bottom contact, right angle
 * Amphenol F33Z-1A7Q1-E8C24
 * JLCPCB C262669
+
 Make footprint compatible to:
 * GCT FFC2B35-24-G
 * Hirose FH12-24S-0.5SH(55)
 * Molex 5051102491
 
 ### 0.5mm pitch, 24p, top contact, right angle
-* CviLux CF20241U0R0-NH
+#### Au-finish
 * Amphenol F32Q-1A7H1-11024
+* FH12A-24S-0.5SH(55) : JLCPCB C506794
+
+#### Sn-finish
+* CviLux CF20241U0R0-NH
 * WE 68712414022
-* FH12A-24S-0.5SH(55)
-* JLCPCB C262643
-* JLCPCB C2858299
+* AFC07-S24ECA-00 : JLCPCB C262643
