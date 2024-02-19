@@ -1,0 +1,120 @@
+[OutputJobFile]
+Version=1.0
+Caption=
+Description=
+VaultGUID=
+ItemGUID=
+ItemHRID=
+RevisionGUID=
+RevisionId=
+VaultHRID=
+AutoItemHRID=
+NextRevId=
+FolderGUID=
+LifeCycleDefinitionGUID=
+RevisionNamingSchemeGUID=
+
+[OutputGroup1]
+Name=Documentation.OutJob
+Description=
+TargetOutputMedium=Assembly Drawing
+VariantName=I2C
+VariantScope=1
+CurrentConfigurationName=
+TargetPrinter=Virtual Printer
+PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
+OutputMedium1=Print Job
+OutputMedium1_Type=Printer
+OutputMedium1_Printer=
+OutputMedium1_PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
+OutputMedium2=Schematics
+OutputMedium2_Type=Publish
+OutputMedium3=Assembly Drawing
+OutputMedium3_Type=Publish
+OutputType1=Schematic Print
+OutputName1=Schematic Prints
+OutputCategory1=Documentation
+OutputDocumentPath1=
+OutputVariantName1=
+OutputEnabled1=0
+OutputEnabled1_OutputMedium1=0
+OutputEnabled1_OutputMedium2=1
+OutputEnabled1_OutputMedium3=0
+OutputDefault1=0
+PageOptions1=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=0|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=0|PaperKind=A4|PaperIndex=9
+Configuration1_Name1=OutputConfigurationParameter1
+Configuration1_Item1=Record=SchPrintView|ShowNoERC=False|ShowParamSet=True|ShowProbe=True|ShowBlanket=True|NoERCSymbolsToShow="Thin Cross","Thick Cross","Small Cross",Checkbox,Triangle|ShowNote=True|ShowNoteCollapsed=False|ShowOpenEnds=True|ExpandDesignator=True|ExpandNetLabel=False|ExpandPort=False|ExpandSheetNum=False|ExpandDocNum=False|PrintArea=0|PrintAreaRect.X1=0|PrintAreaRect.Y1=0|PrintAreaRect.X2=0|PrintAreaRect.Y2=0|DocumentPath=All SCH Documents
+OutputType2=PCBDrawing
+OutputName2=Draftsman
+OutputCategory2=Documentation
+OutputDocumentPath2=
+OutputVariantName2=
+OutputEnabled2=1
+OutputEnabled2_OutputMedium1=0
+OutputEnabled2_OutputMedium2=0
+OutputEnabled2_OutputMedium3=1
+OutputDefault2=0
+PageOptions2=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
+
+[PublishSettings]
+OutputFilePath2=C:\github\esp32-web-radio\hardware\esp32-web-radio\Project Outputs for esp32-web-radio\Schematics\WEBRAD_1.0.0_schematics.PDF
+ReleaseManaged2=1
+OutputBasePath2=Project Outputs for esp32-web-radio
+OutputPathMedia2=[Media Name]
+OutputPathMediaValue2=
+OutputPathOutputer2=[Output Type]
+OutputPathOutputerPrefix2=
+OutputPathOutputerValue2=
+OutputFileName2=Documentation.PDF
+OutputFileNameMulti2=
+UseOutputNameForMulti2=0
+OutputFileNameSpecial2==board_name+_+board_revision+'.'+assembly_revision+'_'+variantName+_schematics
+OpenOutput2=1
+PromptOverwrite2=1
+PublishMethod2=0
+ZoomLevel2=50
+FitSCHPrintSizeToDoc2=1
+FitPCBPrintSizeToDoc2=1
+GenerateNetsInfo2=1
+MarkPins2=1
+MarkNetLabels2=1
+MarkPortsId2=1
+GenerateTOC2=1
+ShowComponentParameters2=1
+GlobalBookmarks2=0
+PDFACompliance2=Disabled
+PDFVersion2=Default
+OutputFilePath3=C:\github\esp32-web-radio\hardware\esp32-web-radio\Project Outputs for esp32-web-radio\Assembly Drawing\WEBRAD_project_revision_AssyDrawing.PDF
+ReleaseManaged3=1
+OutputBasePath3=Project Outputs for esp32-web-radio
+OutputPathMedia3=[Media Name]
+OutputPathMediaValue3==board_name+_+project_revision+_AssyDrawing
+OutputPathOutputer3=[Output Type]
+OutputPathOutputerPrefix3=
+OutputPathOutputerValue3=
+OutputFileName3=Documentation.PDF
+OutputFileNameMulti3=
+UseOutputNameForMulti3=0
+OutputFileNameSpecial3==board_name+_+board_revision+'.'+assembly_revision+'_'+variantName+_AssyDrawing
+OpenOutput3=1
+PromptOverwrite3=1
+PublishMethod3=0
+ZoomLevel3=50
+FitSCHPrintSizeToDoc3=1
+FitPCBPrintSizeToDoc3=1
+GenerateNetsInfo3=1
+MarkPins3=1
+MarkNetLabels3=1
+MarkPortsId3=1
+GenerateTOC3=1
+ShowComponentParameters3=1
+GlobalBookmarks3=0
+PDFACompliance3=Disabled
+PDFVersion3=Default
+
+[GeneratedFilesSettings]
+RelativeOutputPath2=C:\github\esp32-web-radio\hardware\esp32-web-radio\Project Outputs for esp32-web-radio\Schematics\WEBRAD_1.0.0_schematics.PDF
+OpenOutputs2=1
+RelativeOutputPath3=C:\github\esp32-web-radio\hardware\esp32-web-radio\Project Outputs for esp32-web-radio\Assembly Drawing\WEBRAD_project_revision_AssyDrawing.PDF
+OpenOutputs3=1
+
