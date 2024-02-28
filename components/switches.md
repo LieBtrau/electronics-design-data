@@ -35,6 +35,7 @@
 ## Straight THT, SPDT/DPDT
 * DPDT : Nidec CL-SB-22C-01
 * DPDT : Wuerth 452404020202
+* DPDT : JLCPCB C431542
 * SPDT : E-switch EG1271
 
 # Rotary Encoder
