@@ -32,10 +32,10 @@
 * E-switch EG1257
 * G-Switch MK-12C02-G025 (JLCPCB C778186)
 
-## Straight THT, SPDT
-* Nidec CL-SB-22C-01
-* Wuerth 452404020202
-* E-switch EG1271
+## Straight THT, SPDT/DPDT
+* DPDT : Nidec CL-SB-22C-01
+* DPDT : Wuerth 452404020202
+* SPDT : E-switch EG1271
 
 # Rotary Encoder
 ## Parameters
