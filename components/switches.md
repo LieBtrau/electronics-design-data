@@ -60,3 +60,11 @@
 ## Vertical SMD, 9.5mm height, 6x6mm
 * Wuerth 430182095816
 * C&K PTS645SL95SMTR92LFS
+
+## RA SMD, 4.7 x (2.9 → 3.5)mm
+* E-switch TL1016BAF160QG
+* C&K PTS840 GMP SMTR LFS
+* Panasonic EVQP7L01P
+* ALPS SKSCLDE010 (JLCPCB C115362)
+
+
