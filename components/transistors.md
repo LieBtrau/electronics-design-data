@@ -35,7 +35,7 @@
 
 # PMOS
 ## Low voltage, medium current
-* [JLCPBC Basic Part](https://www.lcsc.com/product-detail/MOSFETs_LRC-LRC-LBSS84LT1G_C8492.html) : AO3401A : 30V/4.0A, Vgsth = -0.9V, Igss = 100nA
+* [JLCPBC Basic Part](https://jlcpcb.com/partdetail/Alpha_OmegaSemicon-AO3401A/C15127) : AO3401A : 30V/4.0A, Vgsth = -0.9V, Igss = 100nA
 * SI3401A : 30V/4A, Vgsth = 1.3V, Igss = 100nA (€0.04/pce at LCSC)
 * DMP3098L
 * DMG3401LSN
