@@ -16,3 +16,5 @@ More stackups on [High-Speed Layout Guidelines for Signal Conditioners and USB H
 
 # Clearance according to IPC-2221
 [Using an IPC-2221 PCB Clearance Calculator for High Voltage Design](https://resources.altium.com/p/using-an-ipc-2221-calculator-for-high-voltage-design)
+
+For 230V, single phase : 3.0mm clearance, 4.0mm creepage
