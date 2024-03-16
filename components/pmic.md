@@ -41,6 +41,8 @@ Instead of a supervisor, a clean power-on reset signal can be generated using : 
 | Part number | Order nr. | Iq | Timeout | Package | Price \[€\] | Alternatives |
 | ---------------|-------------------------|-------|-------|---------|-------|--------------|
 | TLV803EA30DBZR | 296-TLV803EA30DBZRCT-ND | 250nA | 200ms | SOT23-3 | €0.68 | AOE : xxx803 or xxx809 from many manufacturers <br/>CAT853TTBI-GT3OSCT-ND, 6µA |
+| RT9818C-30GVL | 1028-RT9818C-30GVLCT-ND | 3µA | 220ms | SOT23-3 | €0.41|  |
+| APX803S-31SA-7 |296-TLV803EA30DBZRCT-ND | 10µA | 240ms | SOT23-3 | €0.35 | JLCPCB C129757 |
 
 ## Adjustable voltage supervisor (with 0.4V reference)
 * TPS3808G01DBVR (JLCPCB C19653 : €0.38)
