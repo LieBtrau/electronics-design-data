@@ -8,6 +8,11 @@
 # Using third party model for NMOS/PMOS
 [](https://www.analog.com/en/technical-articles/ltspice-using-an-intrinsic-symbol-for-a-third-party-model.html)
 
+## My library
+* AO3401.mod
+* AO3401A.mod
+
+
 # Consumed power by component in LTSpice
 1. Run transient simulation
 2. Mouse on component, hold ALT-key and left click
