@@ -21,3 +21,15 @@ For 230V, single phase : 3.0mm clearance, 4.0mm creepage
 
 # Temperature rise
 [PCB Trace Width Calculator](https://www.digikey.be/en/resources/conversion-calculators/conversion-calculator-pcb-trace-width)
+
+# Over voltage category
+[Understanding IEC Overvoltage Categories](https://www.cui.com/blog/understanding-iec-overvoltage-categories)
+* CAT II : Local level, appliances designed to be plugged into wall outlets in the house
+  * <=300VAC nominal -> 2500V transient
+* CAT III : fixed installation
+  * <=300VAC nominal -> 4000V transient
+
+# Pollution degree
+ IEC 60947-1 and IEC 60664-1:2020
+
+IEC 60664-1:2020 : Insulation coordination for equipment within low-voltage supply systems - Part 1: Principles, requirements and tests

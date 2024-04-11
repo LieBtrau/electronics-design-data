@@ -4,11 +4,16 @@
 
 # Barrel connectors
 ## Audio connector
-### 3.5mm, phone jack female, SMD RA, 7mm between studs, 4 conductors 
-* Tensility 54-00177 ?
-* CUI SJ2-35954D-SMT-TR ?
-* CUI SJ-43516-SMT-TR ?
-* CUI SJ2-35894D-SMT-TR ?
+### 2.5mm, phone jack female, SMD RA, 4mm between studs, 3 conductors, no switch
+* CUI SJ2-25103A-SMT-TR
+* Switchcraft MDSMT2BRATRX
+* XKB PJ-209X-3B-SMT (JLCPCB C500083)
+
+### 3.5mm, phone jack female, SMD RA, 6mm between studs, 3 conductors, two switches
+* CUI SJ2-35863B1-SMT-TR
+* Adam-Tech ASJ-106-K-G-T/R
+* Amphenol 10038075-A1PLF
+* JLCPCB C381135 PJ-327A0-SMT
 
 # Wire to board
 
