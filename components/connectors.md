@@ -2,6 +2,14 @@
 * [The Tin Commandments: Guidelines For The Use Of Tin On Connector Contacts](https://www.ramoem.com/uploads/4/4/0/7/44075859/tin_commandments.pdf)
   * Don't mix tin and gold
 
+# Barrel connectors
+## Audio connector
+### 3.5mm, phone jack female, SMD RA, 7mm between studs, 4 conductors 
+* Tensility 54-00177 ?
+* CUI SJ2-35954D-SMT-TR ?
+* CUI SJ-43516-SMT-TR ?
+* CUI SJ2-35894D-SMT-TR ?
+
 # Wire to board
 
 ## 2.0mm pitch SMD, right angle
