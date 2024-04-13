@@ -9,11 +9,20 @@
 * Switchcraft MDSMT2BRATRX
 * XKB PJ-209X-3B-SMT (JLCPCB C500083)
 
+### 2.5mm, phone plug male, 3 conductors, no switch
+* CUI SP-2533-01
+* Tensility 50-00400
+* Tensility 50-00406 
+
 ### 3.5mm, phone jack female, SMD RA, 6mm between studs, 3 conductors, two switches
 * CUI SJ2-35863B1-SMT-TR
 * Adam-Tech ASJ-106-K-G-T/R
 * Amphenol 10038075-A1PLF
 * JLCPCB C381135 PJ-327A0-SMT
+
+### 3.5mm, phone plug male, 3 conductors, no switch
+* Tensility 50-00396
+* CUI SP-3533-01
 
 # Wire to board
 
