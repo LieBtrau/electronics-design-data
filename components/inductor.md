@@ -18,4 +18,5 @@
 
 # Common mode chokes
 ## Hi-speed data
-* WE 744233900, 0805, 90ohm, 131nH
+* WE 744233900, 0805, 90ohm, 131nH, JLCPCB C54888
+* WE 744232090, 1206, 90ohm, 111nH, JLCPCB C131487
