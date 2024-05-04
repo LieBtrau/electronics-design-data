@@ -6,7 +6,13 @@
 # Test hardware
 
 ## PC
-Fanless box mini-PC inside the test fixture, as used in digital signage
+Thin client, fanless box mini-PC inside the test fixture, as used in digital signage
+
+[Overview](https://www.parkytowers.me.uk/thin/): 
+* Lenovo ThinkCentre M92p Tiny, M93p Tiny
+* HP T620,630,640,730,740
+* FS S920,S940 or Dell/Wyse 5060,5070
+* Optiplex 3000 thin client
 * [ASRock iBOX-420-DL](https://www.asrockind.com/en-gb/iBOX-420-DL)
 * [VNOPN Mini PC Intel N3150 Quad Core,Fanless Mini Computer]()
 
