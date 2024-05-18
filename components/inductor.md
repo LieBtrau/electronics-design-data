@@ -16,6 +16,9 @@
 ## Low current, for digital IO
 * WE 742792662 : 0603
 
+## Medium current, for power rails
+* WE 742792625 : 0603, 100ohm, 100MHz, 1.5A, 50mohm
+
 # Common mode chokes
 ## Hi-speed data
 * WE 744233900, 0805, 90ohm, 131nH, JLCPCB C54888
