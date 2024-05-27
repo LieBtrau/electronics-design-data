@@ -1,5 +1,7 @@
 mouse bites, see IPC_7351, Figure 3-21
 
+courtyard, see IPC_7352, 3.3
+
 # Layer stackup
 ## 6 Layer stackup
 6 layers (3 signal layers, 2 ground, 1 power)
