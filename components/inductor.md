@@ -4,6 +4,20 @@
 |------------|--------------------|------|---------------|------|
 | 10 | 1.5A -> 3.5A | 4.0x4.0 (1616) | <0.5 | LCSC C167879 <br/>Tai Tech HPC 4018NF-100M<br/>Abracon ASPI-4030S-100M-T |
 
+# Inductors
+## Ferrite core
+* High frequency > 1MHz
+* Hard saturation, inductance drops quickly
+* Higher inductance values (10uH to 1mH)
+* Use for : high output voltage, low output current
+* Lower peak saturation current (for the same RMS current)
+
+## Powdered Iron core
+* Low frequency < 500kHz
+* Soft saturation, inductance drops slowly
+* Smaller inductance values (1uH to 100uH)
+* Higher peak saturation current (for the same RMS current)
+
 # Ferrite beads
 [Shall We Use a Ferrite Bead in Power Rail or Not? | Explained by Eric Bogatin](https://youtu.be/HaLMjVkKYMw?t=267):
   * Do not place ferrite bead in series with power supply!  Power rail droop: The voltage across the inductor (dI/dt) by switching will cause a voltage drop and every other device on that power rail will see it.  You can only do it when you place the feedback loop after the ferrite bead (WE ANP0022).  This LC-filter causes a phase shift and can cause instability.
