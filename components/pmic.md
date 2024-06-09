@@ -1,5 +1,24 @@
 # LDO
 ## SOT23-5
+### 3V3, low Iout, ultra-low Iq
+* Package : SOT23-5
+* Output : 3.0V
+* Output current : 100mA -> 300mA
+* Operating temp : -40°C < T < +85°C
+* Iq : < 1µA
+* Dropout max : 0.16V @ 100mA
+* Features :
+  * with and without output discharge
+  * with and without battery monitoring output
+* Manufacturers : TI, Ablic, Diodes, Toshiba
+* Sources : 
+  * TI TPS7A02 : TPS7A0230PDBVR (JLCPCB C3747031)
+  * TI TPS7A03 : TPS7A0330PDBVR (JLCPCB C3752328)
+  * Ablic S-1318D30-M5T1U4
+  * Diodes AP7354-30W5-7
+  * Toshiba TCR3UF30A,LM(CT (good transient response)
+
+
 ### 3V3, high Iout, low Iq
 XC6220 : LCSC C86534
 * Price : €0.68
