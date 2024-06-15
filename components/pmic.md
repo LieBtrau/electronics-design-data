@@ -116,5 +116,12 @@ Other pin standard:
 * obsolete, but still available
 
 # Li-Ion Charger
-* Microchip MCP73831T-2ACI/OT : 500mA charger, 4.2V end voltage
-* TI BQ24010DRCR
+* Microchip MCP73831T-2ACI/OT
+  * 500mA charger
+  * 4.2V end voltage
+  * ! no Thermistor control
+  * LTC4054, STC4054 and TP4057 share same pin layout.
+* TI BQ21040DBVR :
+  * higher Vin than MCP73831 : 28V
+  * higher charge current : 0.8A
+  * thermistor control
