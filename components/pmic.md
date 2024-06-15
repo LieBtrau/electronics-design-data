@@ -115,7 +115,6 @@ Other pin standard:
 ## AP9101CAK6-ANTRG1
 * obsolete, but still available
 
-# Battery Charger
-* Microchip MCP73833T-AMI/MF (0h timer) (JLCPCB ok)
-* Microchip MCP73833T-FCI/MF (6h timer) (JLCPCB ok)
+# Li-Ion Charger
+* Microchip MCP73831T-2ACI/OT : 500mA charger, 4.2V end voltage
 * TI BQ24010DRCR
