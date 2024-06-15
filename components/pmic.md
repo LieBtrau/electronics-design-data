@@ -124,4 +124,4 @@ Other pin standard:
 * TI BQ21040DBVR :
   * higher Vin than MCP73831 : 28V
   * higher charge current : 0.8A
-  * thermistor control
+  * 10㏀ thermistor control input
