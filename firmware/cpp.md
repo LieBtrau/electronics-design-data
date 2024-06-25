@@ -1,3 +1,6 @@
+# Mixing C and CPP
+[How can I modify my own C header files so it’s easier to #include them in C++ code?](https://isocpp.org/wiki/faq/mixing-c-and-cpp#include-c-hdrs-personal)
+
 # Function parameter example
 * [Arduino-kiss](https://github.com/LieBtrau/digital-walkie-talkie/tree/master/firmware/tests/other/arduino-kiss)
 * [Si4463-stream](https://github.com/LieBtrau/digital-walkie-talkie/tree/master/firmware/tests/radio/si4463-stream)
@@ -8,6 +11,9 @@
 
 ## ESP32
 * [chickenguard](https://github.com/LieBtrau/chickenguard-2019-upgrade/tree/main/firmware/chickenguard)
+
+## EEPROM config with CRC
+* [EEPROMAnything](./EEPROMAnything.h), the version found online doesn't have the CRC-check
 
 # Ringbuffer
 lib_deps =
