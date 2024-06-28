@@ -125,3 +125,10 @@ Other pin standard:
   * higher Vin than MCP73831 : 28V
   * higher charge current : 0.8A
   * 10㏀ thermistor control input
+
+# USB-PD Controller
+CYPD3177
+[Overview](https://hackaday.com/2020/10/23/a-plethora-of-power-delivery-potential/)
+* [STUSB4500](https://hackaday.com/2021/04/21/easy-usb%E2%80%91c-power-for-all-your-devices/)
+* [FUSB302](https://hackaday.io/project/176680-pd-micro-usb-c-pd30-pps-trigger)
+* [IP2721](https://hackaday.io/project/173717-usb-c-pd-max-trigger-board)
