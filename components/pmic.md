@@ -18,7 +18,6 @@
   * Diodes AP7354-30W5-7
   * Toshiba TCR3UF30A,LM(CT (good transient response)
 
-
 ### 3V3, high Iout, low Iq
 XC6220 : LCSC C86534
 * Price : €0.68
@@ -127,8 +126,14 @@ Other pin standard:
   * 10㏀ thermistor control input
 
 # USB-PD Controller
-CYPD3177
 [Overview](https://hackaday.com/2020/10/23/a-plethora-of-power-delivery-potential/)
 * [STUSB4500](https://hackaday.com/2021/04/21/easy-usb%E2%80%91c-power-for-all-your-devices/)
+  * Most popular on [JLCPCB](https://jlcpcb.com/partdetail/Stmicroelectronics-STUSB4500QTR/C2678061)
 * [FUSB302](https://hackaday.io/project/176680-pd-micro-usb-c-pd30-pps-trigger)
 * [IP2721](https://hackaday.io/project/173717-usb-c-pd-max-trigger-board)
+* [CYPD3177-24LQXQ](https://jlcpcb.com/partdetail/3345638-CYPD317724LQXQ/C2959321)
+  * no programming needed.  Voltage can be set by resistors.
+
+# Current Sense Amplifier
+* [INA226](https://jlcpcb.com/partdetail/TexasInstruments-INA226AIDGSR/C49851): 36Vmax, 10µA input leakage on analog inputs 
+* [INA238AIDGSR](https://jlcpcb.com/partdetail/TexasInstruments-INA238AIDGSR/C2868250) : 85Vmax, 2.5nA input leakage on analog inputs
