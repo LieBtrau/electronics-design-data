@@ -1,6 +1,34 @@
-mouse bites, see IPC_7351, Figure 3-21
+# PCB manufacturers
+* [PCBShopper](http://pcbshopper.com/): Compare PCB manufacturers and get the best prices and delivery terms
 
-courtyard, see IPC_7352, 3.3
+# PCB Design rules
+## Grids
+* 0.5mm for components
+* 0.1mm grid for everything else
+
+## General
+* via = 0.7mm ring, 0.3mm hole
+* trace width : aim for 50ohm trace impedance, but don't go below 0.15mm
+
+## From manufacturers
+| Parameter            | Eurocircuits 6C | Sparkfun | [Seeed](http://support.seeedstudio.com/knowledgebase/articles/447362-fusion-pcb-specification) | [AllPcb](https://www.allpcb.com/standard_pcb_manufacturing_capability.html)
+|----------------------|-----------------|----------|-------|-------|
+| Track width          |  0.15           | 0.20     | 0.15  | 0.20  |
+| Track to track       |  0.15           | 0.20     | 0.15  | 0.20  |
+| Track to pad         |  0.15           | 0.20     | 0.15  | 0.30  |
+| Pad to pad           |  0.15           | 0.20     | 0.15  | 0.25  |
+| Via hole size        |  0.35           | 0.50     | 0.30  | 0.30  |
+| Min. annular ring    |  0.175          | 0.30     | 0.25  | 0.30  |
+| Min. dist. Cu to dim.|  0.25           | 0.25     | 0.25  | 0.50  |
+| Min. hole-hole dist. |  0.35           | 0.20     | 0.25  | 0.40  |
+
+
+## Mouse bites
+* [Mouse Bites](https://blogs.mentor.com/tom-hausherr/blog/tag/mouse-bite/)
+* see IPC_7351, Figure 3-21
+
+## Courtyard
+see IPC_7352, 3.3
 
 # Layer stackup
 ## 6 Layer stackup
