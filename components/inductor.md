@@ -35,7 +35,7 @@
 
 # Common mode chokes
 ## Hi-speed data
- * WE 744232222, 1206, 2200ohm (3MHz - 300MHz)
+* WE 744232222, 1206, 2200ohm (3MHz - 300MHz)
 * WE 744233900, 0805, 90ohm, 131nH, JLCPCB C54888
 * WE 744232090, 1206, 90ohm, 111nH, JLCPCB C131487
 
