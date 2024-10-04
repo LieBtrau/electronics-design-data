@@ -21,22 +21,5 @@ placeholder of libraries and info about electronics used over several repositori
 * [Switches](../../wiki/Electronic-standard-parts-:-switches)
 * [Octopart Common Parts library](https://octopart.com/common-parts-library)
 
-# PCB manufacturers
-* [PCBShopper](http://pcbshopper.com/): Compare PCB manufacturers and get the best prices and delivery terms
-
-# PCB Design rules
-* [Mouse Bites](https://blogs.mentor.com/tom-hausherr/blog/tag/mouse-bite/)
-
-| Parameter            | Eurocircuits 6C | Sparkfun | [Seeed](http://support.seeedstudio.com/knowledgebase/articles/447362-fusion-pcb-specification) | [AllPcb](https://www.allpcb.com/standard_pcb_manufacturing_capability.html)
-|----------------------|-----------------|----------|-------|-------|
-| Track width          |  0.15           | 0.20     | 0.15  | 0.20  |
-| Track to track       |  0.15           | 0.20     | 0.15  | 0.20  |
-| Track to pad         |  0.15           | 0.20     | 0.15  | 0.30  |
-| Pad to pad           |  0.15           | 0.20     | 0.15  | 0.25  |
-| Via hole size        |  0.35           | 0.50     | 0.30  | 0.30  |
-| Min. annular ring    |  0.175          | 0.30     | 0.25  | 0.30  |
-| Min. dist. Cu to dim.|  0.25           | 0.25     | 0.25  | 0.50  |
-| Min. hole-hole dist. |  0.35           | 0.20     | 0.25  | 0.40  |
-
 # STM32 & AVR
 * [MCU Boards](../../wiki)
