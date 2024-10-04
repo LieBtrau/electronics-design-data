@@ -31,7 +31,13 @@
 * WE 742792662 : 0603
 
 ## Medium current, for power rails
-* WE 742792625 : 0603, 100ohm, 100MHz, 1.5A, 50mohm
+* WE 742792625 : 0603, 100ohm, 100MHz, 2.0A, 50mohm
+* WE 742792651 : 0603, 600ohm, 100MHz, 1.0A, 50mohm
+
+## High current, for power rails
+* HI1812V101R-10 Laird
+* 2518121217Y6 Fair-Rite
+* JLCPCB C2894325
 
 # Common mode chokes
 ## Hi-speed data
