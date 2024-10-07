@@ -137,3 +137,6 @@ Other pin standard:
 # Current Sense Amplifier
 * [INA226](https://jlcpcb.com/partdetail/TexasInstruments-INA226AIDGSR/C49851): 36Vmax, 10µA input leakage on analog inputs 
 * [INA238AIDGSR](https://jlcpcb.com/partdetail/TexasInstruments-INA238AIDGSR/C2868250) : 85Vmax, 2.5nA input leakage on analog inputs
+
+# Integrated ideal diode
+* [LM73100](https://www.ti.com/product/LM7310/part-details/LM73100RPWR)
