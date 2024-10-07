@@ -7,10 +7,15 @@
 
 # Using third party model for NMOS/PMOS
 [](https://www.analog.com/en/technical-articles/ltspice-using-an-intrinsic-symbol-for-a-third-party-model.html)
+1. Add a new part to the schematic, e.g. NMOS
+2. Ctrl-right click on the part
+3. Set Prefix-parameter of the part to "X"
+4. Set Value-parameter of the part to the part name in the library, e.g. "AO3401A".
 
 ## My library
 * AO3401.mod
 * AO3401A.mod
+* BSS138P_2011
 
 
 # Consumed power by component in LTSpice
