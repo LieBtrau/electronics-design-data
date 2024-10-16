@@ -28,7 +28,7 @@
   * When using in multiple stage filters for DCDC converters, put the real inductors closest to the switching converter and ferrite beads further away (WE ANP0044).
 
 ## Low current, for digital IO
-* WE 742792662 : 0603
+* WE 742792662 : 0603, 1kOhm, 100MHz, 830mA, 300mohm
 
 ## Medium current, for power rails
 * WE 742792625 : 0603, 100ohm, 100MHz, 2.0A, 50mohm
