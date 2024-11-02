@@ -19,6 +19,10 @@
 
 
 # Consumed power by component in LTSpice
+[LTspice: Computing the Average or RMS Value of a Trace](https://www.analog.com/en/resources/technical-articles/ltspice-computing-the-average-or-rms-value-of-a-trace.html)
 1. Run transient simulation
 2. Mouse on component, hold ALT-key and left click
 3. To get the average power over that period, place the cursor over the title for the power graph, hold the CTRL key, and left click.
+
+# Harmonics analysis
+[LTspice tutorial - Ep6 Basics of FFT analysis and .four statment](https://www.youtube.com/watch?v=rVAvW1Jh2AE)
