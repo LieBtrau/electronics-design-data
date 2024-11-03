@@ -1,22 +1,20 @@
-[Measuring inductor saturation](http://www.vk2zay.net/article/200)
+# Measurements
+* [Measuring inductor saturation](http://www.vk2zay.net/article/200)
+* Measure Q-factor with a network analyzer
+  * Use the shunt method
+  * Use NanoVNASaver and make it show "S21 R+jX Series"
 
 | Value [µH] | Saturation current [A] | Size [mm x mm] | DC-resistance [ohm] | Type |
 |------------|--------------------|------|---------------|------|
 | 10 | 1.5A -> 3.5A | 4.0x4.0 (1616) | <0.5 | LCSC C167879 <br/>Tai Tech HPC 4018NF-100M<br/>Abracon ASPI-4030S-100M-T |
 
-# Inductors
-## Ferrite core
-* High frequency > 1MHz
-* Hard saturation, inductance drops quickly
-* Higher inductance values (10uH to 1mH)
-* Use for : high output voltage, low output current
-* Lower peak saturation current (for the same RMS current)
-
-## Powdered Iron core
-* Low frequency < 500kHz
-* Soft saturation, inductance drops slowly
-* Smaller inductance values (1uH to 100uH)
-* Higher peak saturation current (for the same RMS current)
+# Selection for low losses
+Use Wuerth Red-Expert Power Inductor : Losses calculator.
+* f=13.56MHz
+* Duty cycle = 0.5
+* I<sub>L_AVG</sub> = 0.7A
+* ΔI<sub>L</sub> = 0.15A
+Then go to the P<sub>TOT</sub>-column and reduce maximum value until less than 100 items are left.  After that, you can sort that column from low to high to find the best inductor.
 
 # Ferrite beads
 [Shall We Use a Ferrite Bead in Power Rail or Not? | Explained by Eric Bogatin](https://youtu.be/HaLMjVkKYMw?t=267):
