@@ -14,4 +14,14 @@
 
 * TI DRV8231ADDAR
   * with assembly option, can be made footprint compatible with DRV8870DDA
-  * allows current measuring  
+  * allows current measuring
+
+# Half-bridge drivers
+* CSD97395Q4M 
+
+# Audio amplifier
+## Class-D
+* TAS5720M :
+  * I²S input
+  * available on JLCPCB
+  * 20W mono
