@@ -21,8 +21,11 @@
 * Epson RX8901CE
 
 # Crystals
-Mind the temperature range of the crystal. The oscillation frequency of the crystal is inherently temperature dependent. From -120ppm at -40°C to +120ppm at 85°C is a common range. 
-Take the parabolic coefficient of the crystal into account (see Seiko crystals). The parabolic coefficient is the second derivative of the frequency with respect to temperature.
+Mind the temperature range of the crystal. The oscillation frequency of the crystal is inherently temperature dependent. The curve also depends on the crystal cut. 
+* AT-cut has a cubic stability curve over temperature
+* BT-cut has a parabolic stability curve over temperature
+
+[Characterizing Frequency Deviations of Quartz Crystals: Frequency Tolerance, Frequency Stability, and Aging](https://www.allaboutcircuits.com/technical-articles/characterizing-frequency-deviations-of-quartz-crystals-frequency-tolerance-frequency-stability-and-aging/)
 
 ## Reference
 [Tuning fork crystals & Oscillator](https://abracon.com/Support/Tuning-Fork-Crystals-and-Oscillator.pdf)
