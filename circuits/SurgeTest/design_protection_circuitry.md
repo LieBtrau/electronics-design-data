@@ -24,6 +24,9 @@ Disadvantages of MOVs:
 Advantages of MOVs:
 * lower capacitance than TVS diodes
 
+### 3-GDT, 2-MOV protection
+* [Lightning Surge Response Improvement by Combinations of Varistors and Gas Discharge Tubes](https://www.wseas.org/multimedia/journals/power/2012/54-510.pdf)
+
 # References
 * [How to Select the Optimum Transient Surge Protection for EV On-Board Chargers](https://m.littelfuse.com/media?resourcetype=application-notes&itemid=a12f2475-d207-4f54-a7d6-01c4d6eb435c&filename=how-to-select-the-optimum-transient-surge-protection-for-ev-on-board-chargers-application-note)
 * [Bourns : Designing Effective Surge Protection for AC and DC Powered Systems](https://www.bourns.com/docs/technical-documents/technical-library/isomov/application-notes/Surge_Protection_for_AC_and_DC_Powered_Systems_appnote.pdf)
