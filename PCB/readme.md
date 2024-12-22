@@ -7,7 +7,7 @@
 * 0.1mm grid for everything else
 
 ## General
-* via = 0.7mm ring, 0.3mm hole
+* via = 0.6mm ring, 0.3mm hole
 * trace width : aim for 50ohm trace impedance, but don't go below 0.15mm
 
 ## From manufacturers
