@@ -33,7 +33,7 @@ XC6220 : LCSC C86534
 
 ### 5V, with enable, high input voltage (>15V), Ioutmax = 100mA
 * NCP730ASN500T1G : 150mA, 38V, 2µA Iq
-* TPS70950DBVR  : 150mA, 30V, 1μA Iq (JLCPCB C96028)
+* TPS70950DBVR  : 150mA, 30V, 1μA Iq (JLCPCB C96028), 1.5V dropout @ 150mA
 * LDK320AM50R : 200mA, 18V, 60µA Iq
 * MCP1755 : 300mA, 16V, 68µA Iq
 * RT9069-50  : 200mA, 36V, 2µA Iq (enable on pin 4)
