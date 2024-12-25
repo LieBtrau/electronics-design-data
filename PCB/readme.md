@@ -1,6 +1,13 @@
 # PCB manufacturers
 * [PCBShopper](http://pcbshopper.com/): Compare PCB manufacturers and get the best prices and delivery terms
 
+## JLCPCB
+### Price setting according to PCB-dimensions
+Price calculation is done based on the maximum dimension of the PCB.  For example 50x100mm will be calculated as 100x100mm.  
+* fits within 50x50mm, 6L : €1.92 for 5pcs
+* fits within 100x100mm, 4L : €6.72 for 5pcs
+* fits within 100x100mm, 6L : €33.5 for 5pcs
+
 # PCB Design rules
 ## Grids
 * 0.5mm for components
