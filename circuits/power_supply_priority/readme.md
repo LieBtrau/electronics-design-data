@@ -1,0 +1,1 @@
+Another circuit that could be replaced by multiple LM73100R
