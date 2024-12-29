@@ -1,5 +1,6 @@
 #### References
 * [A Primer on USB Type-C® and USB Power Delivery Applications and Requirements](https://www.ti.com/lit/wp/slyy109b/slyy109b.pdf)
+* [Overview](https://hackaday.com/2020/10/23/a-plethora-of-power-delivery-potential/)
 
 #### Options
 ##### USB-PD 1.0 or higher (if more than 5V is needed)
@@ -17,11 +18,13 @@
     * [AP33771] : QFN24
     * [AP33772] : QFN24
 * Infineon
-    * CYPD3177-24LQXQT : QFN24
-* Rohm, TI : no solution wit 24 pins or less
+    * [CYPD3177-24LQXQ](https://jlcpcb.com/partdetail/3345638-CYPD317724LQXQ/C2959321)
+       * no programming needed.  Voltage can be set by resistors.
+* Rohm, TI : no solution with 24 pins or less
 * ST
     * [STUSB4500](https://hackaday.com/2021/04/21/easy-usb%E2%80%91c-power-for-all-your-devices/) : QFN24
     * [STUSB4500QTR](https://jlcpcb.com/partdetail/Stmicroelectronics-STUSB4500QTR/C2678061) : $2.1,  220pcs
+    * Most popular on [JLCPCB](https://jlcpcb.com/partdetail/Stmicroelectronics-STUSB4500QTR/C2678061)
 * NXP
     * [PTN5110] : QFN16 2.6x2.6mm
 * Richtek
