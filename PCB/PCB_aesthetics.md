@@ -46,13 +46,12 @@ PCB Ordering guideline
 11. Impedance control : Yes
 12. Layer stackup : JLC0616H-3313
 13. Via covering : Epoxy filled & capped
-14. Minimum via hole diameter : 0.3/0.4mm
+14. Minimum hole size : .Hole_Size_Min
 15. Board outline tolerance : +/- 0.2mm
 16. Mark on PCB : 2D bardcode & Number | Data Matrix Code | .board_name _ABCDE_0001 | 8x8mm
 17. Gold fingers : No
 18. Castellated holes : No
 19. Hole count : .Hole_Count
-20. Minimum hole size : .Hole_Size_Min
-21. SMD solder joints : .PadSMD_Count
-22. Through-hole solder joints : .PadThru_Count
+20. SMD solder joints : .PadSMD_Count
+21. Through-hole solder joints : .PadThru_Count
 ```	
