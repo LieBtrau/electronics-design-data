@@ -15,8 +15,9 @@
 * Microchip: no solution for USB-C
 * No QFN24 pin compatible solution
 * Diodes : 
-    * [AP33771] : QFN24
-    * [AP33772] : QFN24
+    * No output discharge?  So what happens after connecting to a 5V device after a 20V device had been connected?
+    * [AP33771] : QFN24, no firmware configuration needed
+    * [AP33772] : QFN24, I²C interface
 * Infineon
     * [CYPD3177-24LQXQ](https://jlcpcb.com/partdetail/3345638-CYPD317724LQXQ/C2959321)
        * no programming needed.  Voltage can be set by resistors.
