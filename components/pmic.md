@@ -133,6 +133,13 @@ Other pin standard:
 * [INA238AIDGSR](https://jlcpcb.com/partdetail/TexasInstruments-INA238AIDGSR/C2868250) : 85Vmax, 2.5nA input leakage on analog inputs
 
 # Integrated ideal diode
+Simple and cheap:
+* LM66100, NID5100GW 
+  * 1.2 V to 5.5 V
+  * 1.5 A 
+  * input polarity protected
+  * low quiescent current (150nA)
+
 * [LM73100](https://www.ti.com/product/LM7310/part-details/LM73100RPWR)
   * Input voltage : 2.7V to 23V
   * reverse current flow blocked
