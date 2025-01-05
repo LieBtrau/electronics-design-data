@@ -1,3 +1,8 @@
+# PSE
+* Injoinic IP6538_AC
+  * available on JLCPCB
+  * 5V, 9V, 12V and PPS (3.3V to 11.1V output)
+
 #### References
 * [A Primer on USB Type-C® and USB Power Delivery Applications and Requirements](https://www.ti.com/lit/wp/slyy109b/slyy109b.pdf)
 * [Overview](https://hackaday.com/2020/10/23/a-plethora-of-power-delivery-potential/)
