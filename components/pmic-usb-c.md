@@ -1,5 +1,11 @@
+# PSE
+* Injoinic IP6538_AC
+  * available on JLCPCB
+  * 5V, 9V, 12V and PPS (3.3V to 11.1V output)
+
 #### References
 * [A Primer on USB Type-C® and USB Power Delivery Applications and Requirements](https://www.ti.com/lit/wp/slyy109b/slyy109b.pdf)
+* [Overview](https://hackaday.com/2020/10/23/a-plethora-of-power-delivery-potential/)
 
 #### Options
 ##### USB-PD 1.0 or higher (if more than 5V is needed)
@@ -14,14 +20,17 @@
 * Microchip: no solution for USB-C
 * No QFN24 pin compatible solution
 * Diodes : 
-    * [AP33771] : QFN24
-    * [AP33772] : QFN24
+    * No output discharge?  So what happens after connecting to a 5V device after a 20V device had been connected?
+    * [AP33771] : QFN24, no firmware configuration needed
+    * [AP33772] : QFN24, I²C interface
 * Infineon
-    * CYPD3177-24LQXQT : QFN24
-* Rohm, TI : no solution wit 24 pins or less
+    * [CYPD3177-24LQXQ](https://jlcpcb.com/partdetail/3345638-CYPD317724LQXQ/C2959321)
+       * no programming needed.  Voltage can be set by resistors.
+* Rohm, TI : no solution with 24 pins or less
 * ST
     * [STUSB4500](https://hackaday.com/2021/04/21/easy-usb%E2%80%91c-power-for-all-your-devices/) : QFN24
     * [STUSB4500QTR](https://jlcpcb.com/partdetail/Stmicroelectronics-STUSB4500QTR/C2678061) : $2.1,  220pcs
+    * Most popular on [JLCPCB](https://jlcpcb.com/partdetail/Stmicroelectronics-STUSB4500QTR/C2678061)
 * NXP
     * [PTN5110] : QFN16 2.6x2.6mm
 * Richtek

@@ -1,0 +1,1 @@
+Low power motor drivers are quite cheap and are suited for inductive loads.  You really need a very good reason to build a motor driver from discrete parts.

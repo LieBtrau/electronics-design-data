@@ -36,10 +36,10 @@ XC6220 : LCSC C86534
 
 ### 5V, with enable, high input voltage (>15V), Ioutmax = 100mA
 * NCP730ASN500T1G : 150mA, 38V, 2µA Iq
-* TPS709  : 150mA, 30V, 1μA Iq
+* TPS70950DBVR  : 150mA, 30V, 1μA Iq (JLCPCB C96028), 1.5V dropout @ 150mA
 * LDK320AM50R : 200mA, 18V, 60µA Iq
 * MCP1755 : 300mA, 16V, 68µA Iq
-* RT9069  : 200mA, 36V, 2µA Iq (enable on pin 4)
+* RT9069-50  : 200mA, 36V, 2µA Iq (enable on pin 4)
 
 ### 5V, with enable, high input voltage (>15V), Ioutmax = 500mA
 Given enough PCB area, it might be better to use a boost converter in SEPIC topology.
@@ -129,17 +129,25 @@ Other pin standard:
   * 10㏀ thermistor control input
 
 # USB-PD Controller
-[Overview](https://hackaday.com/2020/10/23/a-plethora-of-power-delivery-potential/)
-* [STUSB4500](https://hackaday.com/2021/04/21/easy-usb%E2%80%91c-power-for-all-your-devices/)
-  * Most popular on [JLCPCB](https://jlcpcb.com/partdetail/Stmicroelectronics-STUSB4500QTR/C2678061)
-* [FUSB302](https://hackaday.io/project/176680-pd-micro-usb-c-pd30-pps-trigger)
-* [IP2721](https://hackaday.io/project/173717-usb-c-pd-max-trigger-board)
-* [CYPD3177-24LQXQ](https://jlcpcb.com/partdetail/3345638-CYPD317724LQXQ/C2959321)
-  * no programming needed.  Voltage can be set by resistors.
+[usb-c trigger controllers](../circuits/USB/usb-c.md)
 
 # Current Sense Amplifier
 * [INA226](https://jlcpcb.com/partdetail/TexasInstruments-INA226AIDGSR/C49851): 36Vmax, 10µA input leakage on analog inputs 
 * [INA238AIDGSR](https://jlcpcb.com/partdetail/TexasInstruments-INA238AIDGSR/C2868250) : 85Vmax, 2.5nA input leakage on analog inputs
 
 # Integrated ideal diode
+Simple and cheap:
+* LM66100, NID5100GW 
+  * 1.2 V to 5.5 V
+  * 1.5 A 
+  * input polarity protected
+  * low quiescent current (150nA)
+
 * [LM73100](https://www.ti.com/product/LM7310/part-details/LM73100RPWR)
+  * Input voltage : 2.7V to 23V
+  * reverse current flow blocked
+  * input reverse polarity protected
+  * inrush current protection
+  * input UVLO
+  * input OVLO
+  * Not suitable for battery applications (high quiescent current)

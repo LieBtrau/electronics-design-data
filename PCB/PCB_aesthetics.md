@@ -20,3 +20,38 @@
        * Designator : Center
      * Properties : Show silkscreen : with components (and select a proper color)
    * Assembly BOTTOM
+
+# Versioning
+```	
+.board_name
+.board_revision.-
+Git ID : 
+```
+.VersionControl_RevNumberShort
+
+# Fabrication data
+```
+PCB Ordering guideline
+----------------------------
+1. Layer count : .Layer_Count
+2. Dimensions : .Board_Width x .Board_Height
+3. PCB Thickness : 1.6mm
+4. PCB Color : green
+5. Silkscreen : white
+6. Material type : FR4-TG155
+7. Surface finish : ENIG
+8. Gold thickness : 1U"
+9. Outer copper weight : 1oz
+10. Inner copper weight : 0.5oz
+11. Impedance control : Yes
+12. Layer stackup : JLC0616H-3313
+13. Via covering : Epoxy filled & capped
+14. Minimum hole size : .Hole_Size_Min
+15. Board outline tolerance : +/- 0.2mm
+16. Mark on PCB : 2D bardcode & Number | Data Matrix Code | .board_name _ABCDE_0001 | 8x8mm
+17. Gold fingers : No
+18. Castellated holes : No
+19. Hole count : .Hole_Count
+20. SMD solder joints : .PadSMD_Count
+21. Through-hole solder joints : .PadThru_Count
+```	

@@ -8,7 +8,8 @@
 * Termination style : gull wing
 * Switch travel : 1.50mm
 
-### Component choices
+### ~~Component choices~~
+The problem is that the lever is very thin at the point where it enters the housing of the switch.  Tilting the lever upwards will cause it to break.  This switch can only be used in situations where the lever is constrained in a way that it cannot be tilted upwards or downwards, e.g. by using a slot cutout in the housing.  This is not the case in the current design.
 * Wuerth 450404015514
 * Nidec Copal CUS-12TB
 * C&K PCM12SMTR (Farnell €8.98 / 10 pcs)

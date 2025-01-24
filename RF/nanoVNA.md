@@ -50,5 +50,8 @@ Serial port control → Manage → Settings → Datapoints : 1023
   5. Write down inductive value at that same frequency.
   6. Z = sqrt(L/C)
 
+# Measuring cable length
+[#316: Use NanoVNA to measure coax length - BONUS Transmission Lines and Smith Charts, SWR and more](https://www.youtube.com/watch?v=9thbTC8-JtA)
+
 # Problems and solutions
 * When NanoVnaSaver doesn't want to boot any more.  Remove its config : '~/.config/NanoVNASaver/'

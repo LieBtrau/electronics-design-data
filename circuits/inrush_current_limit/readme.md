@@ -1,0 +1,1 @@
+The LM73100R is an integrated solution offering much more than simply limiting inrush-current.
