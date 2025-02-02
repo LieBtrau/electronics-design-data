@@ -4,3 +4,5 @@ These buzzers yield a 27Vpp output voltage:
     * 120µH inductor is placed in parallel with them 
     * driven with an open drain output with extra diode on the output (see PDF).
     * 5V supply voltage
+
+[Hardware implementation for cat repeller](https://github.com/LieBtrau/cat-repeller/blob/main/piezo.md)

@@ -1,5 +1,8 @@
 # LDO
 ## SOT23-5
+### 3V3, low Iout, low Iq
+* Holtek HT7533 (100mA out, 2.5µA Iq) : SOT23-3
+
 ### 3V3, low Iout, ultra-low Iq
 * Package : SOT23-5
 * Output : 3.0V
