@@ -20,6 +20,10 @@
 * Amphenol 10038075-A1PLF
 * JLCPCB C381135 PJ-327A0-SMT
 
+### 3.5mm, phone jack female, SMD RA, 7mm between studs, 4 conductors
+* Tensility 54-00177 : no switch
+* LCSC C7507452 : two switches
+
 ### 3.5mm, phone plug male, 3 conductors, no switch
 * Tensility 50-00396
 * CUI SP-3533-01
