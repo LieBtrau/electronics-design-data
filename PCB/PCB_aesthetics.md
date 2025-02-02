@@ -51,7 +51,9 @@ PCB Ordering guideline
 16. Mark on PCB : 2D bardcode & Number | Data Matrix Code | .board_name _ABCDE_0001 | 8x8mm
 17. Gold fingers : No
 18. Castellated holes : No
-19. Hole count : .Hole_Count
-20. SMD solder joints : .PadSMD_Count
-21. Through-hole solder joints : .PadThru_Count
+19. Press-fit holes : No
+20. Edge plating : No
+21. Hole count : .Hole_Count
+22. SMD solder joints : .PadSMD_Count
+23. Through-hole solder joints : .PadThru_Count
 ```	
