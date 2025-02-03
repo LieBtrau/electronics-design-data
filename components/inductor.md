@@ -25,8 +25,15 @@ Then go to the P<sub>TOT</sub>-column and reduce maximum value until less than 1
   * Ferrite beads only work in their resistive region (turning unwanted RF energy to heat).  This is the region where resistance is maximum and inductance is minimum.
   * When using in multiple stage filters for DCDC converters, put the real inductors closest to the switching converter and ferrite beads further away (WE ANP0044).
 
-## Low current, for digital IO
+Trilogy of inductors, section "applications" explains where to use what ferrite bead.  The older version of the book on archive.org shows which component values to use.
+
+## Low current power rails and analog signals
 * WE 742792662 : 0603, 1kOhm, 100MHz, 830mA, 300mohm
+  * unsuitable for fast edges : 4.8µH at 5MHz, 3.7µH at 10MHz : this really distorts the signal
+  * use on low current power rails
+
+## Digital signals
+* TBD
 
 ## Medium current, for power rails
 * WE 742792625 : 0603, 100ohm, 100MHz, 2.0A, 50mohm
