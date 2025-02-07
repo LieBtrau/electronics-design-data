@@ -1,1 +1,0 @@
-[ANP083 | Adapter PCB for filtering electromagnetic interference on an RS-485 interface](https://www.we-online.com/components/media/o187971v410%20ANP083c%20EN.pdf)
