@@ -1,3 +1,6 @@
+# 555-timer
+* LMC555 : MSOP8
+
 # RTC
 ## Characteristics
 * Package : SOIC-8 (smaller alternative is TSSOP-8 3.00mm wide (aka MSOP8))
