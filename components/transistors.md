@@ -13,6 +13,20 @@
 * BSS126 : 600V/21mA
 
 ## Enhancement
+### Low voltage, low current : NMOS + PMOS
+#### Characteristics
+* SOT-363
+* Vds >= 20V
+* Ids >= 500mA
+* Vgsth <= 2.50V
+* RdsON <= 400mOhm
+
+#### Sources
+* SI3439KDWA-TP, C99824
+* SI1539CDL-T1, C141530 -> Page
+* DMC3400SDW, C155499
+* BSD235CH6327XTSA1, C151517
+
 ### Low voltage, low current
 * FDV301N : 25V/220mA, Vgsth: 0.70V - 0.85 - 1.06 @250µA
   * Tighter Vgs tolerance than BSS138 : Vgs range +/- 15%
