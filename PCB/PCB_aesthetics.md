@@ -24,12 +24,12 @@
 # Versioning
 ```	
 .board_name
-.board_revision.-
-Git ID : 
+.board_revision.-.VersionControl_RevNumberShort
 ```
-.VersionControl_RevNumberShort
 
 # Fabrication data
+For Pb-free, at least TG155 is required.  For leaded solder, TG135 is sufficient.
+
 ```
 PCB Ordering guideline
 ----------------------------
