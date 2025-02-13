@@ -13,3 +13,11 @@
 
 # DfM
 * Mounting holes
+* Layer stack table
+* Fab notes, see [PCB aesthetics : ordering guideline](./PCB_aesthetics.md) 
+
+# Identification
+* Board name
+* Board revision
+* GIT commit hash, can be placed after the board revision
+* JLCPCB : QR-code window and order number
