@@ -1,6 +1,6 @@
 # Assembly output for JLCPCB
 1. Open BoMDoc document
-2. Open BoMDoc properties
+2. Open BoMDoc properties -> Columns tab
 3. Add alias to Names:
   * Item ID : Comment
   * ItemGUID : Footprint
