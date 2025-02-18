@@ -35,7 +35,7 @@ PCB Ordering guideline
 ----------------------------
 1. Layer count : .Layer_Count
 2. Dimensions : .Board_Width x .Board_Height
-3. PCB Thickness : 1.6mm
+3. PCB Thickness : .Total_Thickness
 4. PCB Color : green
 5. Silkscreen : white
 6. Material type : FR4-TG155
