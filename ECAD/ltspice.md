@@ -26,3 +26,7 @@
 
 # Harmonics analysis
 [LTspice tutorial - Ep6 Basics of FFT analysis and .four statment](https://www.youtube.com/watch?v=rVAvW1Jh2AE)
+
+# Measure insertion loss, return loss
+[Measuring Retun Loss](https://maker.pro/forums/threads/measuring-retun-loss.72803/)
+* Insertion loss can easily be measured with a 50 source and 50ohm load and setting AC-voltage to 2V.
