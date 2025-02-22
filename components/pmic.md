@@ -65,6 +65,13 @@ Instead of a supervisor, a clean power-on reset signal can be generated using : 
 | RT9818C-30GVL | 1028-RT9818C-30GVLCT-ND | 3µA | 220ms | SOT23-3 | €0.41|  |
 | APX803S-31SA-7 |296-TLV803EA30DBZRCT-ND | 10µA | 240ms | SOT23-3 | €0.35 | JLCPCB C129757 |
 
+# Current monitor
+## Analog output
+* TI INA199x : SC-70-6
+  * bidirectional current sense amplifier
+  * 26Vmax
+  * alternative Diodes ZXCT21x
+
 ## Adjustable voltage supervisor (with 0.4V reference)
 * TPS3808G01DBVR (JLCPCB C19653 : €0.38)
 * PT7M3808G01TAEX (JLCPCB C780887 : €0.50)
@@ -134,6 +141,7 @@ Other pin standard:
 # Current Sense Amplifier
 * [INA226](https://jlcpcb.com/partdetail/TexasInstruments-INA226AIDGSR/C49851): 36Vmax, 10µA input leakage on analog inputs 
 * [INA238AIDGSR](https://jlcpcb.com/partdetail/TexasInstruments-INA238AIDGSR/C2868250) : 85Vmax, 2.5nA input leakage on analog inputs
+  * probably FFF-alternative is ISL28022
 
 # Integrated ideal diode
 Simple and cheap:
