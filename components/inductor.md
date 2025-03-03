@@ -58,3 +58,7 @@ Trilogy of inductors, section "applications" explains where to use what ferrite 
 * SXN(Shun Xiang Nuo Elec) SMCM090605-251 (JLCPCB C1692755)
 * Sunltech Tech SMW9050S251ZTT (JLCPCB C878358)
 * PROD Tech PSCLAQ0905-251Y (JLCPCB C2829004)
+
+## High current LF
+* 12x10.8mm and 12x11mm are popular sizes
+* 9x7mm is also popular
