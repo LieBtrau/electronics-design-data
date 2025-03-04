@@ -1,12 +1,18 @@
 # Slide switch 
-## Right-angle SMD, SPDT
+## Right-angle through-hole, SPDT
 ### Characteristics
 * Switch function : on-on
-* Current rating : 300mA
-* Voltage rating DC : 4V
-* Actuator length : 1.50mm
-* Termination style : gull wing
-* Switch travel : 1.50mm
+* Current rating : 100mA
+* Voltage rating DC : 12V
+* Actuator length : 4mm
+* Switch travel : 2mm
+
+### Sources
+* Shou Han SK12D07VG4 (JLCPCB C393937)
+* C&K OS102011MA1QN1C (non-shorting)
+* C&K OS102011MA1QS1C (shorting)
+* E-switch EG1247
+* CIT MS1247L4
 
 ### ~~Component choices~~
 The problem is that the lever is very thin at the point where it enters the housing of the switch.  Tilting the lever upwards will cause it to break.  This switch can only be used in situations where the lever is constrained in a way that it cannot be tilted upwards or downwards, e.g. by using a slot cutout in the housing.  This is not the case in the current design.
