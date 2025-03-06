@@ -68,6 +68,7 @@ Instead of a supervisor, a clean power-on reset signal can be generated using : 
 # Current monitor
 ## Analog output
 * TI INA199x : SC-70-6
+  * A (1.5%, older, less ESD protection), B (1.5%) or C (1%) grade
   * bidirectional current sense amplifier
   * 26Vmax
   * alternative Diodes ZXCT21x
