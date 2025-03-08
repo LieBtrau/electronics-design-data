@@ -30,3 +30,9 @@
 # Measure insertion loss, return loss
 [Measuring Retun Loss](https://maker.pro/forums/threads/measuring-retun-loss.72803/)
 * Insertion loss can easily be measured with a 50 source and 50ohm load and setting AC-voltage to 2V.
+
+# Measure input impedance
+1. Replace the input source with a current source.
+2. Set the current source to 1A.
+3. Do AC analysis 
+4. The voltage at the current source is the input impedance.
