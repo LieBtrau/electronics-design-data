@@ -23,11 +23,17 @@ The problem is that the lever is very thin at the point where it enters the hous
 * E-switch EG1257
 * G-Switch MK-12C02-G025 (JLCPCB C778186)
 
-## Straight THT, SPDT/DPDT
+## Straight THT, SPDT
+* JLCPCB C2939726 (shorting)
+* C&K OS102011MS2QN1 (non-shorting)
+* C&K OS102011MS2QS1 (shorting)
+* C&K SS-12D07-VG 4 NS GA PA
+* Knitter-Switch MFP 113 D (non-shorting)
+
+## Straight THT, DPDT
 * DPDT : Nidec CL-SB-22C-01
 * DPDT : Wuerth 452404020202
 * DPDT : JLCPCB C431542
-* SPDT : E-switch EG1271
 
 # Rotary 
 ## Encoder
