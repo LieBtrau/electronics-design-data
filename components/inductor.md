@@ -45,6 +45,11 @@ Trilogy of inductors, section "applications" explains where to use what ferrite 
 * JLCPCB C2894325
 
 # Common mode chokes
+## Basics
+* [Parallel coupled inductors](https://www.translatorscafe.com/unit-converter/en-US/calculator/mutual-inductance-parallel/)
+  * Inductance of the two coupled inductors in parallel equals the individual inductances: [LTSpice](../circuits/CM-choke/coupledInductors.asc)
+  * Inductance of two equal uncoupled inductors in parallel is half of the individual inductances.
+
 ## Hi-speed data
 * WE 744232222, 1206, 2200ohm (3MHz - 300MHz)
 * WE 744233900, 0805, 90ohm, 131nH, JLCPCB C54888
