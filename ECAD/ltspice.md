@@ -36,3 +36,9 @@
 2. Set the current source to 1A.
 3. Do AC analysis 
 4. The voltage at the current source is the input impedance.
+
+# Measure output impedance
+1. Replace the output load with a current sink.
+2. Set the current sink to 1A.
+3. Do AC analysis 
+4. The voltage at the current sink is the output impedance.
