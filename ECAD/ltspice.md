@@ -42,3 +42,24 @@
 2. Set the current sink to 1A.
 3. Do AC analysis 
 4. The voltage at the current sink is the output impedance.
+
+# Measure 1dB compression point
+1. Add the following to the schematic:
+```spice
+.meas TRAN vin_pp pp V(Vin)
+.meas TRAN vout_pp PP V(Vout_1mA)
+.meas TRAN gain_pp PARAM 20*log10(vout_pp/vin_pp)
+```
+2. Run the transient simulation
+3. Use Ctrl-L to open the SPICE Error Log and view the results.
+4. The gain_pp value is the gain in dB.
+5. Increase the input voltage until the gain is 1dB less than the gain_pp value.
+
+# Measure IM3
+1. Frequency resolution = 1 / (Simulation Time) : 50kHz -> 20µs simulation time
+2. Maximum time step = Simulation time / (Number of data point samples in time) : 2e-5 / 2e5 = 1e-10 = 0.1ns = 100ps
+3. Disable downsampling ("compression") of the output waveform: .OPTIONS plotwinsize=0
+4. In plot window : View -> FFT
+5. Disable "quadratic interpolate uncompressed data" tick mark.
+6. Specify a time range : select a whole number of cycles
+7. Binomial smoothing done before FFT and windowing : Number of points : 3 or 5, doesn't seem to matter much
