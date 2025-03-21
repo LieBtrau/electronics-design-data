@@ -15,7 +15,9 @@ Price calculation is done based on the maximum dimension of the PCB.  For exampl
 
 ## General
 * via = 0.6mm ring, 0.3mm hole
-* trace width : aim for 50ohm trace impedance, but don't go below 0.15mm
+* trace width : 
+  * low speed : 0.25mm, can be routed between pads of 0603 components.  It's a compromise between 0.17mm for JLCPCB 6L and 0.33mm for JLCPCB 4L boards.  So when switching from 4L to 6L, you'll still be ok.
+  * high speed : aim for 50ohm trace impedance, but don't go below 0.15mm
 
 ## From manufacturers
 | Parameter            | Eurocircuits 6C | Sparkfun | [Seeed](http://support.seeedstudio.com/knowledgebase/articles/447362-fusion-pcb-specification) | [AllPcb](https://www.allpcb.com/standard_pcb_manufacturing_capability.html)
