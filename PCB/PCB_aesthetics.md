@@ -31,7 +31,7 @@
 .board_revision.-.VersionControl_RevNumberShort
 ```
 
-# Fabrication data
+# Fabrication data"
 For Pb-free, at least TG155 is required.  For Pb solder, TG135 is sufficient.
 
 ```
@@ -49,7 +49,7 @@ PCB Ordering guideline
 10. Inner copper weight : 0.5oz
 11. Impedance control : No
 12. Layer stackup : JLC0616H-3313
-13. Via covering : Epoxy filled & capped
+13. Via covering : Tented | Epoxy filled & capped
 14. Minimum hole size : .Hole_Size_Min
 15. Board outline tolerance : +/- 0.2mm
 16. Mark on PCB : 2D bardcode & Number | Data Matrix Code | .board_name _ABCDE_0001 | 8x8mm
