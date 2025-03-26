@@ -63,3 +63,13 @@
 5. Disable "quadratic interpolate uncompressed data" tick mark.
 6. Specify a time range : select a whole number of cycles
 7. Binomial smoothing done before FFT and windowing : Number of points : 3 or 5, doesn't seem to matter much
+
+# Measure Q of a resonator
+1. Add the following to the schematic:
+```spice
+.meas AC tmp MAX mag(V(vo))
+.meas AC bw TRIG mag(V(vo))=tmp/sqrt(2) RISE=1 TARG mag(V(vo))=tmp/sqrt(2) FALL=last
+.options meascplxfmt=cartesian
+.measure ac cfreq when mag(V(vo))=tmp
+.measure ac filterq PARAM Re (cfreq/bw)
+```
