@@ -43,6 +43,13 @@
 3. Do AC analysis 
 4. The voltage at the current sink is the output impedance.
 
+# Measure S-parameters
+1. Add the following to the schematic:
+```spice
+.net I(Rout) Vin
+```
+Where "Rout" is the output resistor (50ohm) and "Vin" is the input voltage source (with built-in 50ohm series resistor).
+
 # Measure 1dB compression point
 1. Add the following to the schematic:
 ```spice
