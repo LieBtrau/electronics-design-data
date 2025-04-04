@@ -17,12 +17,14 @@
     * [Notes on USB PD Triggers (And ZY12PDN Instructions)](https://www.alexwhittemore.com/notes-on-usb-pd-triggers-and-zy12pdn-instructions/)
     * [Fusb302mpx](https://jlcpcb.com/partdetail/Onsemi-Fusb302mpx/C442699)
     * [Pinecil schematic](https://files.pine64.org/doc/Pinecil/Pinecil_schematic_v2.0_20220608.pdf)
-* Microchip: no solution for USB-C
+* Microchip: to be researched
 * No QFN24 pin compatible solution
 * Diodes : 
     * No output discharge?  So what happens after connecting to a 5V device after a 20V device had been connected?
     * [AP33771] : QFN24, no firmware configuration needed
     * [AP33772] : QFN24, I²C interface
+        * featured by [Great Scott Gadgets](https://youtu.be/kcmpGbR6xZc)
+        * much simpler firmware implementation than FUSB302
 * Infineon
     * [CYPD3177-24LQXQ](https://jlcpcb.com/partdetail/3345638-CYPD317724LQXQ/C2959321)
        * no programming needed.  Voltage can be set by resistors.
