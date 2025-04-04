@@ -41,6 +41,8 @@
     * [IP2721](https://hackaday.io/project/173717-usb-c-pd-max-trigger-board) : TSSOP16
     
 #####  UFP USB 2.0 without USB PD (5V only & ≤15 W)
+USB power capability is advertized by the DFP.  The UFP is responsible to respect this.
+When using GPIOs, the current capability will only be read upon attaching the cable.  Later changes (e.g. DFP reduces current capability because of power adapter disconnection) will not be reflected in the GPIO-status.
 * [TUSB320LAIRWBR]()
 * [WUSB3801Q-12/TR]
 * [NXP PTN5150A]
