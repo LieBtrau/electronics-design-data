@@ -22,7 +22,7 @@
 * Diodes : 
     * No output discharge?  So what happens after connecting to a 5V device after a 20V device had been connected?
     * [AP33771] : QFN24, no firmware configuration needed
-    * [AP33772] : QFN24, I²C interface
+    * [AP33772S] : QFN24, I²C interface
         * featured by [Great Scott Gadgets](https://youtu.be/kcmpGbR6xZc)
         * much simpler firmware implementation than FUSB302
 * Infineon
