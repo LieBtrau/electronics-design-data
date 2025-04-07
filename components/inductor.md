@@ -30,7 +30,7 @@ Trilogy of inductors, section "applications" explains where to use what ferrite 
 ## Low current power rails and analog signals
 * WE 742792662 : 0603, 1kOhm, 100MHz, 830mA, 300mohm
   * unsuitable for fast edges : 4.8µH at 5MHz, 3.7µH at 10MHz : this really distorts the signal
-  * use on low current power rails
+  * use on low current power rails for analog signals
 
 ## Digital signals
 * TBD
@@ -47,7 +47,7 @@ Trilogy of inductors, section "applications" explains where to use what ferrite 
 # Common mode chokes
 ## Basics
 * [Parallel coupled inductors](https://www.translatorscafe.com/unit-converter/en-US/calculator/mutual-inductance-parallel/)
-  * Inductance of the two coupled inductors in parallel equals the individual inductances: [LTSpice](../circuits/CM-choke/coupledInductors.asc)
+  * Inductance of the two coupled inductors in parallel equals the individual inductances, but you have twice the current carrying capability: [LTSpice](../circuits/CM-choke/coupledInductors.asc)
   * Inductance of two equal uncoupled inductors in parallel is half of the individual inductances.
 
 ## Hi-speed data
