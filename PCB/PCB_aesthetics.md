@@ -4,7 +4,10 @@
 * Try to keep things as symmetrical as possible
 * Silkscreen
  * Limited use : no designators
- * Mark component polarity (diode, pin 1 of IC)
+ * Mark component polarity (diode, pin 1 of IC):
+   * full circle
+   * width = 0.25mm
+   * radius = 0.01mm
  * Do not place on bare copper (or vias)
  * Inverted text for pin labels of the connectors
  * True-Type, sans-serif Font : Century Gothic, at least 1.5mm high
