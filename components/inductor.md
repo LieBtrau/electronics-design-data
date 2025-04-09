@@ -4,10 +4,6 @@
   * Use the shunt method
   * Use NanoVNASaver and make it show "S21 R+jX Series"
 
-| Value [µH] | Saturation current [A] | Size [mm x mm] | DC-resistance [ohm] | Type |
-|------------|--------------------|------|---------------|------|
-| 10 | 1.5A -> 3.5A | 4.0x4.0 (1616) | <0.5 | LCSC C167879 <br/>Tai Tech HPC 4018NF-100M<br/>Abracon ASPI-4030S-100M-T |
-
 # Selection for low losses
 Use Wuerth Red-Expert Power Inductor : Losses calculator.
 * f=13.56MHz
@@ -15,6 +11,14 @@ Use Wuerth Red-Expert Power Inductor : Losses calculator.
 * I<sub>L_AVG</sub> = 0.7A
 * ΔI<sub>L</sub> = 0.15A
 Then go to the P<sub>TOT</sub>-column and reduce maximum value until less than 100 items are left.  After that, you can sort that column from low to high to find the best inductor.
+
+# Power inductor
+7x7mm is a common size for power inductors around 3A of rated current.
+
+| Value [µH] | Saturation current [A] | Size [mm x mm] | DC-resistance [ohm] | Type |
+|------------|--------------------|------|---------------|------|
+| 3.3 | 4.5 | 7 x 7 x 4 | 17.2m | WE 744311330, LCSC C167219 |
+| 10 | 1.5A -> 3.5A | 4.0x4.0 (1616) | <0.5 | LCSC C167879 <br/>Tai Tech HPC 4018NF-100M<br/>Abracon ASPI-4030S-100M-T |
 
 # Ferrite beads
 [Shall We Use a Ferrite Bead in Power Rail or Not? | Explained by Eric Bogatin](https://youtu.be/HaLMjVkKYMw?t=267):
