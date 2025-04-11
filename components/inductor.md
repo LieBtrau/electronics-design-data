@@ -37,7 +37,7 @@ Trilogy of inductors, section "applications" explains where to use what ferrite 
   * use on low current power rails for analog signals
 
 ## Digital signals
-* TBD
+* Find the clock frequency of the signal and use a choke with a high CM-impedance and low DM-impedance at that frequency.
 
 ## Medium current, for power rails
 * WE 742792625 : 0603, 100ohm, 100MHz, 2.0A, 50mohm
