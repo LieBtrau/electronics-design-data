@@ -38,7 +38,7 @@
 For Pb-free, at least TG155 is required.  For Pb solder, TG135 is sufficient.
 
 ```
-PCB Ordering guideline
+PCB Ordering guideline rigid
 ----------------------------
 1. Layer count : .Layer_Count
 2. Dimensions : .Board_Width x .Board_Height
@@ -64,3 +64,30 @@ PCB Ordering guideline
 22. SMD solder joints : .PadSMD_Count
 23. Through-hole solder joints : .PadThru_Count
 ```	
+
+```
+PCB Ordering guideline flexible
+----------------------------
+* Base material : flex
+* Substrate type : 25µm dielectric thickness
+* Layers : .Layer_Count
+* Dimensions : .Board_Width x .Board_Height
+* PCB Thickness : 0.11mm
+* Coverlay color : yellow
+* Silkscreen : white
+* Gold thickness : 1U"
+* Outer copper weight : 1/3oz
+* Coverlay thickness : PI:12.5µm, AD: 15µm
+* Gold fingers : No
+* Stiffener : polyimide
+* Polyimide thickness : 0.20mm
+* EMI Shielding film : Both sides (Black, 18µm)
+* Grounding : Yes
+* Cutting method : laser cutting
+* Mark on PCB : Order number, specify location
+* Silkscreen on stiffener : No
+* Minimum hole size : .Hole_Size_Min
+* Hole count : .Hole_Count
+* SMD solder joints : .PadSMD_Count
+* Through-hole solder joints : .PadThru_Count
+```
