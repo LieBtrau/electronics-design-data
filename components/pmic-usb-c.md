@@ -17,6 +17,9 @@
     * [Notes on USB PD Triggers (And ZY12PDN Instructions)](https://www.alexwhittemore.com/notes-on-usb-pd-triggers-and-zy12pdn-instructions/)
     * [Fusb302mpx](https://jlcpcb.com/partdetail/Onsemi-Fusb302mpx/C442699)
     * [Pinecil schematic](https://files.pine64.org/doc/Pinecil/Pinecil_schematic_v2.0_20220608.pdf)
+    * No control for external FETs
+    * No internal LDO
+    * power consumer, provider and dual-role
 * Microchip: to be researched
 * No QFN24 pin compatible solution
 * Diodes : 
@@ -25,6 +28,7 @@
     * [AP33772S] : QFN24, I²C interface
         * featured by [Great Scott Gadgets](https://youtu.be/kcmpGbR6xZc)
         * much simpler firmware implementation than FUSB302
+        * needs access to USB-data pins
 * Infineon
     * [CYPD3177-24LQXQ](https://jlcpcb.com/partdetail/3345638-CYPD317724LQXQ/C2959321)
        * no programming needed.  Voltage can be set by resistors.
@@ -33,6 +37,11 @@
     * [STUSB4500](https://hackaday.com/2021/04/21/easy-usb%E2%80%91c-power-for-all-your-devices/) : QFN24
     * [STUSB4500QTR](https://jlcpcb.com/partdetail/Stmicroelectronics-STUSB4500QTR/C2678061) : $2.1,  220pcs
     * Most popular on [JLCPCB](https://jlcpcb.com/partdetail/Stmicroelectronics-STUSB4500QTR/C2678061)
+    * [SparkFun Power Delivery Board - USB-C (Qwiic)](https://cdn.sparkfun.com/assets/9/2/6/8/6/SparkFun_PowerDeliveryBoardSchematic.pdf)
+    * power consumer only
+    * Includes control for external FETs
+    * LDO included
+    * Has non-volatile memory, so can can independently once programmed.
 * NXP
     * [PTN5110] : QFN16 2.6x2.6mm
 * Richtek
