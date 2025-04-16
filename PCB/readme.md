@@ -39,6 +39,9 @@ Price calculation is done based on the maximum dimension of the PCB.  For exampl
 ## Courtyard
 see IPC_7352, 3.3
 
+# Flex PCB
+[JLCPCB design tips](https://jlcpcb.com/blog/flex-pcb-design-tips)
+
 # Layer stackup
 ## 6 Layer stackup
 6 layers (3 signal layers, 2 ground, 1 power)
