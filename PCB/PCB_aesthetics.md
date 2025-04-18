@@ -12,6 +12,9 @@
  * Inverted text for pin labels of the connectors
  * True-Type, sans-serif Font : Century Gothic, at least 1.5mm high
 
+ # Usability
+ * Label your connectors and their pinout (+, - , GND, VCC, etc.) especially for wire-to-board connectors where this is not obvious.
+
  [Phil's Lab : How To Get Your PCB Manufactured & Assembled - Phil's Lab #94](https://youtu.be/PfGJDiz7-TQ?t=1540)
  * Assembly Drawings: Draftsman document with at least 4 pages:
    * 3D view top /bottom
