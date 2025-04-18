@@ -31,6 +31,44 @@ Bounce2
 # Macros
 * Replace `#define` for register definitions with scoped enum class as done [here](https://github.com/LieBtrau/esp32-web-radio/tree/main/firmware/esp32/platformio/thieu-b55/lib/ES8388).
 
+# Function pointers
+* Function pointers to member functions: function pointers can be made to work with member functions, but the syntax is a bit different. You need to use the `&` operator to get the address of the member function, and you also need to specify the class name. Here's an example:
+```cpp
+class MyClass {
+public:
+    void myFunction() {
+        Serial.println("Hello from MyClass!");
+    }
+};
+void myFunctionPointer(MyClass* obj, void (MyClass::*func)()) {
+    (obj->*func)();
+}
+void setup() {
+    Serial.begin(9600);
+    MyClass obj;
+    void (MyClass::*func)() = &MyClass::myFunction;
+    myFunctionPointer(&obj, func);
+}
+```
+* Function pointers to static member functions: function pointers can also be used with static member functions. The syntax is similar to regular function pointers, but you don't need to use the `&` operator. Here's an example:
+```cpp
+class MyClass {
+public:
+    static void myStaticFunction() {
+        Serial.println("Hello from MyClass static function!");
+    }
+};
+void myStaticFunctionPointer(void (*func)()) {
+    func();
+}
+void setup() {
+    Serial.begin(9600);
+    void (*func)() = &MyClass::myStaticFunction;
+    myStaticFunctionPointer(func);
+}
+```
+example: Sparkfun STHS34PF80 sensor library
+
 # Bit manipulation
 [Encoding bit fields istead of using masks](https://github.com/LieBtrau/chickenguard-2019-upgrade/blob/main/firmware/chickenguard/include/bit_manipulation.h)
 
