@@ -61,6 +61,7 @@ Where "Rout" is the output resistor (50ohm) and "Vin" is the input voltage sourc
 3. Use Ctrl-L to open the SPICE Error Log and view the results.
 4. The gain_pp value is the gain in dB.
 5. Increase the input voltage until the gain is 1dB less than the gain_pp value.
+[example](https://www.youtube.com/watch?v=u636Jx4yj84&t=617s)
 
 # Measure IM3
 1. Frequency resolution = 1 / (Simulation Time) : 50kHz -> 20µs simulation time
