@@ -12,6 +12,20 @@ Use Wuerth Red-Expert Power Inductor : Losses calculator.
 * ΔI<sub>L</sub> = 0.15A
 Then go to the P<sub>TOT</sub>-column and reduce maximum value until less than 100 items are left.  After that, you can sort that column from low to high to find the best inductor.
 
+# Signal inductor
+## 1008-size (2520 metric)
+* Wuerth WE-KI 1008
+* Murata LQW2UASR
+* Laird IWC1008
+* Guangdong Fenghua FHW1008UC
+* Coilcraft 1008PSM
+
+## 4.2x4.8mm, 3.56x4.95mm
+* Wuerth WE-KI 4248
+* Coilcraft 1812SMS
+* Sunlight SCA1812H (22n -> 150nH)
+
+
 # Power inductor
 7x7mm is a common size for power inductors around 3A of rated current.
 
@@ -62,7 +76,7 @@ Trilogy of inductors, section "applications" explains where to use what ferrite 
 ## Medium current LF
 250µH, 1.2A (dT=40°C), 130mOhm (per coil), 1-70MHz (Z>1Kohm)
 
-* WE 744224
+* WE 744224 (€4.32 Sinnuss.nl)
 * YJYCOIN YLCM0905C-251T (JLCPCB C5137118)
 * SXN(Shun Xiang Nuo Elec) SMCM090605-251 (JLCPCB C1692755)
 * Sunltech Tech SMW9050S251ZTT (JLCPCB C878358)
