@@ -12,6 +12,14 @@ Use Wuerth Red-Expert Power Inductor : Losses calculator.
 * ΔI<sub>L</sub> = 0.15A
 Then go to the P<sub>TOT</sub>-column and reduce maximum value until less than 100 items are left.  After that, you can sort that column from low to high to find the best inductor.
 
+# RFC (radio frequency choke)
+J.J.Carr: Secrets of RF Circuit Design :
+* <10MHz : 2.5mH
+* 10MHz -> 30MHz : 1mH
+* 30MHz -> 100MHz : 100µH
+* 100MHz -> 300MHz : 10µH
+These values are not critical and are given only as guidelines. Although it might be a bit tricky to get a 1-mH RFC to operate well at 100 MHz, there is no really hard boundary for these bands.
+
 # Signal inductor
 ## 1008-size (2520 metric)
 * Wuerth WE-KI 1008
