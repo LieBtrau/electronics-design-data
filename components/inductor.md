@@ -1,5 +1,6 @@
 # Measurements
 * [Measuring inductor saturation](http://www.vk2zay.net/article/200)
+* A simulation model (Rs, L, C) can be derived by measurements according to [NFC-antenna design](../circuits/NFC-antenna_design/NFC-impedance-matching.ipynb)
 * Measure Q-factor with a network analyzer
   * Use the shunt method
   * Use NanoVNASaver and make it show "S21 R+jX Series"
