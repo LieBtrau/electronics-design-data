@@ -35,6 +35,8 @@ Serial port control → Manage → Settings → Datapoints : 1023
 * Connect the resistor directly to the secondary coil.  Don't connect secondary coil to an SMA-connector and then the resistor on the other end of the SMA-cable, close to port 2.
 
 # Measuring impedances
+When measuring impedance, remark that **"S11 Phase" is not the same as impedance phase**.  The S11 phase is the phase of the reflected signal, while the impedance phase is the phase of the voltage across the load.
+
 ## Series, shunt, shunt-through measurements
 * [Dan Koellen](https://www.ai6xg.com/post/reactive-component-measurement-with-the-nanovna)
 * [Brian Walker](http://www.clarke.com.au/pdf/CMT_Accurate_Measurements_VNA.pdf)
