@@ -56,4 +56,6 @@ When measuring impedance, remark that **"S11 Phase" is not the same as impedance
 [#316: Use NanoVNA to measure coax length - BONUS Transmission Lines and Smith Charts, SWR and more](https://www.youtube.com/watch?v=9thbTC8-JtA)
 
 # Problems and solutions
-* When NanoVnaSaver doesn't want to boot any more.  Remove its config : '~/.config/NanoVNASaver/'
+* When NanoVnaSaver doesn't want to boot any more:
+ * Linux : Remove its config : '~/.config/NanoVNASaver/'
+ * Windows : Disconnect VNA before starting NanoVNASaver.
