@@ -27,28 +27,13 @@
 # Harmonics analysis
 [LTspice tutorial - Ep6 Basics of FFT analysis and .four statment](https://www.youtube.com/watch?v=rVAvW1Jh2AE)
 
-# Measure insertion loss, return loss
-[Measuring Retun Loss](https://maker.pro/forums/threads/measuring-retun-loss.72803/)
-* Insertion loss can easily be measured with a 50 source and 50ohm load and setting AC-voltage to 2V.
-
-# Measure input impedance
-1. Replace the input source with a current source.
-2. Set the current source to 1A.
-3. Do AC analysis 
-4. The voltage at the current source is the input impedance.
-
-# Measure output impedance
-1. Replace the output load with a current sink.
-2. Set the current sink to 1A.
-3. Do AC analysis 
-4. The voltage at the current sink is the output impedance.
-
-# Measure S-parameters
+# Measure S-parameters : insertion loss S21, return loss S11, input impedance Zin, output impedance Zout
 1. Add the following to the schematic:
 ```spice
 .net I(Rout) Vin
 ```
 Where "Rout" is the output resistor (50ohm) and "Vin" is the input voltage source (with built-in 50ohm series resistor).
+Then you can select what traces to plot in the simulation window: S11, S21, Zin, Zout, ...
 
 # Measure 1dB compression point
 1. Add the following to the schematic:
