@@ -12,6 +12,14 @@ Download 0.5.4 binary or later
 3. Device Manager → Universal Serial Bus controllers → remove "USB UART adapter"
 4. Disconnect & reconnect VNA
 
+# Output power
+* 2mA setting : 160mVpp into a 50 Ohm load
+* 4mA setting : 320mVpp into a 50 Ohm load
+* 6mA setting : 480mVpp into a 50 Ohm load
+* 8mA setting : 600mVpp into a 50 Ohm load
+
+So when measuring small amplifiers, use 2mA setting, add an attenuator on port 0 and recalibrate.
+
 # Data points
 Do this at every startup of NanoVNA!
 
