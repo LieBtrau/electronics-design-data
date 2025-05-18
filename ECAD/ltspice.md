@@ -56,6 +56,15 @@ Then you can select what traces to plot in the simulation window: S11, S21, Zin,
 5. Disable "quadratic interpolate uncompressed data" tick mark.
 6. Specify a time range : select a whole number of cycles
 7. Binomial smoothing done before FFT and windowing : Number of points : 3 or 5, doesn't seem to matter much
+8. Measure the voltage at one of the two fundamental frequencies : e.g. -24.1dBV -> -11.1dBm
+```code
+P[dBm] = X[dBV] - 10*log10(50) + 30
+       = -24.1dBV - 17 + 30
+       = -11.1dBm
+```
+9. Measure the voltage at the third order intermodulation frequency : e.g. -79dBV -> -66dBm
+10. Calculate the IMD ratio (IMDR[dB]) : Pout_desired[dB] - Pout_distortion[dB] = e.g. (-11.1dBm) - (-66dBm) = 54.9dB
+11. OIP3 = IMDR[dB]/2 + Pout_desired[dB] = 54.9dB/2 + (-11.1dBm) = 16.35dBm
 
 # Measure Q of a resonator
 1. Add the following to the schematic:
