@@ -27,6 +27,15 @@
 # Harmonics analysis
 [LTspice tutorial - Ep6 Basics of FFT analysis and .four statment](https://www.youtube.com/watch?v=rVAvW1Jh2AE)
 
+# Measure frequency response
+1. Add the following to the schematic:
+```spice
+.meas tran T1 find time when V(out)=2.0 rise 1
+.meas tran T2 find time when V(out)=2.0 rise 2
+.meas tran  Frequency param 1/(T2-T1)
+```
+Where 2.0 is the voltage level at which you want to measure the frequency response.  This should be halfway between the low and high levels of the output signal.  
+
 # Measure S-parameters : insertion loss S21, return loss S11, input impedance Zin, output impedance Zout
 1. Add the following to the schematic:
 ```spice
