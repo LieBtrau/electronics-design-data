@@ -22,6 +22,13 @@ J.J.Carr: Secrets of RF Circuit Design :
 These values are not critical and are given only as guidelines. Although it might be a bit tricky to get a 1-mH RFC to operate well at 100 MHz, there is no really hard boundary for these bands.
 
 # Signal inductor
+## Air core inductor (Q > 100 @100MHz)
+* Wuerth WE-CAIR
+* Abracon AIAC-4125C (Mouser, Digikey)
+* Bourns AC1060R (Mouser, Digikey)
+* Coilcraft 2222SQ (Mouser)
+* Coilcraft 132-XXSM (Mouser)
+
 ## 1008-size (2520 metric)
 * Wuerth WE-KI 1008
 * Murata LQW2UASR
