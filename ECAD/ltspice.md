@@ -26,6 +26,17 @@
 
 # Harmonics analysis
 [LTspice tutorial - Ep6 Basics of FFT analysis and .four statment](https://www.youtube.com/watch?v=rVAvW1Jh2AE)
+1. Add the following to the schematic:
+```spice
+.param f=100e6
+.four {f} 10 100 V(VC1)
+.options numdgt=7
+.options plotwinsize=0
+.tran 0 10u 0 1e-10
+```
+2. Run fourier analysis for 10 harmonics and 100 cycles
+3. The options are set to 7 digits and no downsampling
+4. Be sure to set the time step to 1e-10s or smaller, otherwise the FFT will not be accurate and show too high harmonics.
 
 # Measure frequency response
 1. Add the following to the schematic:
@@ -69,6 +80,7 @@ Then you can select what traces to plot in the simulation window: S11, S21, Zin,
 ```code
 P[dBm] = X[dBV] - 10*log10(50) + 30
        = -24.1dBV - 17 + 30
+       = -24.1dBV + 13
        = -11.1dBm
 ```
 9. Measure the voltage at the third order intermodulation frequency : e.g. -79dBV -> -66dBm
