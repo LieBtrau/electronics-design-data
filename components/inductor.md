@@ -28,9 +28,11 @@ These values are not critical and are given only as guidelines. Although it migh
 * Bourns AC1060R (Mouser, Digikey)
 * Coilcraft 2222SQ (Mouser)
 * Coilcraft 132-XXSM (Mouser)
+* Walsin LSQ-series (Mouser, Digikey)
+* Walsin LSI-series
 
 ## 1008-size (2520 metric)
-* Wuerth WE-KI 1008
+* Wuerth WE-KI 1008, WE-RFI, WE-RFH
 * Murata LQW2UASR
 * Laird IWC1008
 * Guangdong Fenghua FHW1008UC
@@ -101,3 +103,17 @@ Trilogy of inductors, section "applications" explains where to use what ferrite 
 ## High current LF
 * 12x10.8mm and 12x11mm are popular sizes
 * 9x7mm is also popular
+
+# Toroidal inductors
+## Material
+### Ferrite
+Applications of ferrite cores: EMI suppression, RF transformers
+
+* Type 43 :
+  * inductors up to 1MHz (tested)
+  * EMI suppression 20MHz - 250MHz (Fair-Rite data sheet)
+* Type 61 :
+  * inductors up to 20MHz (tested)
+* Type 67 :
+  * inductors up to 75MHz (tested)
+* [Wire length calculator](http://www.calculatoredge.com/electronics/coilwinding.htm#toroid)
