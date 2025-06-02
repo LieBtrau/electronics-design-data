@@ -1,10 +1,7 @@
-# Installation
-
-[Binary releases](https://github.com/NanoVNA-Saver/nanovna-saver/releases/)
-Python install of 0.5.4 didn't work (changelog.md not found)
-
-## Linux
-Download 0.5.4 binary or later
+# PC-software
+* NanoVNA-App : works the best
+* NanoVNA saver : frequent errors
+* VNA-QT : avoid
 
 ## Windows : COM-port doesn't want to detect
 1. Make sure pyserial is installed.
@@ -13,10 +10,11 @@ Download 0.5.4 binary or later
 4. Disconnect & reconnect VNA
 
 # Output power
-* 2mA setting : 160mVpp into a 50 Ohm load
-* 4mA setting : 320mVpp into a 50 Ohm load
-* 6mA setting : 480mVpp into a 50 Ohm load
-* 8mA setting : 600mVpp into a 50 Ohm load
+Output waveform is a square wave with a duty cycle of 50%.  The output power is not constant, but varies with the current setting.  The output voltage is measured at the SMA port, and the output power is calculated as follows:
+* 2mA setting : 160mVpp into a 50 Ohm load : -8.9dBm
+* 4mA setting : 320mVpp into a 50 Ohm load : -2.9dBm
+* 6mA setting : 480mVpp into a 50 Ohm load : +0.6dBm
+* 8mA setting : 600mVpp into a 50 Ohm load : +2.6dBm
 
 So when measuring small amplifiers, use 2mA setting, add an attenuator on port 0 and recalibrate.
 
@@ -48,7 +46,6 @@ When measuring impedance, remark that **"S11 Phase" is not the same as impedance
 ## Series, shunt, shunt-through measurements
 * [Dan Koellen](https://www.ai6xg.com/post/reactive-component-measurement-with-the-nanovna)
 * [Brian Walker](http://www.clarke.com.au/pdf/CMT_Accurate_Measurements_VNA.pdf)
-
 
 # Measuring unknown cable impedance
 * [#326: How to Measure the impedance of "unknown" coax using a NanoVNA](https://www.youtube.com/watch?v=hqKLFbNYRZc)
