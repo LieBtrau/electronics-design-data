@@ -1,0 +1,5 @@
+1. Common-mode choke are on the cable side, not on the phy side.  CM-chokes are always connected as close as possible to their connectors.
+2. Common-mode chokes effectively shield CM-noise, but they do it by reflecting the energy back to the source. There's no damping of the energy.
+3. Bob-Smith termination is a way to dampen the reflected CM-energy in the cable.
+4. There's [some discussion](https://electronics.stackexchange.com/questions/161436/why-is-bob-smith-termination-for-ethernet-recommended-if-its-wrong) whether Bob-Smith termination is correct or whether it's actually needed.  But it seems to be the best bet for now.
+5. Alternative FLIR-termination uses 50-ohm resistors to terminate differential signals with capacitors in series.  These capacitors are tied to an intermediary net.  For CM-signals, that's 4x50ohm in parallel, which is 12.5 ohm. Then this intermediary net is terminated with 125ohm (4x510ohm in parallel) to ground and a HiV capacitor to earth/connector shield.  This terminates the CM-signals with 150ohm.
