@@ -1,6 +1,7 @@
 # DfT
 * **Test points for GND, VCC, and other important signals**
   * Easy for a fast measurement on a broken unit
+* **Programming pads** for your microcontroller or SPI flash
 * **NC-Shunts on power supplies** so that the load can easily be disconnected
   * Open shunt by cutting
   * Close shunt by adding solder drop.
