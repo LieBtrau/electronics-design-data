@@ -73,7 +73,7 @@ Trilogy of inductors, section "applications" explains where to use what ferrite 
 
 ## Medium current, for power rails
 * WE 742792625 : 0603, 100ohm, 100MHz, 2.0A, 50mohm
-* WE 742792651 : 0603, 600ohm, 100MHz, 1.0A, 50mohm
+* WE 742792651 : 0603, 600ohm, 100MHz, 1.0A, 50mohm (used on [WE's Filter Stick USB2.0](https://www.we-online.com/en/components/products/EMC_FILTER_BAGS_STICKS_USB_2_0_TYPA_FILTERSTICK))
 
 ## High current, for power rails
 * HI1812V101R-10 Laird
