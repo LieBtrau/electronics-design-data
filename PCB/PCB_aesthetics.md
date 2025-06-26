@@ -43,29 +43,31 @@ For Pb-free, at least TG155 is required.  For Pb solder, TG135 is sufficient.
 ```
 PCB Ordering guideline rigid
 ----------------------------
-1. Layer count : .Layer_Count
-2. Dimensions : .Board_Width x .Board_Height
-3. PCB Thickness : .Total_Thickness
-4. PCB Color : green
-5. Silkscreen : white
-6. Material type : >=FR4-TG155
-7. Surface finish : Pb-free HASL
-8. Gold thickness : 1U"
-9. Outer copper weight : 1oz
-10. Inner copper weight : 0.5oz
-11. Impedance control : No
-12. Layer stackup : JLC0616H-3313
-13. Via covering : Tented | Epoxy filled & capped
-14. Minimum hole size : .Hole_Size_Min
-15. Board outline tolerance : +/- 0.2mm
-16. Mark on PCB : 2D bardcode & Number | Data Matrix Code | .board_name _ABCDE_0001 | 8x8mm
-17. Gold fingers : No
-18. Castellated holes : No
-19. Press-fit holes : No
-20. Edge plating : No
-21. Hole count : .Hole_Count
-22. SMD solder joints : .PadSMD_Count
-23. Through-hole solder joints : .PadThru_Count
+* Layer count : .Layer_Count
+* Dimensions : .Board_Width x .Board_Height
+* Deburring : Yes
+* PCB Thickness : .Total_Thickness
+* PCB Color : green
+* Silkscreen : white
+* Material type : >=FR4-TG155
+* Surface finish : ENIG 2U"
+* Outer copper weight : 1oz
+* Inner copper weight : 0.5oz
+* Impedance control : Yes
+* Layer stackup : JLC06081H-2116
+* Via covering : Epoxy filled & capped
+* Minimum hole size : .Hole_Size_Min
+* Board outline tolerance : +/- 0.2mm
+* Mark on PCB : 2D barcode & Number | Data Matrix Code | .board_name _ABCDE_0001 | 8x8mm
+* Gold fingers : Yes
+* Beveling : No
+* Castellated holes : No
+* Press-fit holes : No
+* Edge plating : No
+* Blind slots : No
+* Hole count : .Hole_Count
+* SMD solder joints : .PadSMD_Count
+* Through-hole solder joints : .PadThru_Count
 ```	
 
 ```
