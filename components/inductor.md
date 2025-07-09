@@ -32,6 +32,7 @@ These values are not critical and are given only as guidelines. Although it migh
 * Walsin LSI-series
 
 ## 1008-size (2520 metric)
+* Abracon AISC-1008
 * Wuerth WE-KI 1008, WE-RFI, WE-RFH
 * Murata LQW2UASR
 * Laird IWC1008
