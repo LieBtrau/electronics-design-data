@@ -28,15 +28,19 @@
 [LTspice tutorial - Ep6 Basics of FFT analysis and .four statment](https://www.youtube.com/watch?v=rVAvW1Jh2AE)
 1. Add the following to the schematic:
 ```spice
-.param f=100e6
-.four {f} 10 100 V(VC1)
+.param f=1e3
+.four {f} 10 100 V(out)
 .options numdgt=7
 .options plotwinsize=0
-.tran 0 10u 0 1e-10
+.tran 0 {100/f} 0 {1/(f*100)}
 ```
-2. Run fourier analysis for 10 harmonics and 100 cycles
+Where "f" is the frequency of the signal you want to analyze, e.g. 1kHz.
+
+2. Runs fourier analysis for 10 harmonics and 100 cycles
 3. The options are set to 7 digits and no downsampling
-4. Be sure to set the time step to 1e-10s or smaller, otherwise the FFT will not be accurate and show too high harmonics.
+4. Be sure to set the time step small enough, otherwise the FFT will not be accurate and show too high harmonics.
+
+For audio signals in general applications, a THD of 1% is acceptable.
 
 # Measure frequency response
 1. Add the following to the schematic:
