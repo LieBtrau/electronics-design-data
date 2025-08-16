@@ -1,4 +1,6 @@
 # LDO
+For low power applications, consider a low Iq buck converter instead of an LDO.  e.g. TPS62840 : Iq=60nA, Vinmax=6.5V, Iout=600mA.
+
 ## SOT23-5
 ### 3V3, low Iout, low Iq
 * Holtek HT7533 (100mA out, 2.5µA Iq) : SOT23-3
