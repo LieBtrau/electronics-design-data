@@ -105,6 +105,18 @@ Trilogy of inductors, section "applications" explains where to use what ferrite 
 * 12x10.8mm and 12x11mm are popular sizes
 * 9x7mm is also popular
 
+# Pulse transformers (LAN)
+## non-PoE
+* TDK ALT4532M-201-T001
+* Wuerth 74930000, 74930030
+* Pulse TC5G00, TC2G00, TC1G00
+* Bourns SM453230-181N7Y
+
+## PoE
+* Bourns SM453230-231N7YP
+* Pulse : TC1G00P, TC5G00P
+* Abracon ALANC001G2-EADT, ALANC001G1-EADT
+
 # Toroidal inductors
 ## Material
 ### Ferrite
