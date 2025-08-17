@@ -107,15 +107,14 @@ Trilogy of inductors, section "applications" explains where to use what ferrite 
 
 # Pulse transformers (LAN)
 ## non-PoE
-* TDK ALT4532M-201-T001
+* TDK ALT4532M-201-T001 (JLCPCB C2845101)
 * Wuerth 74930000, 74930030
 * Pulse TC5G00, TC2G00, TC1G00
-* Bourns SM453230-181N7Y
+* Bourns SM453230-181N7Y (not fully footprint compatible)
 
 ## PoE
-* Bourns SM453230-231N7YP
+* Bourns SM453230-231N7YP (not fully footprint compatible)
 * Pulse : TC1G00P, TC5G00P
-* Abracon ALANC001G2-EADT, ALANC001G1-EADT
 
 # Toroidal inductors
 ## Material
