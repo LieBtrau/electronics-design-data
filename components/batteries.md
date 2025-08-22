@@ -17,23 +17,23 @@ Use low-self discharge types (Varta Ready2Use, ...) : comparison
 * high internal resistance, not suitable for high current draw.  Can be fixed with supercap, see  [A Long-Lifetime, Cost-Competitive Solution in Smart
 Meters Based on the TPS61094](https://www.ti.com/lit/an/slvaf41a/slvaf41a.pdf?ts=1700888594827)
 
-# Alkaline : 1.5V
+# Alkaline (Zn-MnO2) : 1.5V
 
-* AAA : Aldi : Topcraft Ultra Alkaline
-* AA : Aldi : Topcraft Ultra Alkaline
+* AAA : Aldi : Topcraft Ultra Alkaline (1.2Ah)
+* AA : Aldi : [Topcraft Ultra Alkaline (2.6Ah)](https://lygte-info.dk/review/batteries2012/Top%20Craft%20Ultra%20Alkaline%20AA%20UK.html)
 
 At the end of its lifetime it leaks its highly corrosive contents which eats away your electronics.
 
 # LiFeS2 (1.5V, performance upgrade to alkaline)
-
 * -40°C → 60°C
 * High current (2A from AA, 200mΩ)
-* high capacity(3000mAh AA)
+* high capacity(3Ah AA)
 * low self-discharge (10 years shelf life)
 * safe (short circuit, crush, drop, heating)
+* Available in AA and AAA.
 
-* AAA : Energizer Ultimate Lithium
-* AA : Energizer Ultimate Lithium
+* Brico.be : [AAA : Energizer Ultimate Lithium](https://lygte-info.dk/review/batteries2012/Energizer%20Ultimate%20Lithium%20AAA%202019%20UK.html) : 1.3Ah
+* Brico.be (€16/10pcs) : [AA : Energizer Ultimate Lithium](https://lygte-info.dk/review/batteries2012/Energizer%20Ultimate%20Lithium%20AA%20UK.html) : 3Ah
 
 # 18650 Li-Ion LiFePO4 : 3.3V
 
