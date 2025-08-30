@@ -1,3 +1,16 @@
+# Linux install
+When wine got an update, you'll have to remove all of wine, including the .wine folder in your home directory, and reinstall wine.  Then you can reinstall LTspice.
+1. Install wine
+```bash
+sudo apt-get remove wine --purge
+mv ~/.wine ~/.wine_backup_$(date +%Y%m%d%H%M%S)  # backup your old wine folder
+sudo apt update
+sudo apt install wine q4wine winbind winetricks playonlinux wine-binfmt exe-thumbnailer
+winetricks # to check if everything is ok
+wget https://ltspice.analog.com/software/LTspice64.exe
+wine LTspice64.exe
+```
+
 # Add extra model for standard part, such as e.g. MMBT5551 for an NPN-transistor
 1. Add your lib file to : my documents / LTspiceXX.. / lib
 2. Add statement ".include MMBT5551.lib"
