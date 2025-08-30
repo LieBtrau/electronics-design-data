@@ -13,3 +13,6 @@
 
 # DMM
 * [Brymen BM839](https://www.welectron.com/Brymen-BM839-Multimeter_1)
+
+# Waveform generator
+* Siglent SDG2122X
