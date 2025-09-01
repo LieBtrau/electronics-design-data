@@ -169,3 +169,5 @@ Simple and cheap:
   * input UVLO
   * input OVLO
   * Not suitable for battery applications (high quiescent current)
+
+  For low Iq : LM74610-Q1 Zero IQ Reverse Polarity Protection Smart Diode Controller
