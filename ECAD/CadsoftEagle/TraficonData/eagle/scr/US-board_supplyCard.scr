@@ -1,0 +1,19 @@
+# US supply card with Harting 2932 connector
+#
+# Draws the dimension lines of a US format board (114.3mm x 174.6mm)
+# Draws also the holes for fixation of the front plate
+
+
+Grid mm 1 off;
+Set Wire_Bend 4;
+Layer Dimension;
+Wire 0 (0 0) (166 114.3) (0 0);
+
+#Draw holes
+change drill 3.2
+via round (5.57 107.36);
+via round (5.57 7.03);
+via round (40.64 103.35);
+
+Grid Last;
+Window Fit;

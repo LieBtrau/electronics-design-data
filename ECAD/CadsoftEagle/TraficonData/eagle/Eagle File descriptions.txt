@@ -1,0 +1,36 @@
+Gerber-files:
+
+	.whl	aperture table (not for RS274-X)
+	.cmp	component side
+	.sol	solder side
+	.Ly2	Layer 2
+	.Ly3	Layer 3
+	.plc	Component side silkscreen.
+	.pls	Solder side silkscreen.
+	.stc	Component side solder mask.
+	.sts	Solder side solder mask.
+	.crc	Component side cream frame
+	.crs	Solder side cream frame.
+
+	.drl	Drill configuration file.
+	.drd	Drilling data for NC drilling machines.
+
+
+The following files can not be imported in a gerber viewer, and will generate an error.
+
+	.dri	Drill information, the missing drill diameters.
+	.gpi	Plotter information (pad info,....)
+	.erc	Error file from electrical rule check (not necessary for board manufacturer)
+	.$$$	useless file
+
+Component mounting data:
+	
+	.mnt 	generic format
+
+	UNIDAT-format (www.unicam.de)
+	.uni	Unidat-file
+	.ref	cross reference file
+
+Data for PCB-testers
+
+	.fab	eM-Test Expert (http://www.ugs.com/products/tecnomatix/assembly_planning/pcb/em_test_expert.shtml), 			formerly FABmaster

@@ -1,0 +1,19 @@
+# US card edge Board
+#
+# Draws the dimension lines of a board that fits in a US-rack, but has a DIN41612F connector
+# Draws also the holes for fixation of the front plate
+
+
+Grid mm 1 off;
+Set Wire_Bend 4;
+Layer Dimension;
+Wire 0 (0 0) (166 114.3) (0 0);
+
+#Draw plated holes
+change drill 3.2
+pad round (5.57 107.36);
+pad round (5.57 7.03);
+pad round (40.64 103.35);
+
+Grid Last;
+Window Fit;
