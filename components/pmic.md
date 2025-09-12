@@ -86,8 +86,6 @@ Instead of a supervisor, a clean power-on reset signal can be generated using : 
   * 26Vmax
   * alternative Diodes ZXCT21x
 
-
-
 # Buck converter
 ## Low power Module
 * Vin = 6.5V → 36V, Vout = 5V (trimmable), Iout = 500mA
@@ -171,3 +169,10 @@ Simple and cheap:
   * Not suitable for battery applications (high quiescent current)
 
   For low Iq : LM74610-Q1 Zero IQ Reverse Polarity Protection Smart Diode Controller
+
+  # LED Driver
+  4.4mm wide TSSOP-24 package, 16 outputs, max. 5.5V, serializable via SPI
+  * ST STP16CPC26XTR
+  * TI TLC5928PWPR (with LED error detection)
+  * TI TLC59282DBQR (many at JLCPCB)
+  * Sunmoon SM16306S, JLCPCB C2830324 (€0.07/pce)
