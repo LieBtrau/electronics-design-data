@@ -1,0 +1,19 @@
+# US card edge Board
+#
+# Draws the dimension lines of a US format board (114.3mm x 174.6mm)
+# Draws also the holes for fixation of the front plate
+
+
+Grid mm 1 off;
+Set Wire_Bend 4;
+Layer Dimension;
+Wire 0 (0 0) (165.1 114.3) (174.6 102.4) (165.1 57.9) (174.6 56.7) (165.1 22.2) (174.6 21) (165.1 11.9) (0 0);
+
+#Draw via's
+change drill 3.2
+via round (5.57 107.36);
+via round (5.57 7.03);
+via round (40.64 103.35);
+
+Grid Last;
+Window Fit;

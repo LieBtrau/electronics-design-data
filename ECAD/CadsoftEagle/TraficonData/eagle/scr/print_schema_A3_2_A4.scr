@@ -1,0 +1,3 @@
+#This program prints the A3 schematic to A4 format
+
+PRINT 0.715 - black solid;

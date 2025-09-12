@@ -15,7 +15,8 @@
 # DfM
 * Mounting holes
 * Layer stack table
-* Fab notes, see [PCB aesthetics : ordering guideline](./PCB_aesthetics.md) 
+* Fab notes, see [PCB aesthetics : ordering guideline](./PCB_aesthetics.md)
+* run your design through [JLCDFM](https://jlcdfm.com/) to find the weak points or even errors.
 
 # Identification
 * Board name

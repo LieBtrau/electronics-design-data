@@ -1,0 +1,4 @@
+#Export files for Neos netlistcheck
+#
+EXPORT PARTLIST		partlist.txt;
+EXPORT PINLIST		pinlist.txt;

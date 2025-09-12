@@ -1,0 +1,6 @@
+# Print bottom of layout
+
+errors clear;
+display none 16 17 18 20 49;
+ratsnest;
+print 1 - black solid

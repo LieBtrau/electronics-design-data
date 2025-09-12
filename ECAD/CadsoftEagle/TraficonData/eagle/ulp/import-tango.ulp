@@ -1,0 +1,294 @@
+/* ***********************************************************************
+   **																	**
+   ** Filename:		IMPORT-TANGO.ULP									**
+   **																	**
+   ** Programmer:	Ralf Kilguss										**
+   **																	**
+   ** Copyright:	Ralf Kilguss										**
+   **																	**
+   ** Describtion:	This ULP read in a Tango® netlist and generate		**
+   ** 				Ealge Layout file (BRD). 							**
+   **																	**
+   **===================================================================**
+   **																	**
+   ** Legal issues:	This program is provided as it is. Without any 		**
+   **				warranties of any kind of data lose or damages.		**																	**
+   **																	**
+   ** Version: 		1.2													**
+   **																	**
+   ** Date: 		December, 2002										**
+   **																	**
+   ** -----------------------------------------------------------------	**
+   **																	**
+   ** History:	1.1 fixes library input									**
+   **			Date: Dec. 2002											**
+   **																	**
+   **			1.2 fixes script execution error under Win2000			**
+   **			Date: Dec. 2002											**
+   **																	**
+   **																	**
+   *********************************************************************** */
+
+
+string 	version = "1.2";
+
+
+#usage "<b>Import TANGO® NETLIST into Eagle Layout filename (*.NET)</b>\n"
+       "<p>"
+       "Imports TANGO® NETLIST Data File Version 1.00 - 2.20"
+       "<p>"
+       "Based on : Tango® file format description"
+       "<p>"
+       "TANGO® is a registered trademark of ACCEL Technologies, Inc."
+       "<p>"
+       "<b><author>Author: Ralf Kilguss</author></b>"
+       "<p>"
+       "Email: Ralf@RKilguss.de"
+
+
+
+string Help =
+      "This ULP will convert a netlist from Tango®<p>" +
+      "to Eagle Script if an error occures message<p>" +
+      "dialog will be shown.<p>" +
+      "<hr><p>" +
+      "<b>STEPS:</b><p>" +
+      "<b>======</b><p>" +
+      "1) Press <b>OK</b> button to start<p>" +
+      "2) Select in the file open dialog the <b>*.NET</b> file<p>" +
+      "3) Encoding will done automatic<p>" +
+      "4) End Dialog press <b>OK</b> button for read in automatic<p>" +
+      "   press <b>Cancel</b> if you want to start script manual<p>" +
+      "In any event scriptfile located in the same location like netlistfile<p>";  
+
+string Version =
+          "<b>Tango® import ULP</b><p>" +
+          "<p><p> Version: " + version + "<p>"
+          " Copyright Nov. 2002 by Ralf Kilguss<p><p>" +
+          "<hr> " +
+          "<p> The author is not responsible for any damage or data lose <p>" +
+          " If bugs get found please report to Ralf@RKilguss.de<p><p>" +
+          "<hr> " +
+          "<p>TANGO® is a registered trademark of Accel Technologies Inc.";
+
+/* ***********************************************************************
+   **																	**
+   ** V A R I A B L E   D E C L A R A T I O N 							**
+   **																	**
+   *********************************************************************** */
+string 	fileName = "";
+string 	TangoFile[];
+string 	outtext;
+int 	LineCount;
+string  outputFileName;
+int		stateflag = 0;
+
+int		SPACING = 400;		// Please change this var if you want parts
+							// got placed more near or more far
+
+
+
+/* ***********************************************************************
+   **																	**
+   ** Functionname:	ULP_MainDLG ()										**
+   **																	**
+   ** Describtion:	Opens the main dialog where user can set all the 	**
+   **				settings. 											**
+   *********************************************************************** */
+void ULP_MainDLG(void) 
+{
+	dlgDialog("Import Tango® Netlist into Boardeditor") 
+   	{
+    	dlgStretch(0);
+      	dlgHBoxLayout 
+      	{
+         	dlgSpacing(500);
+      	}
+      	dlgStretch(0);
+      	dlgLabel(usage, 1);
+      	dlgStretch(0);
+      	dlgHBoxLayout 
+      	{
+        	dlgStretch(0);
+         	dlgPushButton("+&OK") dlgAccept();
+         	dlgStretch(0);
+         	dlgPushButton("-&Cancel") {dlgReject(); exit(0);}
+         	dlgStretch(1);
+         	dlgPushButton("&Version Info") dlgMessageBox(Version, "OK");
+         	dlgStretch(0);
+         	dlgPushButton("&Help") dlgMessageBox(Help, "OK");
+         	dlgStretch(0);
+		}
+      	dlgStretch(1);
+	};
+}
+/* *********************************************************************** */
+
+
+
+/* ***********************************************************************
+   **																	**
+   ** Functionname:	PrintError ()										**
+   **																	**
+   ** Describtion:	shows error dialog which occure after executing   	**
+   **				TangoDecoder () function.					 		**
+   **						 											**
+   *********************************************************************** */
+void PrintError (int error)
+{
+	switch (error)
+	{
+		case 0: 
+			break;
+			
+		default:
+			dlgMessageBox( "ERROR:\n\nUnknown error occurt while translating\n\n\n", "&OK") ;
+	}
+}
+/* *********************************************************************** */
+
+
+
+
+/* ***********************************************************************
+   **																	**
+   ** Functionname:	TangoDecoder ()										**
+   **																	**
+   ** Describtion:	this function read the ASCII Tango file and will  	**
+   **				place the signals and parts directly into the 		**
+   ** 				new opened Eagle board file. This is done via 	 	**
+   ** 				scriptfile due to missing adding functionality in	**
+   **				ULP's.												**
+   **						 											**
+   *********************************************************************** */
+int TangoDecoder ()
+{
+	int		i, ii, iii;
+	string 	libfiles[];
+	int 	libcount;
+	string 	libpath;
+	int		x = SPACING, y = SPACING;
+	int 	nlcount = 0;	
+	
+	
+	output (outputFileName, "wt")								// create/overwrite scriptfile which get generated
+	{
+		for (i = 0; i < LineCount; i++)							// main loop processing all lines
+		{
+			if ((strrchr (TangoFile[i], '[') == -1) && (stateflag != 1))
+					printf ("# %s\n", TangoFile[i]);			// write comment if any
+
+	        // Writing libraries inside the script files which get used by using eagle path
+	        // ============================================================================
+	        if ((strrchr (TangoFile [i], '[') >= 0) && (stateflag != 1))
+           	{
+				printf ("# Eagle Version:   %d\n#\n", EAGLE_VERSION);
+				printf ("# Eagle Release:   %d\n#\n", EAGLE_RELEASE);
+				printf ("# Eagle Signature: %s\n#\n", EAGLE_SIGNATURE);
+				printf ("# Converted with Import-Tango ULP (c) by Ralf Kilguss on your own risk\n#\n#\n");
+				
+				printf ("GRID MIL;\n\n");
+				libpath = path_lbr[0] + '/';
+           		libcount = fileglob (libfiles, libpath);
+            	for (ii = 0; ii < libcount; ii++)
+            	{
+            		if (strstr (libfiles[ii], ".lbr") != -1)
+            			printf ("USE %s;\n", filename (libfiles[ii]));
+            	}
+            	stateflag = 1;
+			}
+//         *** converting to scriptfile *** 
+//         *** partplacement *** 
+        	if (strrchr (TangoFile[i], '[') >= 0)
+        	{
+        		i++;					// set index to first data sentence
+        		printf ("\nADD %s ( %d %d );\n", TangoFile[i+1], x, y);
+        		printf ("NAME %s ( %d %d );\n", TangoFile [i], x, y);
+        		printf ("VALUE %s %s;\n", TangoFile [i], TangoFile [i+2]); 
+        		i = i + 6;
+	            x = x + SPACING;
+    	        if (x > 5500) 
+    	        {
+        	        x = SPACING;
+            	    y = y + SPACING;
+				}
+			}
+//         *** Signals ***
+        	if (strrchr (TangoFile[i], '(') >= 0)
+        	{	
+        		i++;										// set index to first data sentence
+            	ii = strlen (TangoFile[i]);					// check if netlable more than 8 character 
+            	if (ii > 8)
+                	printf ("\nSIGNAL NETL%d ", nlcount++);	// if longer than 8 will get replaced Eagel convention
+				else 
+					printf ("\nSIGNAL %s ", TangoFile[i]);	// take as it is.
+					
+
+            	i++; 										// set index to next data sentence
+            	ii = strrchr (TangoFile[i], ',');			// check the possition of the comma to remove it
+            	iii = strlen (TangoFile[i]);
+            	printf ("%s ", strsub(TangoFile[i], 0, ii));
+            	printf ("%s ", strsub(TangoFile[i], ii + 1, iii));
+            	do 
+            	{
+					i++;									// set index to next data sentence
+            		ii = strrchr (TangoFile[i], ',');
+            		if (ii != -1)
+            		{
+		            	iii = strlen (TangoFile[i]);
+        		    	printf ("%s ", strsub(TangoFile[i], 0, ii));
+            			printf ("%s ", strsub(TangoFile[i], ii + 1, iii));	// set index to next data sentence
+            		}
+            		else
+            			printf (";");
+              	}
+            	while (strrchr (TangoFile[i], ')') == -1);
+        	}
+		}
+	}
+	return (0);	
+}
+/* *********************************************************************** */
+
+
+
+
+
+/* ***********************************************************************
+   **																	**
+   ** Functionname:	main ()												**
+   **																	**
+   ** Describtion:	main function will controll everything in this ULP 	**
+   **						 											**
+   *********************************************************************** */
+void main ()
+{
+	string	message = "Import is finished. \nLocation: ";
+	
+	
+	if (board) board(B) 								// make sure this ULP gets executed in the layout editor.
+	{
+		ULP_MainDLG ();									// show main dialog
+		fileName = dlgFileOpen("Select a NET-File", "", "*.net");
+		if (!fileName)
+			exit (0);									// exit no file select
+		outputFileName = filesetext (fileName, ".scr");	// set new file extension 
+		
+		LineCount = fileread (TangoFile, fileName);		// read the Tango file in a string array
+		PrintError (TangoDecoder ());					// print error dialog
+	}
+	else												// ULP didn't get executed in the layout editor
+	{
+		dlgMessageBox( "ERROR:\n\nStart this ULP from the Board Editor\n\n\n", "&OK") ;
+	}
+	
+	message = message + outputFileName + "\nWould you like to execute script?\n\n";
+	if (dlgMessageBox (message, "&OK", "&Cancel") == 0)
+	{
+		message = "script " + "'" + outputFileName + "'";
+		exit (message);
+	}
+	else
+		exit (0);
+}
+/* *********************************************************************** */

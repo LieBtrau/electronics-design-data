@@ -1,0 +1,23 @@
+Library organisation as Digikey:
+
+-Semiconductors
+--ICs
+--Discretes
+--Modules
+
+-Passives
+--Caps
+--Crystals
+--Inductors
+--Resistors
+
+-ElectroMechanical
+--Relays
+--Switches
+
+-Power, CircuitProtection
+--Battery
+--Circuit protection
+--Trafo
+
+-Connectors

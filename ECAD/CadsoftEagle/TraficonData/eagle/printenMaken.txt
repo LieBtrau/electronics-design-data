@@ -1,0 +1,18 @@
+Printen van layouts in Eagle om bij D'tron te laten maken:
+
+Lagen die moeten aan staan:
+
+Top: 		1,17,18,20
+Bottom:	16,17,18,20
+
+
+Page setup:
+
+Mirror Off
+Scale=1
+
+Printer PC-prodserver:
+Blad bij het andere papier leggen, niet in het aparte laatje
+
+Tot slot:
+Controle of de tegenoverliggende hoekpunten en boringen mooi passen.
