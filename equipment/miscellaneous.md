@@ -16,3 +16,7 @@
 
 # Waveform generator
 * Siglent SDG2122X
+* Minimum output signal 1mVpp into 50 Ohm, shown as -56dBm on TinySA spectrum analyser
+* -38dBc at 100MHz (1mVpp signal, measured with TinySA)
+* fix 50ohm output impedance
+* Max. frequency sine wave 120MHz, square wave 25MHz
