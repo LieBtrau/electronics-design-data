@@ -93,7 +93,7 @@ Trilogy of inductors, section "applications" explains where to use what ferrite 
 * WE 744232090, 1206, 90ohm, 111nH, JLCPCB C131487
 
 ## Medium current LF
-250µH, 1.2A (dT=40°C), 130mOhm (per coil), 1-70MHz (Z>1Kohm)
+9.2x6.0mm, 250µH, 1.2A (dT=40°C), 130mOhm (per coil), 1-70MHz (Z>1Kohm)
 
 * WE 744224 (€4.32 Sinnuss.nl)
 * YJYCOIN YLCM0905C-251T (JLCPCB C5137118)
@@ -102,8 +102,9 @@ Trilogy of inductors, section "applications" explains where to use what ferrite 
 * PROD Tech PSCLAQ0905-251Y (JLCPCB C2829004)
 
 ## High current LF
-* 12x10.8mm and 12x11mm are popular sizes
+* 7x6mm is a common size (Pulse, Bourns, Wuerth)
 * 9x7mm is also popular
+* 12x10.8mm and 12x11mm are popular sizes
 
 # Pulse transformers (LAN)
 ## non-PoE
