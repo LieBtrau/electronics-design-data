@@ -3,14 +3,14 @@
 * Align components to grid (0.5mm)
 * Try to keep things as symmetrical as possible
 * Silkscreen
- * Limited use : no designators
- * Mark component polarity (diode, pin 1 of IC):
-   * full circle
-   * width = 0.25mm
-   * radius = 0.01mm
- * Do not place on bare copper (or vias)
- * Inverted text for pin labels of the connectors
- * True-Type, sans-serif Font : Century Gothic, at least 1.5mm high
+  * Limited use : no designators
+  * Mark component polarity (diode, pin 1 of IC):
+    * full circle
+    * width = 0.25mm
+    * radius = 0.01mm
+  * Do not place on bare copper (or vias)
+  * Inverted text for pin labels of the connectors
+  * True-Type, sans-serif Font : Century Gothic, at least 1.5mm high
 
  # Usability
  * Label your connectors and their pinout (+, - , GND, VCC, etc.) especially for wire-to-board connectors where this is not obvious.
@@ -59,7 +59,7 @@ PCB Ordering guideline rigid
 * Minimum hole size : .Hole_Size_Min
 * Board outline tolerance : +/- 0.2mm
 * Mark on PCB : 2D barcode & Number | Data Matrix Code | .board_name _ABCDE_0001 | 8x8mm
-* Gold fingers : Yes
+* Gold fingers : No
 * Beveling : No
 * Castellated holes : No
 * Press-fit holes : No
