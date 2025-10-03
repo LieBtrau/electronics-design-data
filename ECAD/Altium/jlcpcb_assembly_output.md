@@ -2,9 +2,9 @@
 1. Open BoMDoc document
 2. Open BoMDoc properties -> Columns tab
 3. Add alias to Names:
+  * Comment : Name (already there by default)
   * Item ID : Comment
   * ItemGUID : Footprint
-  * Comment : Name (already there by default)
 4. Open BoM_JLCPCB to check if everything is correct:
 
 |Comment | Designator | Footprint | JLCPCB Part #|
