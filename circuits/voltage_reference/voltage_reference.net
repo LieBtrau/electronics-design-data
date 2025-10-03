@@ -1,0 +1,19 @@
+* C:\github\electronics-design-data\circuits\current_source_stabilized\voltage_reference.asc
+V1 N001 0 10
+Q1 N002 N004 0 0 BC846B
+R1 out1 N004 10k
+R2 N004 0 10k
+R3 N001 out1 1k
+R4 out1 N002 {Rparam}
+Q2 N003 N005 0 0 BC846B
+R6 N005 0 10k
+R7 N001 out2 1k
+R8 out2 N003 {Rparam}
+Q3 out2 out2 N005 0 BC846B
+.model NPN NPN
+.model PNP PNP
+.lib C:\Users\32470\OneDrive - 7c7engineering.com\Documents\LTspiceXVII\lib\cmp\standard.bjt
+.dc V1 0 10
+.step param Rparam 0.01 200 10
+.backanno
+.end
