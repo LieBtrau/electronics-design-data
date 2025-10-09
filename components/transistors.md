@@ -3,9 +3,17 @@
 * S9013 J3 : 25V/500mA, LCSC C6749 (basic part, €00.013): hfe = 300 - 400
 * BC846B : 65V/100mA, LCSC C87062, Higher Vceo and Vcbo than BC847B
 
+## Low voltage, medium current (Ic <= 1A)
+* S8050 (500mA) : JLCPCB Basic part
+* SS8050 (1A) : JLCPCB Basic part
+
 # BJT PNP
 ## Low voltage, low current
 * BC856B : 65V/100mA, no direct LCSC equivalent in their Basic category.
+
+## Low voltage, medium current (Ic <= 1A)
+* S8550 (500mA) : JLCPCB Basic part
+* SS8550 (1A) : JLCPCB Basic part
 
 # NMOS
 ## Depletion
