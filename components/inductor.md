@@ -88,7 +88,7 @@ Trilogy of inductors, section "applications" explains where to use what ferrite 
   * Inductance of two equal uncoupled inductors in parallel is half of the individual inductances.
 
 ## Hi-speed data
-* WE 744232222, 1206, 2200ohm (3MHz - 300MHz)
+* WE 744232222, 1206, 2200ohm (3MHz - 300MHz) : USB 2.0
 * WE 744233900, 0805, 90ohm, 131nH, JLCPCB C54888
 * WE 744232090, 1206, 90ohm, 111nH, JLCPCB C131487
 
@@ -117,7 +117,7 @@ Trilogy of inductors, section "applications" explains where to use what ferrite 
 * Bourns SM453230-231N7YP (not fully footprint compatible)
 * Pulse : TC1G00P, TC5G00P
 
-# Toroidal inductors
+# Toroidal cores
 ## Material
 ### Ferrite
 Applications of ferrite cores: EMI suppression, RF transformers
