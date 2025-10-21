@@ -42,7 +42,7 @@ For Pb-free, at least TG155 is required.  For Pb solder, TG135 is sufficient.
 
 ```
 PCB Ordering guideline rigid
-----------------------------
+-----------------------------------------
 * Layer count : .Layer_Count
 * Dimensions : .Board_Width x .Board_Height
 * Deburring : Yes
@@ -53,18 +53,20 @@ PCB Ordering guideline rigid
 * Surface finish : ENIG 2U"
 * Outer copper weight : 1oz
 * Inner copper weight : 0.5oz
-* Impedance control : Yes
-* Layer stackup : JLC06081H-2116
+* Layer stackup
+  * 1.6mm 6L : JLC06161H-3313
+  * 0.8mm 6L : JLC06081H-2116
+* Impedance control : No requirement
 * Via covering : Epoxy filled & capped
 * Minimum hole size : .Hole_Size_Min
 * Board outline tolerance : +/- 0.2mm
 * Mark on PCB : 2D barcode & Number | Data Matrix Code | .board_name _ABCDE_0001 | 8x8mm
 * Gold fingers : No
-* Beveling : No
 * Castellated holes : No
 * Press-fit holes : No
 * Edge plating : No
 * Blind slots : No
+* UL Marking : No
 * Hole count : .Hole_Count
 * SMD solder joints : .PadSMD_Count
 * Through-hole solder joints : .PadThru_Count
@@ -72,7 +74,7 @@ PCB Ordering guideline rigid
 
 ```
 PCB Ordering guideline flexible
-----------------------------
+---------------------------------------
 * Base material : flex
 * Substrate type : 25µm dielectric thickness
 * Layers : .Layer_Count
