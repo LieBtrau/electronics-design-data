@@ -1,6 +1,8 @@
 # DfT
 * **Test points for GND, VCC, and other important signals**
   * Easy for a fast measurement on a broken unit
+* **Test point to put firmware into production mode**
+  * During the test, you might want to use the customer firmware.  By adding a test point to put the firmware into production mode, you can avoid having to reflash the firmware after each test.
 * **Programming pads** for your microcontroller or SPI flash
 * **NC-Shunts on power supplies** so that the load can easily be disconnected
   * Open shunt by cutting
@@ -22,4 +24,4 @@
 * Board name
 * Board revision
 * GIT commit hash, can be placed after the board revision
-* JLCPCB : QR-code window and order number
+* JLCPCB : Datamatrixvf-code window and order number
