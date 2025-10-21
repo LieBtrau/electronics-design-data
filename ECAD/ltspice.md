@@ -55,12 +55,12 @@ Where "f" is the frequency of the signal you want to analyze, e.g. 1kHz.
 
 For audio signals in general applications, a THD of 1% is acceptable.
 
-# Measure frequency response
+# Measure frequency
 1. Add the following to the schematic:
 ```spice
 .meas tran T1 find time when V(out)=2.0 rise 1
 .meas tran T2 find time when V(out)=2.0 rise 2
-.meas tran  Frequency param 1/(T2-T1)
+.meas tran Frequency param 1/(T2-T1)
 ```
 Where 2.0 is the voltage level at which you want to measure the frequency response.  This should be halfway between the low and high levels of the output signal.  
 
