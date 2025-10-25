@@ -159,6 +159,12 @@ Simple and cheap:
   * input polarity protected
   * low quiescent current (150nA)
 
+* For higher voltages (>24V), but requires external N-MOSFETs (only starts at 4V):
+  * AP74700QW6-7
+  * NCV68061SNAIT1G
+  * TPS65R01Q-S6TR-S
+  * LM74700QDBVRQ1, LM74700QDBVTQ1
+
 * [LM73100](https://www.ti.com/product/LM7310/part-details/LM73100RPWR)
   * Input voltage : 2.7V to 23V
   * reverse current flow blocked
@@ -168,7 +174,10 @@ Simple and cheap:
   * input OVLO
   * Not suitable for battery applications (high quiescent current)
 
-  For low Iq : LM74610-Q1 Zero IQ Reverse Polarity Protection Smart Diode Controller
+  For zero Iq : LM74610-Q1 Zero IQ Reverse Polarity Protection Smart Diode Controller
+  * not ground referenced
+  * will temporarily turn mosfet off to recharge capacitor.  So the output voltage will drop during this time.
+  * at low currents (<1mA), the NMOS will not turn on. 
 
   # LED Driver
   4.4mm wide TSSOP-24 package, 16 outputs, max. 5.5V, serializable via SPI
