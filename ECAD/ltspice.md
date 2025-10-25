@@ -58,11 +58,15 @@ For audio signals in general applications, a THD of 1% is acceptable.
 # Measure frequency
 1. Add the following to the schematic:
 ```spice
-.meas tran T1 find time when V(out)=2.0 rise 1
-.meas tran T2 find time when V(out)=2.0 rise 2
-.meas tran Frequency param 1/(T2-T1)
+.param first_edge 200 ; 200th edge
+.param last_edge 700 ; 700th edge
+.param zero_crossing_voltage 5.0 ; voltage at zero crossing
+.meas tran T1 find time when V(osc_out)={zero_crossing_voltage} rise {first_edge}
+.meas tran T2 find time when V(osc_out)={zero_crossing_voltage} rise {last_edge}
+.meas tran Frequency param ({last_edge}-{first_edge})/(T2-T1)
 ```
-Where 2.0 is the voltage level at which you want to measure the frequency response.  This should be halfway between the low and high levels of the output signal.  
+Where "osc_out" is the node you want to measure the frequency from.
+
 
 # Measure S-parameters : insertion loss S21, return loss S11, input impedance Zin, output impedance Zout
 1. Add the following to the schematic:
