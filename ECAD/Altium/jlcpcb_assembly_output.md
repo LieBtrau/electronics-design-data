@@ -5,7 +5,7 @@
   * Comment : Name (already there by default)
   * Item ID : Comment
   * ItemGUID : Footprint
-4. Open BoM_JLCPCB to check if everything is correct:
+4. Open BoM_JLCPCB and select the columns as shown below
 
 |Comment | Designator | Footprint | JLCPCB Part #|
 |--------|------------|-----------|--------------|
