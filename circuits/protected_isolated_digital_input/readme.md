@@ -1,0 +1,1 @@
+For an alternative circuit with improved current control, check out [TLP293 circuit](../optocoupler_speedup/TLP293-test.asc)
