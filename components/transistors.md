@@ -1,3 +1,20 @@
+# Mid-power BJT pairs for discrete amplifiers
+## SOT89
+* 1.5A/80V : 2SCR554P5T100 / 2SAR554P5T100 (?) not advertised as complementary, but parameters match
+* 2A/30V : 2DD2679 / 2DB1714
+* 2A/30V : 2SAR512P5T100 / 2SCR512P5T100 (?) not advertised as complementary, but parameters match
+* 2A/40V : PBSS5240XF / PBSS4240XF
+* 2A/50V : 2SC4672 / 2SA1797
+* 2A/50V : PBSS4250X,135 / PBSS4240X
+* 3A/50V : 2SAR533P5T100 / 2SCR533P5T100 (?) not advertised as complementary, but parameters match
+
+## SOT23
+* 1.5A/30V : 2SD2657 /  2SB1695 (in LTSpice), not available at JLCPCB
+* 2A/40V : ZXTN4240F-7 / ZXTP5240F-7, available at LCSC
+* 2A/50V : 2SCR553R / 2SAR553R (in LTSpice)
+* 2.5A/80V : 2SAR544R / 2SCR544R (in LTSpice)
+* 3A/40V : ZXTN25040DFH / ZXTP25040DFH
+
 # BJT NPN
 ## Low voltage, low current
 * S9013 J3 : 25V/500mA, LCSC C6749 (basic part, €00.013): hfe = 300 - 400
