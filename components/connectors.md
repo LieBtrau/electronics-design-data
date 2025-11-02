@@ -1,6 +1,16 @@
-# Galvanic compatibility
+# Contact terminals finish
+* For analog signals, Au finish is preferred, as it has lower contact resistance and better corrosion resistance.
+
+## Gold embrittlement
+* It is best to avoid gold-plated SMT components (RF connectors?) if there are tin-plated or partially tin-plated alternatives available (as on most SMT pin headers)
+
+## Silver finish
+* ceramic RF-filters often use silver finish
+* very prone to tarnishing
+
+## Galvanic compatibility
 * [The Tin Commandments: Guidelines For The Use Of Tin On Connector Contacts](https://www.ramoem.com/uploads/4/4/0/7/44075859/tin_commandments.pdf)
-  * Don't mix tin and gold
+  * Don't mix tin and gold!
 
 # Barrel connectors
 ## Audio connector
