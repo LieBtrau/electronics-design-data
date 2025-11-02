@@ -21,6 +21,20 @@
 * Add a **reset button** (or make sure the programmer has one), otherwise you'll end up unplugging and replugging your USB-port or your programmer all the time.
 
 # DfM
+## Fiducials
+* keep silkscreen away from fiducials
+* at least 3 fiducials
+
+## Layer ID
+* in Cu layer
+* top layer = 1, inner layers = 2,3,.., bottom layer = last layer
+* mirror number on bottom layer only
+
+## Silkscreen
+* Pin 1 indicator must remain visible after component placement.
+* For PTH components, a component outline and reference designator on the silkscreen are recommended (because they might be placed manually).
+
+## Miscellaneous
 * Mounting holes
 * Layer stack table
 * Fab notes, see [PCB aesthetics : ordering guideline](./PCB_aesthetics.md)
