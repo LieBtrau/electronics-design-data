@@ -46,12 +46,13 @@ These values are not critical and are given only as guidelines. Although it migh
 
 
 # Power inductor
-7x7mm is a common size for power inductors around 3A of rated current.
+7x7mm, 7x6.6mm is a common size for power inductors
 
 | Value [µH] | Saturation current [A] | Size [mm x mm] | DC-resistance [ohm] | Type |
 |------------|--------------------|------|---------------|------|
 | 3.3 | 4.5 | 7 x 7 x 4 | 17.2m | WE 744311330, LCSC C167219 |
 | 10 | 1.5A -> 3.5A | 4.0x4.0 (1616) | <0.5 | LCSC C167879 <br/>Tai Tech HPC 4018NF-100M<br/>Abracon ASPI-4030S-100M-T |
+| 33 | 2.5A | 7x6.6mm | 0.31 | LCSC C177245|
 
 # Ferrite beads
 [Shall We Use a Ferrite Bead in Power Rail or Not? | Explained by Eric Bogatin](https://youtu.be/HaLMjVkKYMw?t=267):
