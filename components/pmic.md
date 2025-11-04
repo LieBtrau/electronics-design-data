@@ -69,7 +69,7 @@ Instead of a supervisor, a clean power-on reset signal can be generated using : 
 | APX803S-31SA-7 |296-TLV803EA30DBZRCT-ND | 10µA | 240ms | SOT23-3 | €0.35 | JLCPCB C129757 |
 
 ## 3V3 voltage supervisor with manual reset input
-* TPS3808G33DBVR
+* TPS3808EG33DBVR
 * TPS3808E
 
 ## Adjustable voltage supervisor (with 0.4V reference) with manual reset input
