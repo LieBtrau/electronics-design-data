@@ -44,4 +44,4 @@
 * Board name
 * Board revision
 * GIT commit hash, can be placed after the board revision
-* JLCPCB : Datamatrixvf-code window and order number
+* JLCPCB : 8x8mm Datamatrix-code window and order number.  Indicate this also in the fab notes, so that other fabs understand what it is (and use the provided silkscreen area)
