@@ -72,12 +72,19 @@ Trilogy of inductors, section "applications" explains where to use what ferrite 
 
 ## Digital signals
 * Find the clock frequency of the signal and use a choke with a high CM-impedance and low DM-impedance at that frequency.
+* 100MHz, 100ohm
+  * TDK MPZ1608S121ATA
+  * Samsung CIS10P121AC
+  * Fair-Rite 2506031217Y2
 
 ## Medium current, for power rails
 * WE 742792625 : 0603, 100ohm, 100MHz, 2.0A, 50mohm
 * WE 742792651 : 0603, 600ohm, 100MHz, 1.0A, 50mohm (used on [WE's Filter Stick USB2.0](https://www.we-online.com/en/components/products/EMC_FILTER_BAGS_STICKS_USB_2_0_TYPA_FILTERSTICK))
+* Fair-Rite 2512061217Y5 : 1206
+* Laird HI1206P121R-10 : 1206
+* Pulse PE-1206PFB121ST : 1206
 
-## High current, for power rails
+## High current, for power rails (1812)
 * HI1812V101R-10 Laird
 * 2518121217Y6 Fair-Rite
 * JLCPCB C2894325
