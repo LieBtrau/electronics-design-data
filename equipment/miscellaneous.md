@@ -20,3 +20,7 @@
 * -38dBc at 100MHz (1mVpp signal, measured with TinySA)
 * fix 50ohm output impedance
 * Max. frequency sine wave 120MHz, square wave 25MHz
+
+# Cables
+## USB
+* Usb 2.0 A to USB C cable, 1m : Qualtek 3021090-01M, RND 765-00294
