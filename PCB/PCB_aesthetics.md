@@ -54,6 +54,7 @@ PCB Ordering guideline rigid
 * Outer copper weight : 1oz
 * Inner copper weight : 0.5oz
 * Layer stackup
+  * 1.6mm 4L : JLC04161H-7628
   * 1.6mm 6L : JLC06161H-3313
   * 0.8mm 6L : JLC06081H-2116
 * Impedance control : No requirement
