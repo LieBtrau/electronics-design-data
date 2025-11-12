@@ -3,7 +3,7 @@
 * Align components to grid (0.5mm)
 * Try to keep things as symmetrical as possible
 * Silkscreen
-  * Limited use : no designators
+  * Limited use : no designators, except for through-hole components and connectors
   * Mark component polarity (diode, pin 1 of IC):
     * full circle
     * width = 0.25mm
@@ -28,8 +28,7 @@
 
 # Labeling and versioning
 * Logo
-* 8x8mm silkscreen area for 2D barcode
-* JLCJLCJLCJLC for JLCPCB order codes
+* 8x8mm silkscreen area for 2D barcode (and mark it in the fab notes, so that other fabs understand what it is)
 * Serial - number field (so that it can be manually filled in with a felt pen)
 * QC-field (so that it can be checked after validation testing the specific unit)
 ```	
