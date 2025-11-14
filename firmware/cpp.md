@@ -69,6 +69,20 @@ void setup() {
 ```
 example: Sparkfun STHS34PF80 sensor library
 
+# Cmake variables
+```cmake
+set(MY_VARIABLE "my_value" CACHE STRING "Description of my variable")
+...
+```
+inside the component:
+```cmake
+if(MY_VARIABLE STREQUAL "option1")
+    # Do something for option1
+elseif(MY_VARIABLE STREQUAL "option2")
+    # Do something for option2
+else()
+    message(FATAL_ERROR "Invalid value for MY_VARIABLE: ${MY_VARIABLE}")
+endif()
 # Bit manipulation
 [Encoding bit fields istead of using masks](https://github.com/LieBtrau/chickenguard-2019-upgrade/blob/main/firmware/chickenguard/include/bit_manipulation.h)
 
