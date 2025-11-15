@@ -98,3 +98,22 @@ PCB Ordering guideline flexible
 * SMD solder joints : .PadSMD_Count
 * Through-hole solder joints : .PadThru_Count
 ```
+
+```
+PCB Ordering guideline Aluminum-backed
+---------------------------------------
+* Base Material : Aluminum
+* Layers : .Layer_Count
+* Dimensions : .Board_Width x .Board_Height
+* Deburring/Edge Rounding : Yes
+* PCB Thickness : .Total_Thickness
+* PCB Color : White
+* Silkscreen : Black
+* Surface Finish : Leadfree HASL
+* Outer Copper Weight : 1oz
+* Mark on PCB : 2D barcode & Number | Data Matrix Code | .board_name _ABCDE_0001 | 8x8mm
+* Electrical Test : Not Test
+* Gold fingers : No
+* Castellated Holes : No
+* UL Marking : No
+```
