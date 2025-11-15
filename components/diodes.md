@@ -10,6 +10,9 @@
 |-------|-------------|------|--------|
 | Red-green | Wuerth 156125RV73000 | 1206 | Alternatives (pin compatible) : Lite-On LTST-C235KGKRKT / Dialight 5977703607F | 
 
+## LED general lighting
+* 2835 LEDs are the cheapest (If=40mA)
+
 # Schottky
 ## Western components
 | Max. current | Max. voltage |Package | Part number |  Properties | Sources | Remark |
