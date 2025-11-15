@@ -185,3 +185,7 @@ Simple and cheap:
   * TI TLC5928PWPR (with LED error detection)
   * TI TLC59282DBQR (many at JLCPCB)
   * Sunmoon SM16306S, JLCPCB C2830324 (€0.07/pce)
+
+  ## 2-terminal Linear LED driver
+  * OnSemi NSI450xxx series : 45V
+  * Diodes AL5809
