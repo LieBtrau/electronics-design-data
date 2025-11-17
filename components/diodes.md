@@ -20,6 +20,7 @@
 | 30mA       | 30V          | SOD323 | RB751 | Ct = 2.0pF<br/><=500nA leakage @ 30V | JLCPCB C154819 | very low capacitance |
 | 200mA        | 30V          | SOD523 = 0603 | RB521 | <=350mV @ 100mA<br/>10µA leakage @30V | * Rohm RB521SM-30<br/>* Toshiba CES521<br/>* NXP RB521S30<br/>* MCC RB521S-30<br/>| upgrade for BAT54 types|
 | 2A           | 40V          | SMA    | B340AF-13   |  <=500mV @ 2A <br/><=200µA leakage <br/><=100pF |* B240AE-13S<br/>* B24AFC_R1_00001<br/>* SR24-AU_R1_000A1 | for non-synchronous SMPS | 
+| 2A           | 100V          | SMA    | SS210   | * 740mV @ 2A<br/> * 1µA leak @ 100V at 25°C  | * SBR2M100SAF<br/> * STPS2H100AF<br/> * B2100AF<br/> | general purpose |
 | 2A           | 100V         | SOD123F | Diodes SDM2100S1F-7 | <=830mV @2A <br/>Max leakage @ 100V : 400nA | * Rohm RB068MM100TR<br/>* Nexperia PMEG10020ELRX<br/>* Nexperia PMEG10020ELR-QX<br/>* Nexperia PMEG10020AELRX<br/>* Nexperia PMEG10020AELR-QX<br/> | rectification |
 
 low leakage types for small signal use: BAT41, BAS70
