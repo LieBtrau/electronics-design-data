@@ -1,12 +1,26 @@
+# Contact material
+* Phosphor bronze : common, good spring properties
+* Beryllium copper : better spring properties, more expensive, sometimes used for high-reliability connectors
+
 # Contact terminals finish
+## Noble finishes
+* lower insertion force
+* more mating cycles
+* thin plating
+
+### Gold finish
+* Selective plating to avoid Au embrittlement: Au is good for contacting, but it's hard to solder.
+* It is best to avoid fully gold-plated SMT components (RF connectors?) if there are selective plated alternatives available (as on most SMT pin headers)
 * For analog signals, Au finish is preferred, as it has lower contact resistance and better corrosion resistance.
 
-## Gold embrittlement
-* It is best to avoid gold-plated SMT components (RF connectors?) if there are tin-plated or partially tin-plated alternatives available (as on most SMT pin headers)
-
-## Silver finish
+### Silver finish
 * ceramic RF-filters often use silver finish
 * very prone to tarnishing
+
+## Non-noble finishes
+Tin-plating
+* commodity, low cost
+* low number of mating cycles
 
 ## Galvanic compatibility
 * [The Tin Commandments: Guidelines For The Use Of Tin On Connector Contacts](https://www.ramoem.com/uploads/4/4/0/7/44075859/tin_commandments.pdf)
