@@ -28,3 +28,6 @@
 
 ## Barrel jack 
 * Pro-Elec PELB2052 : Barrel Power Cord, 2.1mm DC Power Socket to Free End, 6.6 ft, 2 m, Black
+
+# Cable tie
+* [RS Pro Cable Tie: hook & loop](https://benl.rs-online.com/web/p/cable-ties/1797167)
