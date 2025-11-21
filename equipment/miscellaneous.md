@@ -23,4 +23,8 @@
 
 # Cables
 ## USB
-* Usb 2.0 A to USB C cable, 1m : Qualtek 3021090-01M, RND 765-00294
+* Usb 2.0 A to USB C cable, 1m : Qualtek 3021090-01M (AWG28+AWG22)
+* Usb 3.0 A to USB C cable, 1m : RND 765-00294 (AWG32+AWG23)
+
+## Barrel jack 
+* Pro-Elec PELB2052 : Barrel Power Cord, 2.1mm DC Power Socket to Free End, 6.6 ft, 2 m, Black
