@@ -1,0 +1,16 @@
+* C:\github\electronics-design-data\circuits\LED_linear_current_control\high_current_low_dropout.asc
+R1 N001 N002 1k
+Q1 N002 N003 0 0 2N3904
+Q2 OUT N002 N004 0 SS8050
+R2 N004 N003 1.3k
+R3 0 N004 0.5
+V1 OUT 0 13.5
+V2 N001 0 5
+R4 N001 N003 10k
+.model NPN NPN
+.model PNP PNP
+.lib C:\Users\32470\OneDrive - 7c7engineering.com\Documents\LTspiceXVII\lib\cmp\standard.bjt
+.inc SS8050.mod
+.dc V1 0 2
+.backanno
+.end
