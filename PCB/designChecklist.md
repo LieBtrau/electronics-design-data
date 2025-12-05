@@ -33,6 +33,7 @@
 ## Silkscreen
 * Pin 1 indicator must remain visible after component placement.
 * For PTH components, a component outline and reference designator on the silkscreen are recommended (because they might be placed manually).
+* Label signals on connectors, especially for debugging headers or customer connectors.
 
 ## Miscellaneous
 * Mounting holes
