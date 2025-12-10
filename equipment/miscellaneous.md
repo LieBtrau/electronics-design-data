@@ -31,3 +31,6 @@
 
 # Cable tie
 * [RS Pro Cable Tie: hook & loop](https://benl.rs-online.com/web/p/cable-ties/1797167)
+
+# Soldering
+* [Weller desoldering pump](https://be.farnell.com/weller/7874b/desoldering-pump-anti-static/dp/419023)
