@@ -57,16 +57,18 @@ PCB Ordering guideline rigid
   * 1.6mm 6L : JLC06161H-3313
   * 0.8mm 6L : JLC06081H-2116
 * Impedance control : No requirement
-* Via covering : Epoxy filled & capped
+* Via covering : Plugged | Epoxy filled & capped
 * Minimum hole size : .Hole_Size_Min
 * Board outline tolerance : +/- 0.2mm
-* Mark on PCB : 2D barcode & Number | Data Matrix Code | .board_name _ABCDE_0001 | 8x8mm
+* Mark on PCB : 2D barcode & Number | Data Matrix Code | '.board_name'_ABCDE_0001 | 8x8mm
 * Gold fingers : No
 * Castellated holes : No
 * Press-fit holes : No
 * Edge plating : No
 * Blind slots : No
 * UL Marking : No
+* Backdrill : No
+* Via plating Method : Not specified
 * Hole count : .Hole_Count
 * SMD solder joints : .PadSMD_Count
 * Through-hole solder joints : .PadThru_Count
@@ -111,7 +113,7 @@ PCB Ordering guideline Aluminum-backed
 * Silkscreen : Black
 * Surface Finish : Leadfree HASL
 * Outer Copper Weight : 1oz
-* Mark on PCB : 2D barcode & Number | Data Matrix Code | .board_name _ABCDE_0001 | 8x8mm
+* Mark on PCB : 2D barcode & Number | Data Matrix Code | '.board_name'_ABCDE_0001 | 8x8mm
 * Electrical Test : Not Test
 * Gold fingers : No
 * Castellated Holes : No
