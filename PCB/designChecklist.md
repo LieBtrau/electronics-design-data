@@ -22,6 +22,9 @@
 * **Latchup current protection** by adding NMOS (gates to VCC, sources to the MCU, drains to debug interface pins) and add pull-up resistors on the MCU side (1K for RX input, 100K for TX output).
 
 # DfM
+## Origin
+* bottom-left corner of PCB
+
 ## Fiducials
 * keep silkscreen away from fiducials
 * at least 3 fiducials
