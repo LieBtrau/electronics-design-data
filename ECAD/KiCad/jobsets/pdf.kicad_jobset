@@ -1,0 +1,135 @@
+{
+  "jobs": [
+    {
+      "description": "Script : Export schematic ",
+      "id": "15cb0c74-bb94-40e7-9e8c-14ebeb61fe55",
+      "settings": {
+        "command": "$(KICAD_SCRIPT_DIR)/sch2pdf.sh ${PROJECTNAME} ${BOARDNR} ${REQUIREMENTS_REVISION}.${PCB_REVISION}.${ASSEMBLY_REVISION}",
+        "description": "",
+        "ignore_exit_code": false,
+        "output_filename": "15cb0c74-bb94-40e7-9e8c-14ebeb61fe55.log",
+        "record_output": false
+      },
+      "type": "special_execute"
+    },
+    {
+      "description": "Script : Export Assembly Drawing",
+      "id": "08aa775d-9547-4ace-94ad-1d3a579f4269",
+      "settings": {
+        "command": "$(KICAD_SCRIPT_DIR)/assy2pdf.sh ${PROJECTNAME} ${BOARDNR} ${REQUIREMENTS_REVISION}.${PCB_REVISION}.${ASSEMBLY_REVISION}",
+        "description": "",
+        "ignore_exit_code": false,
+        "output_filename": "08aa775d-9547-4ace-94ad-1d3a579f4269.log",
+        "record_output": false
+      },
+      "type": "special_execute"
+    },
+    {
+      "description": "Export Schematic (old, for reference only)",
+      "id": "0ba929aa-aa82-47b6-a265-511db652abd4",
+      "settings": {
+        "black_and_white": false,
+        "color_theme": "Altium_like",
+        "description": "",
+        "drawing_sheet": "",
+        "format": "pdf",
+        "hpgl_page_size": "default",
+        "hpgl_pen_size": 1.016,
+        "hpgl_plot_origin": "A3",
+        "min_pen_width": 847,
+        "output_dir": "",
+        "page_size": "auto",
+        "pdf_hierarchical_links": true,
+        "pdf_metadata": true,
+        "pdf_property_popups": true,
+        "plot_all": true,
+        "plot_drawing_sheet": true,
+        "use_background_color": true
+      },
+      "type": "sch_export_plot_pdf"
+    },
+    {
+      "description": "Export Assembly Drawing (old, for reference only)",
+      "id": "457df492-7a08-4dad-bf55-cde10221e515",
+      "settings": {
+        "back_fp_property_popups": true,
+        "black_and_white": false,
+        "color_theme": "",
+        "crossout_dnp_footprints_on_fab_layers": true,
+        "description": "",
+        "drawing_sheet": "",
+        "drill_shape": "full",
+        "front_fp_property_popups": true,
+        "hide_dnp_footprints_on_fab_layers": false,
+        "layers": [
+          "In30.Cu",
+          "In29.Cu",
+          "In28.Cu",
+          "In27.Cu",
+          "In26.Cu",
+          "In25.Cu",
+          "In24.Cu",
+          "In23.Cu",
+          "In22.Cu",
+          "In21.Cu",
+          "In20.Cu",
+          "In19.Cu",
+          "In18.Cu",
+          "In17.Cu",
+          "In16.Cu",
+          "In15.Cu",
+          "In14.Cu",
+          "In13.Cu",
+          "In12.Cu",
+          "In11.Cu",
+          "In10.Cu",
+          "In9.Cu",
+          "In8.Cu",
+          "In7.Cu",
+          "In6.Cu",
+          "In5.Cu",
+          "In4.Cu",
+          "In3.Cu",
+          "In2.Cu",
+          "In1.Cu",
+          "F.Fab"
+        ],
+        "layers_to_include_on_all_layers": [
+          "Edge.Cuts"
+        ],
+        "mirror": false,
+        "negative": false,
+        "output_filename": "",
+        "pdf_gen_mode": "one-page-per-layer-one-file",
+        "pdf_metadata": true,
+        "plot_drawing_sheet": true,
+        "plot_footprint_values": true,
+        "plot_pad_numbers": false,
+        "plot_ref_des": true,
+        "single_document": true,
+        "sketch_dnp_footprints_on_fab_layers": true,
+        "sketch_pads_on_fab_layers": true,
+        "subtract_solder_mask_from_silk": true,
+        "use_drill_origin": false
+      },
+      "type": "pcb_export_pdf"
+    }
+  ],
+  "meta": {
+    "version": 1
+  },
+  "outputs": [
+    {
+      "description": "Script PDF",
+      "id": "08c802bc-cb65-4b97-8ff3-806124cd9c0d",
+      "only": [
+        "15cb0c74-bb94-40e7-9e8c-14ebeb61fe55",
+        "08aa775d-9547-4ace-94ad-1d3a579f4269"
+      ],
+      "settings": {
+        "output_path": "${KIPRJMOD}/output"
+      },
+      "type": "folder"
+    }
+  ]
+}
