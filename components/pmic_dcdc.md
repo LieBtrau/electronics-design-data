@@ -23,6 +23,14 @@ An LED driver might be used instead.  The [AP3031 is much cheaper and there are 
   * TI TPSM84209RKH (€2.96/pce)
   * Recom RPX-2.5 (€4.94/pce)
 
+## SOT563 Buck converters
+Synchronous step-down converters in SOT563 (SC-70-6) package, 4.2V < Vin < 17V, Iout up to 2.5A
+* Diodes AP62250Z6-7 : 2.5A (JLCPCB C5290220)
+* Diodes AP62301Z6-7 (3A) (JLCPCB C1880992)
+* Diodes AP6220x : 2A
+* Diodes AP62300Z6-7 : 3A
+* MPS MP1477
+
 ## SOIC8 Buck converters
 VIN > 24V, Iout > 1A
 
