@@ -7,6 +7,8 @@
 | Oscilloscope | Siglent SDS2354X HD |  SDS2HBAQ6R0257 | TBD |
 | Power Supply | Siglent SPD3303C | SPD3EEEC6R0513 | TBD |
 | Electronic Load | Siglent SDL1020X-E | SDL13GCC6R0182 | TBD |
+| Spectrum Analyzer | ZeenKo ZS-406 | SU-406-25030820 | TBD |
+| Function Generator | Siglent SDG2122X | SDG2XFBX901368 | TBD |
 
 # Test Incident Reports
 
