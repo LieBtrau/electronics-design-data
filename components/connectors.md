@@ -40,6 +40,10 @@ Tin-plating
 
 ### 3.5mm, phone jack female, SMD RA, 6mm between studs, 3 conductors, two switches
 * CUI SJ2-35863B1-SMT-TR
+  * pin 1 & 5 : normal open, closes when plug inserted
+  * pin 2 & 4 : normal closed, opens when plug inserted
+  * in case of a 4 pin cable, R2 is connected to pins 1 and 5.  The sleeve is not connected.
+  * the mounting pegs are ⌀0.8mm, so the holes in the PCB should be ⌀1.0mm, not ⌀1.2mm.
 * Adam-Tech ASJ-106-K-G-T/R
 * Amphenol 10038075-A1PLF
 * JLCPCB C381135 PJ-327A0-SMT
