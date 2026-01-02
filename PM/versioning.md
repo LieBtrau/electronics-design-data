@@ -25,21 +25,29 @@ The PCB and the BoM will each have their own IPN (internal part number) that uni
 Git ID is an alternative versioning system, added on the silkscreen and to the manufacturing data.  This allows to trace back the exact design data that was used to manufacture the PCB.  If the design is not properly checked in, this ID will and on "dirty", indicating that the design data is not properly archived.
 
 ## PCB versioning
-**PCB-0123-4500**
+### Application
+* IPN : **PCB-0123-4500**
+* PCB-silkscreen : **PCB-0123-4▮_git id** : the ▮ is a placeholder for the patch level, which is often not known at the time of silk screen generation.  It can be filled in later with a pen.
+* PCB data file names : **PCB-0123-4_git id**
 
-* 01 = project code (2 digits).  Can also be a sub assembly code if the project has more than 10 PCBs.
-* 2 = board id (1 digit)
-* 3 = requirement & test plan version (1 digit)
-* 4 = PCB revision (1 digit, hex)
-* 5 = patch level (1 digit, hex)
-* 00 = leave as 00 for PCB IPN
+### Structure
+* **01** = project code (2 digits).  Can also be a sub assembly code if the project has more than 10 PCBs.
+* **2** = board id (1 digit)
+* **3** = requirement & test plan version (1 digit) : defines compatibility between different PCB versions
+* **4** = PCB revision (1 digit, hex)
+* **5** = patch level (1 digit, hex) (cutting traces, adding small wires, ... )
+* **00** = leave as 00 for PCB IPN
 
 ## PBA versioning
-**PBA-0123-4567**
+### Application
+* IPN : **PBA-0123-4567**
+* PBA data file names : **PBA-0123-4567_git id**
 
-* 01 = project code (2 digits) : should be the same as the PCB project code
-* 2 = board id (1 digit) : should be the same as the PCB board id
-* 4 = PCB revision (1 digit, hex) : should be the same as the PCB revision
-* 5 = patch level (1 digit, hex) : should be the same as the PCB patch level
-* 6 = BoM variant (1 digit, hex)
-* 7 = BoM revision (1 digit, hex)
+### Structure
+* **01** = project code (2 digits) : should be the same as the PCB project code
+* **2** = board id (1 digit) : should be the same as the PCB board id
+* **3** = requirement & test plan version (1 digit) : defines compatibility between different PCB versions
+* **4** = PCB revision (1 digit, hex) : should be the same as the PCB revision
+* **5** = patch level (1 digit, hex) : should be the same as the PCB patch level
+* **6** = BoM variant (1 digit, hex) : assembly variant identifier
+* **7** = BoM revision (1 digit, hex) : revision of the BoM for this assembly variant
