@@ -62,3 +62,10 @@ Make sure to configure the path KICAD_SCRIPT_DIR in the preferences to point to 
 
 * interactive HTML BoM : install the plugin
 * ~~[KDT_Hierarchical_KiBot](https://github.com/nguyen-v/KDT_Hierarchical_KiBot)~~ : it looks very nice on the surface, but I doubt if it's really useful in practice.  This seems like a software project management tool rather than a PCB design tool.
+
+# Variant management
+## KiVar
+KiVar can change the properties of a symbol but not replace the full symbol (and all its properties) with another symbol. 
+You can replace the value by some manually defined text, but this is not very convenient.
+
+This is not a workable solution for managing multiple variants of a design.
