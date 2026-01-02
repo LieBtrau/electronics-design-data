@@ -1,3 +1,4 @@
+# Original versioning scheme
 Rx.y.z-git id
 
 x = version of requirement & test plan
@@ -8,7 +9,37 @@ git id = git short commit id, e.g. 1a2b3c4d
 
 Once released, the version is frozen and cannot be changed.
 
-# Labeling
-PCB: Rx.y
+## Labeling
+PCB: Rx.y-{git id}
 * z is not included in the PCB version, because it depends on the BoM.
 PBA: Rx.y.z
+
+## Problems
+When there are multiple assembly variants for the same PCB version, these all share the same revision number, which is confusing.  When an update is needed on one assembly variant, all the others must also be updated to a new revision number, even if they have no changes.  This leads to unnecessary version increments.
+
+# New versioning scheme
+This new versioning scheme looks to the issue from a logistical perspective.  In logistics, there aren't really versions.  There are only unique part numbers.  A PCB revision update creates a new unique part number.  A BoM revision update creates a new unique part number.
+
+The PCB and the BoM will each have their own IPN (internal part number) that uniquely identifies them.  The PBA IPN is derived from the PCB IPN.
+
+Git ID is an alternative versioning system, added on the silkscreen and to the manufacturing data.  This allows to trace back the exact design data that was used to manufacture the PCB.  If the design is not properly checked in, this ID will and on "dirty", indicating that the design data is not properly archived.
+
+## PCB versioning
+**PCB-0123-4500**
+
+* 01 = project code (2 digits).  Can also be a sub assembly code if the project has more than 10 PCBs.
+* 2 = board id (1 digit)
+* 3 = requirement & test plan version (1 digit)
+* 4 = PCB revision (1 digit, hex)
+* 5 = patch level (1 digit, hex)
+* 00 = leave as 00 for PCB IPN
+
+## PBA versioning
+**PBA-0123-4567**
+
+* 01 = project code (2 digits) : should be the same as the PCB project code
+* 2 = board id (1 digit) : should be the same as the PCB board id
+* 4 = PCB revision (1 digit, hex) : should be the same as the PCB revision
+* 5 = patch level (1 digit, hex) : should be the same as the PCB patch level
+* 6 = BoM variant (1 digit, hex)
+* 7 = BoM revision (1 digit, hex)
