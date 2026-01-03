@@ -1,4 +1,9 @@
-# Setup
+# Hardware setup
+The laptop generates a lot of noise on the output channels.  It helps a lot to connect an 100nF capacitor from left and right output to ground to filter out high frequency noise.
+
+In absence of this filter, a standard Nedis CAGB22150K02 audio splitter cable can be used.
+
+# Software Setup
 Preferences > Soundcard > Soundcard Calibration > Calbrate Soundcard...
 1. Select output device : PCM default
 2. Output : L
@@ -25,3 +30,8 @@ $ pactl get-source-volume alsa_input.pci-0000_00_1f.3.analog-stereo
 Volume: front-left: 20955 /  32% / -29.71 dB,   front-right: 20955 /  32% / -29.71dB balance 0.00
 ```
 
+## You can also set the volume level from the OS
+```
+$ pactl set-sink-volume alsa_output.pci-0000_00_1f.3.analog-stereo 51%
+$ pactl set-source-volume alsa_input.pci-0000_00_1f.3.analog-stereo 32%
+```
