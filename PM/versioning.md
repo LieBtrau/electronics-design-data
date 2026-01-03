@@ -51,3 +51,6 @@ Git ID is an alternative versioning system, added on the silkscreen and to the m
 * **5** = patch level (1 digit, hex) : should be the same as the PCB patch level
 * **6** = BoM variant (1 digit, hex) : assembly variant identifier
 * **7** = BoM revision (1 digit, hex) : revision of the BoM for this assembly variant
+
+## Schematic versioning
+The new versioning scheme differs quite from the standard semantic versioning scheme.  So in the schematic sheet's documentation block, the new versioning scheme will be shown next to a broken down semantic versioning scheme for clarity.
