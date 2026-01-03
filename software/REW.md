@@ -35,3 +35,13 @@ Volume: front-left: 20955 /  32% / -29.71 dB,   front-right: 20955 /  32% / -29.
 $ pactl set-sink-volume alsa_output.pci-0000_00_1f.3.analog-stereo 51%
 $ pactl set-source-volume alsa_input.pci-0000_00_1f.3.analog-stereo 32%
 ```
+
+# Measurements
+## Frequency Response
+1. Select "Measure"
+2. Select "SPL"
+3. Set start and end frequency
+4. Check the levels.  -6dBFS on the input is a good compromise between distortion and noise floor.  Adjust the mic level if needed.
+
+# Reference
+* [#413 Your PC Soundcard is an Oscilloscope, a Signal Generator, and a Spectrum Analyzer (Arta, REW)](https://youtu.be/dX0QkL8xMmE)
