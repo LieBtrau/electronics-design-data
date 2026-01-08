@@ -112,7 +112,7 @@
         "description": "",
         "ignore_exit_code": false,
         "output_filename": "4e48b69b-7aaf-4913-b67c-625c0ed1bbee.log",
-        "record_output": true
+        "record_output": false
       },
       "type": "special_execute"
     }
