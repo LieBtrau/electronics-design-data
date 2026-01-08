@@ -5,10 +5,9 @@
 KIPRJMOD=${KIPRJMOD:-.}
 mkdir -p ${KIPRJMOD}/output
 git_commit_hash=$(git describe --always --dirty)
-revision=$3-$git_commit_hash
 
 kicad-cli sch export pdf \
     --define-var GIT_COMMIT_HASH=$git_commit_hash \
-    --output ${KIPRJMOD}/output/$2"_R"$revision"_SCH.pdf" \
+    --output ${KIPRJMOD}/output/$2"-"$git_commit_hash"_SCH.pdf" \
     --theme Altium_like  \
     ${KIPRJMOD}/$1.kicad_sch

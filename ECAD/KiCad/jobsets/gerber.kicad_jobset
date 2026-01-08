@@ -4,7 +4,7 @@
       "description": "Script: generate gerbers & drill data",
       "id": "4ac17a2a-79b7-4de1-9e70-f86c40dc6787",
       "settings": {
-        "command": "${KICAD_SCRIPT_DIR}/generate_gerber_2L.sh ${PROJECTNAME} ${BOARDNR} ${REQUIREMENTS_REVISION}.${PCB_REVISION}",
+        "command": "${KICAD_SCRIPT_DIR}/generate_gerber_2L.sh ${PROJECTNAME} PCB-${PROJECTID}${BOARDID}${BRANCHID}-${REQID}${REVID}00",
         "description": "",
         "ignore_exit_code": false,
         "output_filename": "4ac17a2a-79b7-4de1-9e70-f86c40dc6787.log",

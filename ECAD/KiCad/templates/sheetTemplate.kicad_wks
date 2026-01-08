@@ -21,28 +21,28 @@
 	)
 	(tbtext "Title: ${TITLE}"
 		(name "")
-		(pos 97.57 31.02)
+		(pos 109.0002 31.0202)
 		(font
 			(face "Carlito")
 			(size 2 2) bold italic)
 	)
-	(tbtext "Sheet: ${SHEETPATH}\nRev: ${REQUIREMENTS_REVISION}.${PCB_REVISION}.${ASSEMBLY_REVISION}-${GIT_COMMIT_HASH}\nSize: ${PAPER}\n"
+	(tbtext "Sheet: ${FILENAME} 		Size: ${PAPER} 		Page: ${#} / ${##}"
 		(name "")
-		(pos 97.57 23.35)
+		(pos 109 4.3)
 		(font
 			(face "Carlito")
 		)
 	)
 	(tbtext "Project"
 		(name "")
-		(pos 109.202 15.857)
+		(pos 109.2022 26.0172)
 		(font
 			(face "Carlito")
 		)
 	)
-	(tbtext "Variant"
+	(tbtext "Assembly\nVariant"
 		(name "")
-		(pos 109.202 8.237)
+		(pos 109.2022 9.5072)
 		(font
 			(face "Carlito")
 		)
@@ -54,20 +54,13 @@
 			(face "Carlito")
 		)
 	)
-	(tbtext "Name: ${PROJECTNAME}\nLink: ${PROJECTURL}"
+	(tbtext "Name: ${PROJECTNAME}\nLink: ${PROJECTURL}\nCode: ${PROJECTID}"
 		(name "")
-		(pos 97.772 14.587)
+		(pos 97.7722 24.7472)
 		(font
 			(face "Carlito")
 		)
 		(maxlen 63.5)
-	)
-	(tbtext "Sheet"
-		(name "")
-		(pos 109.202 31.097)
-		(font
-			(face "Carlito")
-		)
 	)
 	(bitmap
 		(name "")
@@ -521,37 +514,60 @@
 	)
 	(line
 		(name "")
-		(start 98.8822 33.0962)
-		(end 98.8822 3.2512)
+		(start 98.8822 28.3972)
+		(end 98.8822 6.8072)
 	)
 	(line
 		(name "")
-		(start 110.3122 18.2372)
-		(end 35.3822 18.2372)
+		(start 110.3122 6.8072)
+		(end 35.3822 6.8072)
 	)
 	(line
 		(name "")
-		(start 35.3822 33.4772)
+		(start 35.3822 33.0962)
 		(end 35.3822 3.2512)
 	)
 	(line
 		(name "")
-		(start 98.8822 28.3972)
+		(start 110.3122 28.3972)
 		(end 35.3822 28.3972)
 	)
 	(line
 		(name "")
-		(start 62.0522 28.3972)
-		(end 62.0522 18.2372)
-	)
-	(line
-		(name "")
-		(start 110.3122 10.6172)
-		(end 35.3822 10.6172)
+		(start 110.3122 20.7772)
+		(end 35.3822 20.7772)
 	)
 	(line
 		(name "")
 		(start 35.3822 8.0772)
 		(end 2.6162 8.0772)
+	)
+	(tbtext "PCB\n"
+		(name "")
+		(pos 109.0422 18.2372)
+		(font
+			(face "Carlito")
+		)
+	)
+	(tbtext "IPN : PCB-${PROJECTID}${BOARDID}${BRANCHID}-${REQID}${REVID}00		ID: ${BOARDID}	Branch: ${BRANCHID}\nRequirements: ${REQID}		Revision: ${REVID}"
+		(name "")
+		(pos 97.612 16.967)
+		(font
+			(face "Carlito")
+		)
+		(maxlen 63.5)
+	)
+	(line
+		(name "")
+		(start 110.3122 13.1572)
+		(end 35.3822 13.1572)
+	)
+	(tbtext "IPN : PBA-${PROJECTID}${BOARDID}${BRANCHID}-${REQID}${REVID}${VARID}${VARREV}\nID: ${VARID}		Revision: ${REVID} 		Git: ${GIT_COMMIT_HASH}"
+		(name "")
+		(pos 97.612 9.347)
+		(font
+			(face "Carlito")
+		)
+		(maxlen 63.5)
 	)
 )

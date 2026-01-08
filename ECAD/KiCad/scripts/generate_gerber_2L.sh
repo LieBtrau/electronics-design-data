@@ -3,8 +3,7 @@
 KIPRJMOD=${KIPRJMOD:-.}
 mkdir -p ${KIPRJMOD}/output
 git_commit_hash=$(git describe --always --dirty)
-revision=$3-$git_commit_hash
-gerber_folder=${KIPRJMOD}/output/$2"_R"$revision"_GBR"
+gerber_folder=${KIPRJMOD}/output/$2"-"$git_commit_hash"_GBR"
 
 # Create gerbers
 kicad-cli pcb export gerbers \
@@ -29,10 +28,10 @@ kicad-cli pcb export drill \
     $1.kicad_pcb
 
 # Rename gerber files
-new_file_name=$2"_R"$revision
+new_file_name=$2"-"$git_commit_hash
 for f in $gerber_folder/$1-*
 do 
     mv "$f" "${f/$1-/$new_file_name-}"
 done
 # Rename drill data
-mv $gerber_folder"/fmosc.drl" $gerber_folder/$2"_R"$revision".drl"
+mv $gerber_folder"/fmosc.drl" $gerber_folder"/"$new_file_name".drl"

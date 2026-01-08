@@ -108,7 +108,7 @@
       "description": "Script : generate assembly data",
       "id": "4e48b69b-7aaf-4913-b67c-625c0ed1bbee",
       "settings": {
-        "command": "$(KICAD_SCRIPT_DIR)/generate_assembly_data.sh ${PROJECTNAME} ${BOARDNR} ${REQUIREMENTS_REVISION}.${PCB_REVISION}.${ASSEMBLY_REVISION}",
+        "command": "$(KICAD_SCRIPT_DIR)/generate_assembly_data.sh ${PROJECTNAME} PBA-${PROJECTID}${BOARDID}${BRANCHID}-${REQID}${REVID}${VARID}${VARREV}",
         "description": "",
         "ignore_exit_code": false,
         "output_filename": "4e48b69b-7aaf-4913-b67c-625c0ed1bbee.log",

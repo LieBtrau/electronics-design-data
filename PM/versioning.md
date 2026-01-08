@@ -1,38 +1,40 @@
 # Original versioning scheme
-Rx.y.z-git id
+ABCYYMMDD Rx.y.z-git id
 
-x = version of requirement & test plan
-y = PCB version (Altium : board_revision)
-z = BoM version (Altium : assembly_revision)
+* ABC : project code (3 letters) (or customer code for custom projects)
+* YYMMDD : board id (6 digits) : date of first creation of the PCB design
+* x = version of requirement & test plan
+* y = PCB version (Altium : board_revision)
+* z = BoM version (Altium : assembly_revision)
 
-git id = git short commit id, e.g. 1a2b3c4d
+git id = git short commit id, e.g. 1a2b3c4d.  This provides traceability to the exact design data used for manufacturing.  This git id is actually a secondary versioning system, added to the silkscreen.  If the design is not properly checked in, this ID will end on "dirty", indicating that the design data is not properly archived.
 
 Once released, the version is frozen and cannot be changed.
 
 ## Labeling
-PCB: Rx.y-{git id}
+PCB: ABCYYMMDD Rx.y-{git id}
 * z is not included in the PCB version, because it depends on the BoM.
 PBA: Rx.y.z
 
 ## Problems
 When there are multiple assembly variants for the same PCB version, these all share the same revision number, which is confusing.  When an update is needed on one assembly variant, all the others must also be updated to a new revision number, even if they have no changes.  This leads to unnecessary version increments.
 
-There's another problem when a customer asks for a small change on an older PCB version.  It's not possible to simply increment the Requirements & Test Plan version or the PCB-version, because that version might already exist.
+There's another problem when a customer asks for a small change on an older PCB version.  It's not possible to simply increment the Requirements & Test Plan version or the PCB-version, because that version might already exist.  In software development, this is solved by branching.  But in hardware development, branching is not really possible.  We could only create a new project for the older version and give it a novel name, but the link to the original project is lost.
 
 # New versioning scheme
-This new versioning scheme looks to the issue from a logistical perspective.  In logistics, there aren't really versions.  There are only unique part numbers.  A PCB revision update creates a new unique part number.  A BoM revision update creates a new unique part number.
+This new versioning scheme takes on versioning from a logistical perspective.  In logistics, there aren't really versions.  There are only unique part numbers.  A PCB revision update creates a new unique part number.  A BoM revision update creates a new unique part number.
 
 The problem of new changes on older hardware versions is solved by having a separate field for the branch ID.  This allows to have multiple branches of the same PCB, each with their own versioning.
 
 The PCB and the BoM will each have their own IPN (internal part number) that uniquely identifies them.  The PBA IPN is derived from the PCB IPN.
 
-Git ID is an alternative versioning system, added on the silkscreen and to the manufacturing data.  This allows to trace back the exact design data that was used to manufacture the PCB.  If the design is not properly checked in, this ID will and on "dirty", indicating that the design data is not properly archived.
+Git ID is an additional versioning system, added on the silkscreen and to the manufacturing data.  This allows to trace back the exact design data that was used to manufacture the PCB.  If the design is not properly checked in, this ID will and on "dirty", indicating that the design data is not properly archived.
 
 ## PCB versioning
 ### Application
 * IPN : **PCB-0123-4560**
-* PCB-silkscreen : **PCB-0123-45▮_git id** : the ▮ is a placeholder for the patch level, which is often not known at the time of silk screen generation.  It can be filled in later with a pen.
-* PCB data file names : **PCB-0123-45_git id**
+* PCB-silkscreen : **PCB-0123-45▮0_git id** : the ▮ is a placeholder for the patch level, which is not known at the time of silk screen generation.  It can be filled in later with a pen.
+* PCB data file names : **PCB-0123-4500_git id**  (as no new data is created for patch levels, the patch level is always 0 in the data file names)
 
 ### Structure
 * **01** = project code (2 digits).  Can also be a sub assembly code if the project has more than 10 PCBs.
@@ -49,7 +51,7 @@ Git ID is an alternative versioning system, added on the silkscreen and to the m
 * PBA data file names : **PBA-0123-4567_git id**
 
 ### Structure
-* **01** = project code (2 digits).  Can also be a sub assembly code if the project has more than 10 PCBs.
+* **01** = project code (2 digits).  Can also be a sub-assembly code if the project has more than 10 PCBs.
 * **2** = board id (1 digit)
 * **3** = branch id (1 digit) : for different branches of the same project (e.g. product variants)
 * **4** = requirement & test plan version (1 digit) : defines compatibility between different PCB versions

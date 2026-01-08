@@ -4,7 +4,7 @@
       "description": "Script : Export schematic ",
       "id": "15cb0c74-bb94-40e7-9e8c-14ebeb61fe55",
       "settings": {
-        "command": "$(KICAD_SCRIPT_DIR)/sch2pdf.sh ${PROJECTNAME} ${BOARDNR} ${REQUIREMENTS_REVISION}.${PCB_REVISION}.${ASSEMBLY_REVISION}",
+        "command": "$(KICAD_SCRIPT_DIR)/sch2pdf.sh ${PROJECTNAME} PBA-${PROJECTID}${BOARDID}${BRANCHID}-${REQID}${REVID}${VARID}${VARREV}",
         "description": "",
         "ignore_exit_code": false,
         "output_filename": "15cb0c74-bb94-40e7-9e8c-14ebeb61fe55.log",
@@ -16,7 +16,7 @@
       "description": "Script : Export Assembly Drawing",
       "id": "08aa775d-9547-4ace-94ad-1d3a579f4269",
       "settings": {
-        "command": "$(KICAD_SCRIPT_DIR)/assy2pdf.sh ${PROJECTNAME} ${BOARDNR} ${REQUIREMENTS_REVISION}.${PCB_REVISION}.${ASSEMBLY_REVISION}",
+        "command": "$(KICAD_SCRIPT_DIR)/assy2pdf.sh ${PROJECTNAME} PBA-${PROJECTID}${BOARDID}${BRANCHID}-${REQID}${REVID}${VARID}${VARREV}",
         "description": "",
         "ignore_exit_code": false,
         "output_filename": "08aa775d-9547-4ace-94ad-1d3a579f4269.log",

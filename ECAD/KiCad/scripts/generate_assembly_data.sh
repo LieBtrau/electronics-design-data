@@ -4,11 +4,10 @@
 KIPRJMOD=${KIPRJMOD:-.}
 mkdir -p ${KIPRJMOD}/output
 git_commit_hash=$(git describe --always --dirty)
-revision=$3-$git_commit_hash
 
 # Create BoM file in CSV format as accepted by JLCPCB
 kicad-cli sch export bom \
-    --output ${KIPRJMOD}/output/$2"_R"$revision"_BoM.csv" \
+    --output ${KIPRJMOD}/output/$2"-"$git_commit_hash"_BoM.csv" \
     --format-preset CSV \
     --fields "Value,Reference,Footprint,LCSC" \
     --labels "Comment,Designator,Footprint,LCSC part number" \
@@ -20,7 +19,7 @@ kicad-cli sch export bom \
 
 # Create Pick and Place file in CSV format as accepted by JLCPCB
 kicad-cli pcb export pos \
-    --output ${KIPRJMOD}/output/$2"_R"$revision"_PnP.csv" \
+    --output ${KIPRJMOD}/output/$2"-"$git_commit_hash"_PnP.csv" \
     --side both \
     --format csv \
     --units mm \
@@ -28,4 +27,4 @@ kicad-cli pcb export pos \
     --exclude-dnp \
     ${KIPRJMOD}/$1.kicad_pcb
 # Replace first line to match JLCPCB format
-sed -i '1s/.*/Designator,Val,Package,Mid X,Mid Y,Rotation,Layer/' ${KIPRJMOD}/output/$2"_R"$revision"_PnP.csv"
+sed -i '1s/.*/Designator,Val,Package,Mid X,Mid Y,Rotation,Layer/' ${KIPRJMOD}/output/$2"-"$git_commit_hash"_PnP.csv"
