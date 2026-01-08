@@ -11,6 +11,9 @@ An LED driver might be used instead.  The [AP3031 is much cheaper and there are 
 * [AN-1484 Designing A SEPIC Converter](https://www.ti.com/lit/an/snva168e/snva168e.pdf)
 * [Small Buck-Boost Powering Solutions for IoT Devices](https://ww1.microchip.com/downloads/en/DeviceDoc/TB3274-Small-Buck-Boost-Powering-Solutions-for-IoT-Devices-DS90003274A.pdf)
 
+## Very low power boost
+* TPS61299 : 95nA Iq, 1.5A max load
+
 # Buck converter
 ## Low power Module
 * Vin = 6.5V → 36V, Vout = 5V (trimmable), Iout = 500mA
@@ -43,3 +46,9 @@ Pin compatible parts:
 
 Other pin standard:
 * RT8279, RT8289, TPS5410-EP
+
+## Very low power
+* TPS62840 : 60nA Iq, 0.75A max load
+* MAX16956 : 1.1µA Iq
+* TPS629206 : 4µA Iq
+* LMR51625 : 25µA Iq

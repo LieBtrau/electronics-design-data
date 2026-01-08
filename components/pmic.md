@@ -83,7 +83,9 @@ For zero Iq : LM74610-Q1 Zero IQ Reverse Polarity Protection Smart Diode Control
 
 # Power Distribution Switches, Load Drivers
 * TPS22917
-  * low Iq
+  * cheap (€0.39)
+  * Vin : 1V to 5.5V
+  * 0.5µA Iq
   * reverse current blocking (which would require two MOSFETs in back-to-back configuration otherwise)
   * output discharge
   * adjustable inrush current
