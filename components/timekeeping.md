@@ -1,3 +1,8 @@
+# Programmable Timers and Oscillators
+* TPL5110
+    * ultra-low power timer with enable output
+    * can be used to periodically wake up a microcontroller
+
 # 555-timer
 * LMC555 : MSOP8
 
@@ -19,16 +24,13 @@
 * NXP PCF85063AT/AY
 * Diodes PT7C4563BWEX
 * ECS ECS-RTC-SOP8-5101A-TR
+* bSelva : PCF8523 : 200nA timekeeping current
 
 ## Temperature compensated, for industrial applications
 * Epson RX8901CE
 
 # Crystals
-Mind the temperature range of the crystal. The oscillation frequency of the crystal is inherently temperature dependent. The curve also depends on the crystal cut. 
-* AT-cut has a cubic stability curve over temperature
-* BT-cut has a parabolic stability curve over temperature
 
-[Characterizing Frequency Deviations of Quartz Crystals: Frequency Tolerance, Frequency Stability, and Aging](https://www.allaboutcircuits.com/technical-articles/characterizing-frequency-deviations-of-quartz-crystals-frequency-tolerance-frequency-stability-and-aging/)
 
 ## Reference
 [Tuning fork crystals & Oscillator](https://abracon.com/Support/Tuning-Fork-Crystals-and-Oscillator.pdf)
