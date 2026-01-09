@@ -3,7 +3,8 @@
 KIPRJMOD=${KIPRJMOD:-.}
 mkdir -p ${KIPRJMOD}/output
 git_commit_hash=$(git describe --always --dirty)
-gerber_folder=${KIPRJMOD}/output/$2"-"$git_commit_hash"_GBR"
+new_file_name=$2"_"$git_commit_hash
+gerber_folder=${KIPRJMOD}"/output/"$new_file_name"_GBR"
 
 # Create gerbers
 kicad-cli pcb export gerbers \
@@ -28,7 +29,7 @@ kicad-cli pcb export drill \
     $1.kicad_pcb
 
 # Rename gerber files
-new_file_name=$2"-"$git_commit_hash
+
 for f in $gerber_folder/$1-*
 do 
     mv "$f" "${f/$1-/$new_file_name-}"
