@@ -2,6 +2,11 @@
 * TPS631000 : 
   * Li-Ion battery to 3V3 or 5V conversion
   * 8µA quiescent current
+* TPS63900 : 
+  * 1.8-V to 5.5-V
+  * buck-boost converter with input current limit and Dynamic Voltage Scaling
+  * 1.45A switching current
+  * 75nA Iq
 
 # Boost/SEPIC converter
 An LED driver might be used instead.  The [AP3031 is much cheaper and there are many second sources](https://hackaday.io/project/182940-urban-edc-flashlight/log/201518-led-driver).
@@ -13,6 +18,7 @@ An LED driver might be used instead.  The [AP3031 is much cheaper and there are 
 
 ## Very low power boost
 * TPS61299 : 95nA Iq, 1.5A max load
+* MAX17222 : 300nA Iq, 400mV to 5.5V Input, 1A switching current
 
 # Buck converter
 ## Low power Module
