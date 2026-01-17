@@ -50,11 +50,15 @@
   * input polarity protected
   * low quiescent current (150nA)
 
+  Tie /CE low for reverse polarity protection, but allow for current flow in both directions.  When /CE is high, the device behaves like a normal ideal diode, blocking reverse current flow.
+
 * For higher voltages (>24V), but requires external N-MOSFETs (only starts at 4V):
   * AP74700QW6-7
   * NCV68061SNAIT1G
   * TPS65R01Q-S6TR-S
   * LM74700QDBVRQ1, LM74700QDBVTQ1
+
+These devices with external MOSFETs can also be used for reverse polarity protection when configured correctly.  They will continue to block reverse polarity, but they will allow current to flow in both directions when the MOSFETs are turned on.  This is ideal for reverse polarity protection on battery-powered devices, where the battery current needs to flow in both directions (charging and discharging).  See [AND90146/D](https://www.onsemi.com/download/application-notes/pdf/and90146-d.pdf) for details.
 
 * [LM73100](https://www.ti.com/product/LM7310/part-details/LM73100RPWR)
   * Input voltage : 2.7V to 23V
