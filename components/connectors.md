@@ -69,6 +69,13 @@ Tin-plating
 | 8 | none | X12ADGWA3DY1027 | LCSC C2916453 | 0.47 \[€\] | Alternative : Wuerth WR-MJ 615008140621 |
 
 # USB-C 
+## 24p socket right angle THR
+Through hole reflow mount is a combination of SMT pads and through hole pins.  All pads are visible, so inspection is easy.  Always check the pin length.  Not all connectors are suitable for 1.6mm thick PCBs.
+
+* Wuerth 632 723 300 011
+* G-switch GT-USB-7056
+* Slightly longer distance from front edge to mounting post: Stewart SS-52400-003
+
 ## 24p plug right angle
 * Globtek PLUG-USBC-241SMT-TH-4BC2LS, XKB U261-241N-4BC2LS (JLCPCB C2880648)
   * Not so popular on JLCPCB
