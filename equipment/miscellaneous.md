@@ -23,6 +23,7 @@
 
 # Cables
 ## USB
+* Roline USB 3.2, Male USB C to Male USB C, 500mm : Roline 11.02.9070-10 (RS 266-0502) : USB3.2 20Gbps 5A
 * Usb 2.0 A to USB C cable, 1m : Qualtek 3021090-01M (AWG28+AWG22)
 * Usb 3.0 A to USB C cable, 1m : RND 765-00294 (AWG32+AWG23)
 
