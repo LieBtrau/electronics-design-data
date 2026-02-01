@@ -125,3 +125,9 @@ Make footprint compatible to:
 * CviLux CF20241U0R0-NH
 * WE 68712414022
 * AFC07-S24ECA-00 : JLCPCB C262643
+
+## SD card socket
+### Elevated
+[HOAUC HYCW104-TF08-375B](https://www.lcsc.com/product-detail/C2962029.html): LCSC C2962029
+[Molex 473092651](https://www.lcsc.com/product-detail/C587826.html) : LCSC C587826
+[SOFNG TF-021B-H265](https://www.lcsc.com/product-detail/C498185.html) : LCSC C498185
