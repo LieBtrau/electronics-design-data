@@ -38,3 +38,7 @@
 
 # AC-DC Power supply
 * Use class I power supplies only (with earth connection), with IEC 320-C6 or IEC 320-C14 connector.  These are generating less EMI than class II (double insulated) power supplies. In class II power supplies, there's always some capacitive coupling between primary and secondary side, which generates high frequency noise on the output.  They can be had for €15 to €20 for a 12V/2A power supply.
+
+# ESD bags
+* [EUROSTAT Recycled Anti-Static 102 mm(W)x Pink](https://benl.rs-online.com/web/p/anti-static-packaging/0173786)
+* [EUROSTAT Recycled Anti-Static 152 mm(W)x Pink](https://benl.rs-online.com/web/p/anti-static-packaging/0173787)
