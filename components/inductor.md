@@ -24,9 +24,9 @@ These values are not critical and are given only as guidelines. Although it migh
 # Signal inductor
 ## Air core inductor (Q > 100 @100MHz)
 ### Size 4248 (4.2x4.8mm)
-* Wuerth WE-CAIR : 4248
-* [Sunltech SCA1812H](https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8590442902670647296) (JLCPCB)
-* [Abracon AIAC-1812](https://abracon.com/Magnetics/chips/AIAC-1812.pdf)
+* Wuerth WE-CAIR : 4248 : 100nH, 120nH, ~~150nH~~
+* [Sunltech SCA1812H](https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8590442902670647296) (JLCPCB) : 100nH, ~~120nH~~ (exists, but NA at JLCPCB), 150nH
+* [Abracon AIAC-1812](https://abracon.com/Magnetics/chips/AIAC-1812.pdf): 100nH, 120nH, ~~150nH~~
 * [Bourns AC4842R](https://www.bourns.com/docs/product-datasheets/ac4842r.pdf)
 * [Walsin LSI293A](https://www.passivecomponent.com/wp-content/uploads/inductor/LSI293A.pdf)
 * [Coilcraft 1812SMS](https://www.coilcraft.com/getmedia/c6fe1f83-b176-469d-a071-e2edb068fef2/midi.pdf)
