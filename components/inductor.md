@@ -23,26 +23,33 @@ These values are not critical and are given only as guidelines. Although it migh
 
 # Signal inductor
 ## Air core inductor (Q > 100 @100MHz)
-* Wuerth WE-CAIR
-* Abracon AIAC-4125C (Mouser, Digikey)
-* Bourns AC1060R (Mouser, Digikey)
-* Coilcraft 2222SQ (Mouser)
-* Coilcraft 132-XXSM (Mouser)
-* Walsin LSQ-series (Mouser, Digikey)
-* Walsin LSI-series
+### Size 4248 (4.2x4.8mm)
+* Wuerth WE-CAIR : 4248
+* [Sunltech SCA1812H](https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8590442902670647296) (JLCPCB)
+* [Abracon AIAC-1812](https://abracon.com/Magnetics/chips/AIAC-1812.pdf)
+* [Bourns AC4842R](https://www.bourns.com/docs/product-datasheets/ac4842r.pdf)
+* [Walsin LSI293A](https://www.passivecomponent.com/wp-content/uploads/inductor/LSI293A.pdf)
+* [Coilcraft 1812SMS](https://www.coilcraft.com/getmedia/c6fe1f83-b176-469d-a071-e2edb068fef2/midi.pdf)
 
-## 1008-size (2520 metric)
+### Size 5910
+* [Bourns AC1060R](https://www.bourns.com/docs/product-datasheets/ac1060r.pdf?sfvrsn=5f802cf6_3) (Mouser, Digikey)
+* Wuerth WE-CAIR 5910
+* Coilcraft 132-XXSM (Mouser)
+
+### Other sizes
+* Coilcraft 1515SQ, 2222SQ, 2929SQ Series (Mouser)
+  * each value has different size
+  * Walsin LSQ-series is very similar
+* Abracon AIAC-4125C (Mouser, Digikey)
+
+## Ceramic core inductor (Q < 100 @100MHz)
+1008-size (2520 metric)
 * Abracon AISC-1008
 * Wuerth WE-KI 1008, WE-RFI, WE-RFH
 * Murata LQW2UASR
 * Laird IWC1008
 * Guangdong Fenghua FHW1008UC
 * Coilcraft 1008PSM
-
-## 4.2x4.8mm, 3.56x4.95mm
-* Wuerth WE-KI 4248
-* Coilcraft 1812SMS
-* Sunlight SCA1812H (22n -> 150nH)
 
 
 # Power inductor
