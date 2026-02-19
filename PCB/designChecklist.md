@@ -1,3 +1,7 @@
+# KiCon design checklist
+[Checklist for Schematics v2026-02-15](https://docs.google.com/document/d/1gCPILcrdGZJjRzIDSL-b3ezVReeK5S-7raeub1RohyE/edit?pli=1&tab=t.0#heading=h.gjdgxs) : http://github.com/andrewgreenberg
+[Video from KiCon 2025](https://youtu.be/X0hd_v8qRiY)
+
 # DfT
 * **Test points for GND, VCC, RST and other important signals**
   * Easy for a fast measurement on a broken unit
