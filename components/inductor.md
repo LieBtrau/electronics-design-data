@@ -36,10 +36,12 @@ These values are not critical and are given only as guidelines. Although it migh
 * Wuerth WE-CAIR 5910
 * Coilcraft 132-XXSM (Mouser)
 
-### Other sizes
+### each value has different size
 * Coilcraft 1515SQ, 2222SQ, 2929SQ Series (Mouser)
-  * each value has different size
-  * Walsin LSQ-series is very similar
+* Sunltech SCA1515H, SCA2222H, SCA2929H (JLCPCB)
+* Walsin LSQ1515A, LSQ2222A, LSQ2929A
+
+### Other sizes
 * Abracon AIAC-4125C (Mouser, Digikey)
 
 ## Ceramic core inductor (Q < 100 @100MHz)
