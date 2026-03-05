@@ -51,6 +51,7 @@ These values are not critical and are given only as guidelines. Although it migh
 * Murata LQW2UASR
 * Laird IWC1008
 * Guangdong Fenghua FHW1008UC
+* MYX MWI1008UC, MWI1008IF
 * Coilcraft 1008PSM
 
 
