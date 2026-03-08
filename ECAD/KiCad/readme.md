@@ -25,6 +25,11 @@ sudo apt install --install-recommends kicad
     * I forked my own version on [kicad-parts](https://github.com/LieBtrau/kicad-parts)
 * ~~[kicad-db-lib](https://github.com/Projektanker/kicad-db-lib)~~ : easy to setup, but stores data in a json file (custom format).  Might be hard to share with other tools.
 
+# Library management
+Preferences -> Manage Symbol Libraries -> Global Libraries
+* Make sure all libraries are Active.  That will allow you to copy symbols from them in the symbol editor.
+* Make only #gplm library visible.  That will ensure that in the schematic editor, you can only place parts from that library
+
 # Git
 ## Content of .gitignore for KiCad projects:
 ```
