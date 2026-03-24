@@ -3,6 +3,9 @@ Component placement : press F1 for help when the "move" command is active
 1. can't placement close to other components -> press R to change pushing mode
 2. From-to lines are not shown when moving components -> press N
 
+## Fixing errors with multiple harness definitions
+<a href="./Screenshot 2026-03-10 135821.png"><img src="./Screenshot%202026-03-10%20135821.png" width="400" /></a>
+
 # Annotation when reusing sheet symbols
 Open a duplicated sheet.  Select one of the duplicated tabs on the bottom of the screen.  That will allow you to change the variation (place or not-place components).
 Go to Tools -> Annotation -> Board level annotate
@@ -10,6 +13,8 @@ Go to Tools -> Annotation -> Board level annotate
 * Annotate -> Annotate all
 * Accept Changes 
 * Close
+
+
 
 # FFC
 1. Split lines:
