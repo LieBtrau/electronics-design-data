@@ -73,6 +73,7 @@ For zero Iq : LM74610-Q1 Zero IQ Reverse Polarity Protection Smart Diode Control
 * not ground referenced
 * will temporarily turn mosfet off to recharge capacitor.  So the output voltage will drop during this time.
 * at low currents (<1mA), the NMOS will not turn on. 
+* expensive (€1.50)
 
 # LED Driver
 4.4mm wide TSSOP-24 package, 16 outputs, max. 5.5V, serializable via SPI
