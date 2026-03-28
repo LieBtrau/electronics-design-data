@@ -60,6 +60,10 @@ I use the following variables:
 * PROJECTURL : URL of the project repository
 * REQUIREMENTS_REVISION : revision of the requirements document (changes when requirements change).  A requirements change typically causes PCBs to be incompatible to the previous version.
 
+## Sheet symbols
+* Background color : (R, G, B) = (0, 255, 0)
+* Border width : 12 mil
+
 # Output file generation
 I created three [jobsets](https://github.com/LieBtrau/electronics-design-data/tree/master/ECAD/KiCad/jobsets): generating PDF info, generating gerbers and generating assembly data.  Each of these jobsets calls [script](https://github.com/LieBtrau/electronics-design-data/tree/master/ECAD/KiCad/scripts) that executes a kicad-cli command with a predefined set of parameters.  This makes it easy to generate all output files in a reproducible way.  A git-commit hash is automatically inserted into the title block of the schematic and PCB and into the file names of the output files.
 
