@@ -50,6 +50,12 @@ Preferences -> Manage Symbol Libraries -> Global Libraries
 *-rescue.lib
 ```
 
+# Schematic editor 
+
+## Sheet names
+* Name the first sheet "root".  The actual meaningful name is in the project name.
+* The subsheets can have a meaningful name so that they can easily be identified in the file explorer.
+
 ## Text variables
 [How to use text variables to keep all sheets in sync](https://philipmcgaw.com/kicad-title-block): in schematic editor, File -> Schematic Setup -> Project -> Text Variables
 
