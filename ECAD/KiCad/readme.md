@@ -53,7 +53,7 @@ Preferences -> Manage Symbol Libraries -> Global Libraries
 # Schematic editor 
 
 ## Sheet names
-* Name the first sheet "root".  The actual meaningful name is in the project name.
+* The main sheet always has the same name as the project.  There seems no way around that.
 * The subsheets can have a meaningful name so that they can easily be identified in the file explorer.
 
 ## Text variables
