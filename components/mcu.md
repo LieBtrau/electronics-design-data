@@ -1,3 +1,12 @@
+# Low cost MCU 2026
+* ST stm32c0 
+* TI mspm0 
+* ch32v003
+
+# Low power MCU 2026
+[Top 7 Microcontrollers (MCUs) for Battery Life in 2026](https://www.youtube.com/watch?v=lp7SwIY7KiM)
+* ST STM32U3
+
 # Low power, cheap 8 bit
 ## Microchip tinyAVR 0 family
 * Good software support (PlatformIO)
