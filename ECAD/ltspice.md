@@ -82,6 +82,8 @@ Then you can select what traces to plot in the simulation window: S11, S21, Zin,
 .meas TRAN vin_pp pp V(Vin)
 .meas TRAN vout_pp PP V(Vout_1mA)
 .meas TRAN gain_pp PARAM 20*log10(vout_pp/vin_pp)
+For 50ohm system, the input power in dBm can be calculated as:
+.meas TRAN input_power PARAM 10*log10(2.5*vin_pp**2)
 ```
 2. Run the transient simulation
 3. Use Ctrl-L to open the SPICE Error Log and view the results.
