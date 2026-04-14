@@ -131,3 +131,9 @@ Make footprint compatible to:
 [HOAUC HYCW104-TF08-375B](https://www.lcsc.com/product-detail/C2962029.html): LCSC C2962029
 [Molex 473092651](https://www.lcsc.com/product-detail/C587826.html) : LCSC C587826
 [SOFNG TF-021B-H265](https://www.lcsc.com/product-detail/C498185.html) : LCSC C498185
+
+## FFC
+### SMA end launch, right angle, 50Ω, 1.6mm PCB, 6.5 x 6.5 mm
+* RF Solutions CON-SMA-EDGE-S
+* Bat Wireless BWSMA-KE-P001, LCSC C496550
+* DOSIN-806-0134, LCSC C709670
