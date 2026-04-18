@@ -30,6 +30,13 @@ wine LTspice64.exe
 * AO3401A.mod
 * BSS138P_2011
 
+# Temperature sweep
+1. Add the following to the schematic:
+```spice
+.op
+.step temp -40 85 5
+```
+
 
 # Consumed power by component in LTSpice
 [LTspice: Computing the Average or RMS Value of a Trace](https://www.analog.com/en/resources/technical-articles/ltspice-computing-the-average-or-rms-value-of-a-trace.html)
@@ -66,7 +73,6 @@ For audio signals in general applications, a THD of 1% is acceptable.
 .meas tran Frequency param ({last_edge}-{first_edge})/(T2-T1)
 ```
 Where "osc_out" is the node you want to measure the frequency from.
-
 
 # Measure S-parameters : insertion loss S21, return loss S11, input impedance Zin, output impedance Zout
 1. Add the following to the schematic:
