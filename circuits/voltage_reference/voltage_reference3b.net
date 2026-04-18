@@ -1,0 +1,22 @@
+* Z:\home\christoph\git\electronics-design-data\circuits\voltage_reference\voltage_reference3b.asc
+R1 N001 N002 220
+R2 N001 N003 220
+R3 N004 N005 100k
+R4 N005 0 750
+Q1 N004 N004 N002 0 2N3906
+Q2 out N004 N003 0 2N3906
+Q3 N004 out N005 0 2N3904
+D1 0 out PH_BZX384-B3V9
+V1 N001 0 5
+.model D D
+.lib C:\users\christoph\Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NPN NPN
+.model PNP PNP
+.lib C:\users\christoph\Documents\LTspiceXVII\lib\cmp\standard.bjt
+.op
+;.dc v1 10 30
+.step temp 0 40 1
+* select 6V2 temperature compensated zener \nthese have internal zener in series with forward diode.
+* https://wiki.analog.com/university/courses/electronics/text/chapter-14\nhttps://sound-au.com/appnotes/an008.htm
+.backanno
+.end
