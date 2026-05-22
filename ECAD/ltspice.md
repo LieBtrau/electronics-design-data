@@ -82,6 +82,13 @@ Where "osc_out" is the node you want to measure the frequency from.
 Where "Rout" is the output resistor (50ohm) and "Vin" is the input voltage source (with built-in 50ohm series resistor).
 Then you can select what traces to plot in the simulation window: S11, S21, Zin, Zout, ...
 
+## Antenna impedance measurement
+<figure>
+  <img src="./ltspice_impendance_matching.png" alt="Antenna impedance measurement in LTSpice" width="300"/>
+  <figcaption>Impedance measurement of an antenna in LTSpice.  Add trace "Zin(V1)" to the waveform</figcaption>
+</figure>
+
+
 # Measure 1dB compression point
 1. Add the following to the schematic:
 ```spice
