@@ -19,6 +19,6 @@
 # Test Results
 | Action | Expected Result | Observed result | Status |
 |--------|-----------------|-----------------|--------|
-|  | | | ✅ / 🛑<br/>[TIR1](#ttir1)<a id="tir1"/>| 
+|  | | <a href="screenshot.png" target="_blank"><img src="screenshot.png" width="300"/></a>| ✅ / 🛑<br/>[TIR1](#ttir1)<a id="tir1"/>| 
 
 # Test Result Details
