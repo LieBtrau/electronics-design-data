@@ -34,9 +34,9 @@ At the end of its lifetime it leaks its highly corrosive contents which eats awa
 * AA : Aldi : [Topcraft Ultra Alkaline (2.6Ah)](https://lygte-info.dk/review/batteries2012/Top%20Craft%20Ultra%20Alkaline%20AA%20UK.html)
 
 # Lithium (Li) : coin cell 3.0V
-* coin cell
+* CR2032
 * not rechargeable
-* high internal resistance, not suitable for high current draw
+* high internal resistance, not suitable for > 15 mA current draw
 
 # Lithium Ion Coin Cell
 * LIR2450
