@@ -125,6 +125,7 @@ Fill empty areas with copper pour
 * Mounting holes
   * on a 0.5mm grid
   * 1 in each corner, placed as close to the corner as possible to avoid wasting PCB area
+  * Cheap PCB : 50x50mm, 4 mounting holes on a 42x42mm grid (as on Altium PCBs for FM-radio project)
 * Layer stack table
 * Fab notes, see [PCB aesthetics : ordering guideline](./PCB_aesthetics.md)
 * run your design through [JLCDFM](https://jlcdfm.com/) to find the weak points or even errors.
