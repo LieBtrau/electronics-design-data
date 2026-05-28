@@ -112,6 +112,15 @@ Trilogy of inductors, section "applications" explains where to use what ferrite 
 * WE 744233900, 0805, 90ohm, 131nH, JLCPCB C54888
 * WE 744232090, 1206, 90ohm, 111nH, JLCPCB C131487
 
+## Use as transformer
+It might be better to use a LAN pulse transformer instead for that purpose.  It's cheaper, has a wider bandwidth and is the same size.
+
+### 1812 (4.5 x 3.2mm)
+* 1 MHz - 100MHz for 50 ohm systems : 22 µH, 3 kOhm @ 100 MHz
+  * WE 744235220
+  * LCSC C6364839 : €0.20
+  * LCSC C49241520 : €0.14
+
 ## Medium current LF
 9.2x6.0mm, 250µH, 1.2A (dT=40°C), 130mOhm (per coil), 1-70MHz (Z>1Kohm)
 
@@ -127,11 +136,16 @@ Trilogy of inductors, section "applications" explains where to use what ferrite 
 * 12x10.8mm and 12x11mm are popular sizes
 
 # Pulse transformers (LAN)
+* 100 Mbps, 1 Gbps : 350 µH
+* 2.5G to 5G : 120 µH to 180 µH
+
 ## non-PoE
-* TDK ALT4532M-201-T001 (JLCPCB C2845101)
+* TDK ALT4532M-201-T001 (JLCPCB C2845101) : €0.71
 * Wuerth 74930000, 74930030
 * Pulse TC5G00, TC2G00, TC1G00
 * Bourns SM453230-181N7Y (not fully footprint compatible)
+* LCSC C51018454 : 350µH, €0.10
+* LCSC C41425875 : 240µH, €0.05
 
 ## PoE
 * Bourns SM453230-231N7YP (not fully footprint compatible)
