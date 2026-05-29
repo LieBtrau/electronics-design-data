@@ -14,49 +14,49 @@
 	(rect
 		(name "")
 		(start 0 0 ltcorner)
-		(end 0 0.635)
+		(end 275.59 189.23 ltcorner)
 		(repeat 2)
 		(incrx 2.54)
 		(incry 2.54)
 	)
 	(tbtext "Title: ${TITLE}"
 		(name "")
-		(pos 109.0002 31.0202)
+		(pos 168.275 158.115 ltcorner)
 		(font
 			(face "Carlito")
 			(size 2 2) bold italic)
 	)
-	(tbtext "Sheet: ${FILENAME} 		Size: ${PAPER} 		Page: ${#} / ${##}"
+	(tbtext "Sheet: ${FILENAME}"
 		(name "")
-		(pos 109 4.3)
+		(pos 168.91 184.785 ltcorner)
 		(font
 			(face "Carlito")
 		)
 	)
 	(tbtext "Project"
 		(name "")
-		(pos 109.2022 26.0172)
+		(pos 168.91 165.1 ltcorner)
 		(font
 			(face "Carlito")
 		)
 	)
 	(tbtext "Assembly\nVariant"
 		(name "")
-		(pos 109.2022 9.5072)
+		(pos 168.91 176.53 ltcorner)
 		(font
 			(face "Carlito")
 		)
 	)
 	(tbtext "Designer: ${DESIGNER}"
 		(name "")
-		(pos 34.272 5.697)
+		(pos 243.84 184.785 ltcorner)
 		(font
 			(face "Carlito")
 		)
 	)
 	(tbtext "Name: ${PROJECTNAME}\nLink: ${PROJECTURL}\nCode: ${PROJECTID}"
 		(name "")
-		(pos 97.7722 24.7472)
+		(pos 178.435 165.1 ltcorner)
 		(font
 			(face "Carlito")
 		)
@@ -64,8 +64,8 @@
 	)
 	(bitmap
 		(name "")
-		(pos 19.0322 20.9372)
-		(scale 0.2184615385)
+		(pos 257.919 167.241 ltcorner)
+		(scale 0.218798151)
 		(data "iVBORw0KGgoAAAANSUhEUgAAAvgAAAIuCAYAAADKRXzRAAAAAXNSR0IArs4c6QAAAARnQU1BAACx"
 			"jwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAGE5SURBVHhe7d0FvFRV2/fxizyHOpwiDt0l3Y2E"
 			"INKoCBhICVJiIGI3onKDIgg3iN2KKNIdktLdLd11DvnMHi+fG/UAJ2Zmr73n9/18+HhdC9/3eZ/X"
@@ -507,67 +507,108 @@
 			"BHwAAADANUT+DxxrCBh97bbxAAAAAElFTkSuQmCC"
 		)
 	)
-	(rect
-		(name "")
-		(start 110.4902 3.1752)
-		(end 2.5402 33.1472)
-	)
-	(line
-		(name "")
-		(start 98.8822 28.3972)
-		(end 98.8822 6.8072)
-	)
-	(line
-		(name "")
-		(start 110.3122 6.8072)
-		(end 35.3822 6.8072)
-	)
-	(line
-		(name "")
-		(start 35.3822 33.0962)
-		(end 35.3822 3.2512)
-	)
-	(line
-		(name "")
-		(start 110.3122 28.3972)
-		(end 35.3822 28.3972)
-	)
-	(line
-		(name "")
-		(start 110.3122 20.7772)
-		(end 35.3822 20.7772)
-	)
-	(line
-		(name "")
-		(start 35.3822 8.0772)
-		(end 2.6162 8.0772)
-	)
 	(tbtext "PCB\n"
 		(name "")
-		(pos 109.0422 18.2372)
+		(pos 168.91 171.45 ltcorner)
 		(font
 			(face "Carlito")
 		)
 	)
 	(tbtext "IPN : PCB-${PROJECTID}${BOARDID}${BRANCHID}-${REQID}${REVID}00		ID: ${BOARDID}	Branch: ${BRANCHID}\nRequirements: ${REQID}		Revision: ${REVID}"
 		(name "")
-		(pos 97.612 16.967)
+		(pos 178.435 171.45 ltcorner)
 		(font
 			(face "Carlito")
 		)
 		(maxlen 63.5)
-	)
-	(line
-		(name "")
-		(start 110.3122 13.1572)
-		(end 35.3822 13.1572)
 	)
 	(tbtext "IPN : PBA-${PROJECTID}${BOARDID}${BRANCHID}-${REQID}${REVID}${VARID}${VARREV}\nID: ${VARID}		Revision: ${REVID} 		Git: ${GIT_COMMIT_HASH}"
 		(name "")
-		(pos 97.612 9.347)
+		(pos 178.435 176.53 ltcorner)
 		(font
 			(face "Carlito")
 		)
 		(maxlen 63.5)
+	)
+	(rect
+		(name "")
+		(start 274.1422 187.1472)
+		(end 3.6322 2.9972)
+	)
+	(rect
+		(name "")
+		(start 109.0422 2.9972)
+		(end 3.6322 34.7472)
+	)
+	(line
+		(name "")
+		(start 109.0422 6.8072)
+		(end 3.6322 6.8072)
+	)
+	(line
+		(name "")
+		(start 34.1122 6.8072)
+		(end 34.1122 2.9972)
+	)
+	(line
+		(name "")
+		(start 3.6322 10.6172)
+		(end 109.0422 10.6172)
+	)
+	(tbtext "Design report : "
+		(name "")
+		(pos 168.91 180.975 ltcorner)
+		(font
+			(face "Carlito")
+		)
+	)
+	(line
+		(name "")
+		(start 34.1122 10.6172)
+		(end 34.1122 34.7472)
+	)
+	(line
+		(name "")
+		(start 98.8822 10.6172)
+		(end 98.8822 28.3972)
+	)
+	(line
+		(name "")
+		(start 109.0422 15.6972)
+		(end 34.1122 15.6972)
+	)
+	(line
+		(name "")
+		(start 109.0422 20.7772)
+		(end 34.1122 20.7772)
+	)
+	(line
+		(name "")
+		(start 109.0422 28.3972)
+		(end 34.1122 28.3972)
+	)
+	(tbtext "Size: ${PAPER}"
+		(name "")
+		(pos 213.36 184.785 ltcorner)
+		(font
+			(face "Carlito")
+		)
+	)
+	(tbtext "Page: ${#} / ${##}"
+		(name "")
+		(pos 227.33 184.785 ltcorner)
+		(font
+			(face "Carlito")
+		)
+	)
+	(line
+		(name "")
+		(start 50.6222 2.9972)
+		(end 50.6222 6.8072)
+	)
+	(line
+		(name "")
+		(start 64.5922 2.9972)
+		(end 64.5922 6.8072)
 	)
 )
