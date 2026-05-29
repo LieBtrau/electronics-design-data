@@ -61,3 +61,6 @@ Git ID is an additional versioning system, added on the silkscreen and to the ma
 
 ## Schematic versioning
 The new versioning scheme differs quite from the standard semantic versioning scheme.  So in the schematic sheet's documentation block, the new versioning scheme will be shown next to a broken down semantic versioning scheme for clarity.
+
+# PCB database
+Can be found on [github](https://github.com/LieBtrau/kicad-parts/blob/main/database/g-pcb.csv)
