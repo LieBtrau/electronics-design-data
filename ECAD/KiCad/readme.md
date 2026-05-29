@@ -50,6 +50,14 @@ Preferences -> Manage Symbol Libraries -> Global Libraries
 *-rescue.lib
 ```
 
+# Schematic Sheet Editor
+* Set the origin of the coordinate system to the top left corner of the sheet. 
+* Make sure all objects are referenced to the top left corner, not to bottom right corner (default).  
+
+The bottom right corner is the default origin, but it's page size dependent.  Objects will not line up properly if the page size is not a multiple of the grid size, such as A4.  
+
+The schematic editor uses the top left corner as the origin as well.
+
 # Schematic editor 
 
 ## Sheet names
