@@ -83,8 +83,10 @@ Where "Rout" is the output resistor (50ohm) and "Vin" is the input voltage sourc
 Then you can select what traces to plot in the simulation window: S11, S21, Zin, Zout, ...
 
 ## Antenna impedance measurement
+For verification of a matching network you designed with [Mantaro impedance calculators](https://www.mantaro.com/resources/impedance-calculators.php).
+
 <figure>
-  <img src="./ltspice_impendance_matching.png" alt="Antenna impedance measurement in LTSpice" width="300"/>
+  <img src="./ltspice_impedance_matching.png" alt="Antenna impedance measurement in LTSpice" width="300"/>
   <figcaption>Impedance measurement of an antenna in LTSpice.  Add trace "Zin(V1)" to the waveform</figcaption>
 </figure>
 
