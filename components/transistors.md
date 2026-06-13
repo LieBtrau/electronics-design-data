@@ -79,3 +79,11 @@
 * DMP3098L
 * DMG3401LSN
 * TSM650P02CX
+
+# NJFET
+## RF applications
+Pinout : 1 = drain, 2 = source, 3 = gate (drain and source can be swapped)
+* [onsemi MMBFJ309LT1G](https://www.lcsc.com/product-detail/C58012.html) : max. 10 mA Id
+* [onsemi MMBFJ310LT1G](https://www.lcsc.com/product-detail/C33416.html)
+* [onsemi 2SK3557-7-TB-E](https://www.lcsc.com/product-detail/C604972.html)
+* [UTC 2SK508G-K51-AE3-R](https://www.lcsc.com/product-detail/C171542.html)
