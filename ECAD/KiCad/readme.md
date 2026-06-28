@@ -60,6 +60,9 @@ The schematic editor uses the top left corner as the origin as well.
 
 # Schematic editor 
 
+## Templates
+KiCad does not support multiple page sizes within a single schematic project; all sheets in a project must share the same paper size (e.g., A4, A3, A2)
+
 ## Sheet names
 * The main sheet always has the same name as the project.  There seems no way around that.
 * The subsheets can have a meaningful name so that they can easily be identified in the file explorer.
