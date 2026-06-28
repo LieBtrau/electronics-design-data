@@ -35,3 +35,6 @@ low leakage types for small signal use: BAT41, BAS70
 * 1N4148WS : 100V, 150mA, SOD-323
 * BAV170,215 : dual, SOT23-3, common cathode, 5nA @75V
 * BC847B, CB-junction, 15nA @30V
+
+# Zener
+SOD-523 leaves enough choice and is compatible in placement with 0603.
