@@ -65,9 +65,12 @@ Meters Based on the TPS61094](https://www.ti.com/lit/an/slvaf41a/slvaf41a.pdf?ts
 * Brico.be : [AAA : Energizer Ultimate Lithium](https://lygte-info.dk/review/batteries2012/Energizer%20Ultimate%20Lithium%20AAA%202019%20UK.html) : 1.3Ah
 * Brico.be (€16/10pcs) : [AA : Energizer Ultimate Lithium](https://lygte-info.dk/review/batteries2012/Energizer%20Ultimate%20Lithium%20AA%20UK.html) : 3Ah
 
-# 18650 Li-Ion LiFePO4 : 3.3V
+# 18650 Li-Ion LiFePO4 (LFP): 3.3V
 
 * safer than LiNiCoMnO2
+* damaging temperatures : 
+  * + 80 °C : SEI decomposition (Solid Electrolyte Interface)
+  * + 230 °C : thermal runaway
 * cold weather performance terrible (capacity drops to 50% at -10°C, even at 10°C 20% of capacity is lost)
 * [#65 How to use Lifepo4 Batteries (Tutorial)(check also the links in the description)](https://www.youtube.com/watch?v=DicVZfW5YL0&t=2s)
 * [HTCFR18650-1800mAh-3.2V](https://enerpower.de/wp/wp-content/uploads/2019/07/Technical-Specifications-HTCFR18650-1800mAh-3.2V-EN.pdf) : 1800mAh, LiFePO4, at [nkon.nl](https://eu.nkon.nl/heter-18650-1800mah-5-4a.html) (€1.99)
@@ -75,7 +78,12 @@ Meters Based on the TPS61094](https://www.ti.com/lit/an/slvaf41a/slvaf41a.pdf?ts
 # 18650 Li-Ion LiNiCoMnO2 : 3.7V
 
 * great energy density
-* Limited temperature range (-10°C→+65°C)
+* Limited temperature range
+  * discharging : -10 °C → +65 °C
+  * charging : 0 °C to 45 °C
+  * damaging temperatures : 
+    * + 80 °C : SEI decomposition
+    * + 150 °C : thermal runaway
 * When cold, looses lot of output voltage (up to 0.5V) and capacity
 * Charge only at >10°C ambient
 * safety concerns :  protection circuits required
