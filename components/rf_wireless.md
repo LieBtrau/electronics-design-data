@@ -1,11 +1,11 @@
 # Shielding
 ## RFI shield clip
 ### **6.50x0.8x1.28 mm, 0.15 mm slit**
-* ASP-X1208-CB1
+* [Xunpu ASP-X1208-CB1](https://www.lcsc.com/product-detail/C30605059.html)
 * SC6508128-15TC
 * KH-PBJ-6508128
 * ICSRC6508SFR (1.21 mm high)
-* Harwin S0991-46R
+* [Harwin S0991-46R](https://www.lcsc.com/product-detail/C3308732.html)
 
 ### 6.5mm long : other
 * ICSRC6508-015SFR : 6.5x0.8x1.17, 0.1 mm slit
