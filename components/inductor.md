@@ -21,13 +21,6 @@ J.J.Carr: Secrets of RF Circuit Design :
 * 100MHz -> 300MHz : 10µH
 These values are not critical and are given only as guidelines. Although it might be a bit tricky to get a 1-mH RFC to operate well at 100 MHz, there is no really hard boundary for these bands.
 
-## 10 MHz : RF choke
-* KOHERelec ACMA3225POC-470M : 47 µH, 0.9 Ω, 300 mA, SRF = 30 MHz
-* Murata LQW32FT470M0HL : FIXED IND 47uH 300mA 900mΩ 1210
-* TDK ADL3225V-470MT-TL000
-* ~~AHW3225F~~ : inferior part due to much higher DC resistance
-
-
 # Signal inductor
 ## Air core inductor (Q > 100 @100MHz)
 ### Size 4248 (4.2x4.8mm) : ≤ 150nH
@@ -52,7 +45,7 @@ These values are not critical and are given only as guidelines. Although it migh
 * Abracon AIAC-4125C (Mouser, Digikey)
 
 ## Ceramic core inductor (Q < 100 @100MHz)
-1008-size (2520 metric)
+### 1008-size (2520 metric) : typ < 10 µH
 * Abracon AISC-1008
 * Wuerth WE-KI 1008, WE-RFI, WE-RFH
 * Murata LQW2UASR
@@ -61,6 +54,15 @@ These values are not critical and are given only as guidelines. Although it migh
 * MYX MWI1008UC, MWI1008IF
 * Coilcraft 1008PSM
 
+### 1210-size (3225 metric) : typ > 10 µH
+About 10x less Rdc than 1008 inductor of the same value.
+
+* Bourns CPW3230A
+* muRata LQW32FT
+  * Murata LQW32FT470M0HL : FIXED IND 47uH 300mA 900mΩ 1210
+* KOHERelec ACMA3225POC-470M : 47 µH, 0.9 Ω, 300 mA, SRF = 30 MHz
+* TDK ADL3225V-470MT-TL000
+* ~~AHW3225F~~ : inferior part due to much higher DC resistance
 
 # Power inductor
 7x7mm, 7x6.6mm is a common size for power inductors
