@@ -26,7 +26,10 @@
 * Harwin s0971-46r : 5.8x1.1x2.10 mm, 0.20 mm slit
 
 ## One-piece shielding
-* 2118708-2 : 26x26x5.08, 0.20 mm wall thickness
+TE -2 : CRS (cold rolled steel) : matte Sn finish
+TE -4 : Al : matte Sn finish
+
+* [TE 2118708-2](https://www.te.com/en/product-2118708-2.html) : 26x26x5.08, 0.20 mm wall thickness
 
 ## Two-piece shielding
 ### 29 x 18 mm
