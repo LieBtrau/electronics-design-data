@@ -10,7 +10,7 @@
     * radius = 0.01mm
   * Do not place on bare copper (or vias)
   * Inverted text for pin labels of the connectors
-  * True-Type, sans-serif Font : Century Gothic, at least 1.5mm high
+  * True-Type sans-serif Font : Century Gothic or League Spartan, at least 1.5mm high
 
  # Usability
  * Label your connectors and their pinout (+, - , GND, VCC, etc.) especially for wire-to-board connectors where this is not obvious.
