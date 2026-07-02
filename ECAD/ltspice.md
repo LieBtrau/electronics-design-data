@@ -1,4 +1,7 @@
 # Linux install
+## Version
+Install version XVII of LTspice.  Later versions work slower and crash often.
+
 When wine got an update, you'll have to remove all of wine, including the .wine folder in your home directory, and reinstall wine.  Then you can reinstall LTspice.
 1. Install wine
 ```bash
