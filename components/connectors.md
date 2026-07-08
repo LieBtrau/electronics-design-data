@@ -106,8 +106,8 @@ Through hole reflow mount is a combination of SMT pads and through hole pins.  A
   * Leaves metal connections open, so only for closed spaces.
   * Leaves more space for a temperature sensor or PTC-fuse.
 
-## FFC
-### 0.5mm pitch, 24p, bottom contact, right angle
+# FFC
+## 0.5mm pitch, 24p, bottom contact, right angle
 * Amphenol F33Z-1A7Q1-E8C24
 * JLCPCB C262669
 
@@ -116,24 +116,47 @@ Make footprint compatible to:
 * Hirose FH12-24S-0.5SH(55)
 * Molex 5051102491
 
-### 0.5mm pitch, 24p, top contact, right angle
-#### Au-finish
+## 0.5mm pitch, 24p, top contact, right angle
+### Au-finish
 * Amphenol F32Q-1A7H1-11024
 * FH12A-24S-0.5SH(55) : JLCPCB C506794
 
-#### Sn-finish
+### Sn-finish
 * CviLux CF20241U0R0-NH
 * WE 68712414022
 * AFC07-S24ECA-00 : JLCPCB C262643
 
-## SD card socket
-### Elevated
+# SD card socket
+## Elevated
 [HOAUC HYCW104-TF08-375B](https://www.lcsc.com/product-detail/C2962029.html): LCSC C2962029
 [Molex 473092651](https://www.lcsc.com/product-detail/C587826.html) : LCSC C587826
 [SOFNG TF-021B-H265](https://www.lcsc.com/product-detail/C498185.html) : LCSC C498185
 
-## FFC
-### SMA end launch, right angle, 50Ω, 1.6mm PCB, 6.5 x 6.5 mm
+# RF 
+## SMA end launch, right angle, 50Ω, 1.6mm PCB, 6.5 x 6.5 mm
 * RF Solutions CON-SMA-EDGE-S
 * Bat Wireless BWSMA-KE-P001, LCSC C496550
 * DOSIN-806-0134, LCSC C709670
+
+# Board to board 
+## Rectangular connectors
+2.00 mm and 2.54 mm are still cheap, abundant and available in multiple mating heights
+
+### 1.27 mm
+1.27 mm is even more common, but might not allow for bottom entry.  
+For 7 mm board-to-board stacking.  Might use [M3x7+6 standoff](https://www.lcsc.com/product-detail/C52976091.html)
+
+* [male headers](https://www.lcsc.com/category/792.html)
+  * 1.27 mm : typ. insulation height : 1.5 mm
+* [female sockets](https://www.lcsc.com/category/793.html)
+  * 1.27 mm : typ. height : 4.6 mm
+
+
+
+## Edge connectors
+36p PCIe-X1 connectors (e.g. 10018784-10200TLF) : 
+* high speed
+* easy to solder
+* easily available
+* require no mating connector
+* mating PCB requires Au-finish, which makes it expensive if Au is only needed for the connector.
