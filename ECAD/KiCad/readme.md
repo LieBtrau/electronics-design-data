@@ -1,12 +1,12 @@
 # Installation
 ````bash
-sudo add-apt-repository --yes ppa:kicad/kicad-9.0-releases
+sudo add-apt-repository --yes ppa:kicad/kicad-10.0-releases
 sudo apt update
 sudo apt install --install-recommends kicad
 ````
 
 # Preferences
-* For better readability on screens, the carlito font is recommended.
+* For better readability on screens, a sans-serif font, "carlito", is recommended.
 
 # Useful links
 [Getting started](https://docs.kicad.org/9.0/en/getting_started_in_kicad/getting_started_in_kicad.html)
@@ -90,8 +90,4 @@ Make sure to configure the path KICAD_SCRIPT_DIR in the preferences to point to 
 * ~~[KDT_Hierarchical_KiBot](https://github.com/nguyen-v/KDT_Hierarchical_KiBot)~~ : it looks very nice on the surface, but I doubt if it's really useful in practice.  This seems like a software project management tool rather than a PCB design tool.
 
 # Variant management
-## KiVar
-KiVar can change the properties of a symbol but not replace the full symbol (and all its properties) with another symbol. 
-You can replace the value by some manually defined text, but this is not very convenient.
-
-This is not a workable solution for managing multiple variants of a design.
+Included in KiCad as of version 10 : see [KiCad docs](https://docs.kicad.org/10.0/en/eeschema/eeschema.html#schematic-design-variants)
