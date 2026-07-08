@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Usage : generate_assembly_data.sh <project_name> <output_base_name> <revision_prefix>
+# Usage : generate_assembly_data.sh <project_name> <output_base_name> <variant>
 
 KIPRJMOD=${KIPRJMOD:-.}
 mkdir -p ${KIPRJMOD}/output
@@ -16,6 +16,7 @@ kicad-cli sch export bom \
     --exclude-dnp \
     --field-delimiter "," \
     --ref-delimiter "," \
+    --variant $3 \
     ${KIPRJMOD}/$1.kicad_sch
 
 # Create Pick and Place file in CSV format as accepted by JLCPCB
@@ -26,6 +27,7 @@ kicad-cli pcb export pos \
     --units mm \
     --use-drill-file-origin \
     --exclude-dnp \
+    --variant $3 \
     ${KIPRJMOD}/$1.kicad_pcb
 # Replace first line to match JLCPCB format
 sed -i '1s/.*/Designator,Val,Package,Mid X,Mid Y,Rotation,Layer/' ${KIPRJMOD}/output/$new_file_name"_PnP.csv"

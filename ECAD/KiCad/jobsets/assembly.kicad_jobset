@@ -40,7 +40,8 @@
           "Voltage",
           "Wavelength",
           "max(Ic)",
-          "max(Vce)"
+          "max(Vce)",
+          "Class"
         ],
         "fields_ordered": [
           "Value",
@@ -70,10 +71,11 @@
           "__Voltage",
           "__Wavelength",
           "__max(Ic)",
-          "__max(Vce)"
+          "__max(Vce)",
+          "__Class"
         ],
         "filter_string": "",
-        "include_excluded_from_bom": false,
+        "group_symbols": true,
         "keep_line_breaks": false,
         "keep_tabs": false,
         "output_filename": "${BOARDNR}_R${Revision}_BoM.csv",
@@ -81,7 +83,8 @@
         "ref_range_delimiter": "",
         "sort_asc": true,
         "sort_field": "Value",
-        "string_delimiter": "\""
+        "string_delimiter": "\"",
+        "variant_names": []
       },
       "type": "sch_export_bom"
     },
@@ -90,6 +93,7 @@
       "id": "1897e611-492a-4b1e-9142-8edd0ee73132",
       "settings": {
         "description": "",
+        "exclude_bom": false,
         "exclude_dnp": false,
         "exclude_footprints_with_th": false,
         "format": "csv",
@@ -100,15 +104,16 @@
         "single_file": true,
         "smd_only": false,
         "units": "mm",
-        "use_drill_place_file_origin": true
+        "use_drill_place_file_origin": true,
+        "variant": ""
       },
       "type": "pcb_export_pos"
     },
     {
-      "description": "Script : generate assembly data",
+      "description": "Script : generate assembly data for variant A",
       "id": "4e48b69b-7aaf-4913-b67c-625c0ed1bbee",
       "settings": {
-        "command": "$(KICAD_SCRIPT_DIR)/generate_assembly_data.sh ${PROJECTNAME} PBA-${PROJECTID}${BOARDID}${BRANCHID}-${REQID}${REVID}${VARID}${VARREV}",
+        "command": "VARIANT=A && $(KICAD_SCRIPT_DIR)/generate_assembly_data.sh ${PROJECTNAME} PBA-${PROJECTID}${BOARDID}${BRANCHID}-${REQID}${REVID}\"$VARIANT\"${VARREV} $VARIANT",
         "description": "",
         "ignore_exit_code": false,
         "output_filename": "4e48b69b-7aaf-4913-b67c-625c0ed1bbee.log",
