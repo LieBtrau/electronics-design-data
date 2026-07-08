@@ -152,9 +152,9 @@ It might be better to use a LAN pulse transformer instead for that purpose.  It'
 * TDK ALT4532M-201-T001 (JLCPCB C2845101) : €0.71
 * Wuerth 74930000, 74930030
 * Pulse TC5G00, TC2G00, TC1G00
+* CND-Tek GA050G00 (LCSC C41425875) : 240µH, €0.05
 * Bourns SM453230-181N7Y (not fully footprint compatible)
-* LCSC C51018454 : 350µH, €0.10
-* LCSC C41425875 : 240µH, €0.05
+* ~~LCSC C51018454 : 350µH, €0.10~~ : mirrored footprint, not compatible with TDK ALT4532M-201-T001
 
 ## PoE
 * Bourns SM453230-231N7YP (not fully footprint compatible)
