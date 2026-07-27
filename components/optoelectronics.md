@@ -1,4 +1,10 @@
 # LEDs
+## LED technology
+### Green LEDs
+1. InGaN (blue LED base) with green phosphor : bright, higher forward voltage
+2. AlInGaP : less bright, lower forward voltage
+3. GaP : not very bright at all
+
 ## LED 0603
 | Color | Part number | Order code | Remark |
 |-------|-------------|------------|--------|
