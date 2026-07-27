@@ -9,6 +9,20 @@ Price calculation is done based on the maximum dimension of the PCB.  For exampl
 * fits within 100x100mm, 6L : €33.5 for 5pcs
 
 # PCB Design rules
+## Shape
+### Thickness
+Small (< 100 x 100 mm) boards without heavy components could also be made using 0.8 mm thickness instead of 1.6 mm.
+
+### Size
+* 50 x 50 mm, mounting hole at each corner
+* 95 x 50 mm, mounting hole at each corner (so that it can be mounted on a baseboard that slides in a Eurocard enclosure)
+
+### Corners
+* rounded with a 4 mm radius
+
+## Mounting holes
+* mounting hole 3.2 mm diameter for M3 screw
+
 ## Grids
 * 0.5mm for components
 * 0.1mm grid for everything else
