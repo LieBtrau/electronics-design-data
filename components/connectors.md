@@ -148,10 +148,10 @@ For 7 mm board-to-board stacking.  Might use [M3x7+6 standoff](https://www.lcsc.
 
 * [male headers](https://www.lcsc.com/category/792.html)
   * 1.27 mm : typ. insulation height : 1.5 mm
+    * 2x6p : LCSC C41370963
 * [female sockets](https://www.lcsc.com/category/793.html)
   * 1.27 mm : typ. height : 4.6 mm
-
-
+    * 2x6p : [LCSC C41397115](https://www.lcsc.com/product-detail/C41397115.html)
 
 ## Edge connectors
 36p PCIe-X1 connectors (e.g. 10018784-10200TLF) : 
