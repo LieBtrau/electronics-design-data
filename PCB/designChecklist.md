@@ -47,7 +47,9 @@
 * Check that opamp inputs are not swapped.
 * Check IC part numbers reflect the correct package type.
 * For labeled nets: Did you check all of them to make 100% sure they’re all correctly connected?  In Altium be careful when "ports naming nets" is disabled.
-* Relays : free-wheeling diodes or TVS added?
+* Relays : 
+  * free-wheeling diodes or TVS added?
+  * especially on low power designs : the kick-back energy can raise the supply voltage above the maximum that some components can tolerate.  Make sure there's enough local capacitance to suck it up, or add a series diode in the power supply rail.
 * Transformers : check polarity of the windings
 * Unused inputs must not be left floating, especially for digital inputs and ADC-pins.
 * Small, low ESR (e.g., ceramic) bypass capacitors on all IC supplies (check datasheet for values)

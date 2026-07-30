@@ -27,7 +27,6 @@
 ## Production
 * Simplify assembly process
 
-
 # Fields of impact for DfM
 * purchasing of components
 * selection of materials

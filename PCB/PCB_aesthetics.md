@@ -36,7 +36,7 @@
 .board_revision.-.VersionControl_RevNumberShort
 ```
 
-# Fabrication data"
+# Fabrication data
 For Pb-free, at least TG155 is required.  For Pb solder, TG135 is sufficient.
 
 ```
