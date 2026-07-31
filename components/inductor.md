@@ -59,8 +59,8 @@ About 10x less Rdc than 1008 inductor of the same value.
 
 * Bourns CPW3230A
 * muRata LQW32FT
-  * Murata LQW32FT470M0HL : FIXED IND 47uH 300mA 900mΩ 1210
-* KOHERelec ACMA3225POC-470M : 47 µH, 0.9 Ω, 300 mA, SRF = 30 MHz
+  * Murata LQW32FT470M0HL : FIXED IND 47uH 300mA 900mΩ 1210 (LCSC C907956)
+* KOHERelec ACMA3225POC-470M : 47 µH, 0.9 Ω, 300 mA, SRF = 30 MHz (LCSC C42408080, not available at JLCPCB)
 * TDK ADL3225V-470MT-TL000
 * ~~AHW3225F~~ : inferior part due to much higher DC resistance
 
