@@ -1,14 +1,14 @@
 {
   "jobs": [
     {
-      "description": "Script: generate gerbers & drill data",
+      "description": "Script: 2 Layer : generate gerbers & drill data",
       "id": "4ac17a2a-79b7-4de1-9e70-f86c40dc6787",
       "settings": {
         "command": "${KICAD_SCRIPT_DIR}/generate_gerber_2L.sh ${PROJECTNAME} PCB-${PROJECTID}${BOARDID}${BRANCHID}-${REQID}${REVID}00",
         "description": "",
         "ignore_exit_code": false,
-        "output_filename": "4ac17a2a-79b7-4de1-9e70-f86c40dc6787.log",
-        "record_output": false
+        "output_filename": "kicad_gerber.log",
+        "record_output": true
       },
       "type": "special_execute"
     },
@@ -17,6 +17,7 @@
       "id": "8fcb2e87-a841-445a-a34c-5fe609e39767",
       "settings": {
         "black_and_white": true,
+        "check_zones": false,
         "create_gerber_job_file": false,
         "crossout_dnp_footprints_on_fab_layers": false,
         "description": "",
@@ -80,7 +81,8 @@
         "subtract_solder_mask_from_silk": true,
         "use_drill_origin": true,
         "use_protel_file_extension": true,
-        "use_x2_format": true
+        "use_x2_format": true,
+        "variant": ""
       },
       "type": "pcb_export_gerbers"
     },
@@ -96,9 +98,12 @@
         "excellon.oval_drill_route": false,
         "format": "excellon",
         "generate_map": true,
+        "generate_report": false,
+        "generate_tenting": false,
         "gerber_precision": 5,
         "map_format": "gerberx2",
         "output_dir": "",
+        "report_filename": "",
         "units": "mm",
         "zero_format": "decimal"
       },

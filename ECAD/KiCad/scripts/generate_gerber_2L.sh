@@ -29,10 +29,9 @@ kicad-cli pcb export drill \
     $1.kicad_pcb
 
 # Rename gerber files
-
 for f in $gerber_folder/$1-*
 do 
     mv "$f" "${f/$1-/$new_file_name-}"
 done
 # Rename drill data
-mv $gerber_folder"/fmosc.drl" $gerber_folder"/"$new_file_name".drl"
+mv $gerber_folder"/"$1".drl" $gerber_folder"/"$new_file_name".drl"
