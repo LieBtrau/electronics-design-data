@@ -1,0 +1,2 @@
+Kick back energy from a relay can be absorbed by TVS to GND or by diode and zener in parallel to the coil.
+As the relay is opened, the current in the coil will drop (not rise), so the kick back elements should be rated for the maximum operating current of the relay.  There will not be some magical large current spike.
