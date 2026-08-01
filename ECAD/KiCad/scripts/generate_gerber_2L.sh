@@ -35,3 +35,6 @@ do
 done
 # Rename drill data
 mv $gerber_folder"/"$1".drl" $gerber_folder"/"$new_file_name".drl"
+
+# Zip the folder (remove junk paths) and remove original
+zip -rj $gerber_folder".zip" $gerber_folder && rm -rf $gerber_folder

@@ -3,8 +3,9 @@
 # https://docs.kicad.org/10.0/ru/cli/cli.html#pcb_export_pdf
 
 # Create folder "output" if it does not exist
-KIPRJMOD=${KIPRJMOD:-.}
-mkdir -p ${KIPRJMOD}/output
+KIPRJMOD=${KIPRJMOD:-.} # check if the variable is not null, otherwise replace it by '.'
+OUTPUTFOLDER=${KIPRJMOD}/output/$2
+mkdir -p ${OUTPUTFOLDER}
 git_commit_hash=$(git describe --always --dirty)
 new_file_name=$2"_"$git_commit_hash
 
@@ -13,7 +14,7 @@ new_file_name=$2"_"$git_commit_hash
 kicad-cli pcb export pdf ${KIPRJMOD}/$1.kicad_pcb \
     --define-var GIT_COMMIT_HASH=$git_commit_hash \
     --variant $3 \
-    --output ${KIPRJMOD}/output/$new_file_name"_ASSY_TOP.pdf" \
+    --output ${OUTPUTFOLDER}/$new_file_name"_ASSY_TOP.pdf" \
     --layers F.Fab,F.Silkscreen,Edge.Cuts \
     --mode-single \
     --include-border-title \
@@ -22,7 +23,7 @@ kicad-cli pcb export pdf ${KIPRJMOD}/$1.kicad_pcb \
 kicad-cli pcb export pdf ${KIPRJMOD}/$1.kicad_pcb \
     --define-var GIT_COMMIT_HASH=$git_commit_hash \
     --variant $3 \
-    --output ${KIPRJMOD}/output/$new_file_name"_ASSY_BOT.pdf" \
+    --output ${OUTPUTFOLDER}/$new_file_name"_ASSY_BOT.pdf" \
     --layers B.Fab,B.Silkscreen,Edge.Cuts \
     --mode-single \
     --include-border-title \
