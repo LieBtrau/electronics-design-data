@@ -8,7 +8,7 @@
         "description": "",
         "ignore_exit_code": false,
         "output_filename": "kicad_gerber.log",
-        "record_output": true
+        "record_output": false
       },
       "type": "special_execute"
     },

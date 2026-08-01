@@ -1,7 +1,19 @@
 {
   "jobs": [
     {
-      "description": "Generate BoM",
+      "description": "Script : generate assembly data for variant A",
+      "id": "4e48b69b-7aaf-4913-b67c-625c0ed1bbee",
+      "settings": {
+        "command": "VARIANT=A && $(KICAD_SCRIPT_DIR)/generate_assembly_data.sh ${PROJECTNAME} PBA-${PROJECTID}${BOARDID}${BRANCHID}-${REQID}${REVID}\"$VARIANT\"${VARREV} $VARIANT",
+        "description": "",
+        "ignore_exit_code": false,
+        "output_filename": "4e48b69b-7aaf-4913-b67c-625c0ed1bbee.log",
+        "record_output": false
+      },
+      "type": "special_execute"
+    },
+    {
+      "description": "Generate BoM (old, for reference only)",
       "id": "017ef667-2f56-4098-b87c-e0b48a7224b7",
       "settings": {
         "bom_format_preset_name": "CSV",
@@ -89,7 +101,7 @@
       "type": "sch_export_bom"
     },
     {
-      "description": "Generate P&P",
+      "description": "Generate P&P (old, for reference only)",
       "id": "1897e611-492a-4b1e-9142-8edd0ee73132",
       "settings": {
         "description": "",
@@ -108,18 +120,6 @@
         "variant": ""
       },
       "type": "pcb_export_pos"
-    },
-    {
-      "description": "Script : generate assembly data for variant A",
-      "id": "4e48b69b-7aaf-4913-b67c-625c0ed1bbee",
-      "settings": {
-        "command": "VARIANT=A && $(KICAD_SCRIPT_DIR)/generate_assembly_data.sh ${PROJECTNAME} PBA-${PROJECTID}${BOARDID}${BRANCHID}-${REQID}${REVID}\"$VARIANT\"${VARREV} $VARIANT",
-        "description": "",
-        "ignore_exit_code": false,
-        "output_filename": "4e48b69b-7aaf-4913-b67c-625c0ed1bbee.log",
-        "record_output": false
-      },
-      "type": "special_execute"
     }
   ],
   "meta": {

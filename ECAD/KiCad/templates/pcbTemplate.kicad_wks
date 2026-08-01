@@ -1,7 +1,7 @@
 (kicad_wks
 	(version 20231118)
 	(generator "pl_editor")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(setup
 		(textsize 1.5 1.5)
 		(linewidth 0.254)
@@ -14,21 +14,21 @@
 	(rect
 		(name "")
 		(start 0 0 ltcorner)
-		(end 0 0.635)
+		(end 0.4572 0.6858)
 		(repeat 2)
 		(incrx 2.54)
 		(incry 2.54)
 	)
 	(tbtext "Title: ${TITLE}"
 		(name "")
-		(pos 109.0002 31.0202)
+		(pos 80.01 100.33 ltcorner)
 		(font
 			(face "Carlito")
 			(size 2 2) bold italic)
 	)
 	(tbtext "Project"
 		(name "")
-		(pos 109.2022 26.0172)
+		(pos 80.01 105.41 ltcorner)
 		(font
 			(face "Carlito")
 		)
@@ -42,7 +42,7 @@
 	)
 	(tbtext "Name: ${PROJECTNAME}\nLink: ${PROJECTURL}\nCode: ${PROJECTID}"
 		(name "")
-		(pos 97.7722 23.4772)
+		(pos 90.17 107.95 ltcorner)
 		(font
 			(face "Carlito")
 		)
@@ -50,8 +50,8 @@
 	)
 	(bitmap
 		(name "")
-		(pos 19.0322 20.9372)
-		(scale 0.2184615385)
+		(pos 170.18 108.585 ltcorner)
+		(scale 0.2028571429)
 		(data "iVBORw0KGgoAAAANSUhEUgAAAvgAAAIuCAYAAADKRXzRAAAAAXNSR0IArs4c6QAAAARnQU1BAACx"
 			"jwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAGE5SURBVHhe7d0FvFRV2/fxizyHOpwiDt0l3Y2E"
 			"INKoCBhICVJiIGI3onKDIgg3iN2KKNIdktLdLd11DvnMHi+fG/UAJ2Zmr73n9/18+HhdC9/3eZ/X"
@@ -495,44 +495,59 @@
 	)
 	(rect
 		(name "")
-		(start 110.4902 3.1752)
-		(end 2.5402 33.1472)
+		(start 110.9472 3.2258)
+		(end 2.9972 29.8958)
 	)
 	(line
 		(name "")
-		(start 98.8822 28.3972)
-		(end 98.8822 3.2512)
+		(start 100.7872 24.8158)
+		(end 100.7872 3.2258)
 	)
 	(line
 		(name "")
-		(start 35.3822 33.0962)
-		(end 35.3822 3.2512)
+		(start 36.0172 29.8958)
+		(end 36.0172 3.2258)
 	)
 	(line
 		(name "")
-		(start 110.3122 28.3972)
-		(end 35.3822 28.3972)
+		(start 110.9472 24.8158)
+		(end 36.0172 24.8158)
 	)
 	(line
 		(name "")
-		(start 110.3122 18.2372)
-		(end 35.3822 18.2372)
+		(start 110.9472 14.6558)
+		(end 36.0172 14.6558)
 	)
 	(line
 		(name "")
-		(start 35.3822 8.0772)
-		(end 2.6162 8.0772)
+		(start 36.0172 8.3058)
+		(end 2.9972 8.3058)
 	)
 	(tbtext "PCB\n"
 		(name "")
-		(pos 109.0422 15.6972)
+		(pos 80.01 114.935 ltcorner)
 		(font
 			(face "Carlito")
 		)
 	)
-	(tbtext "IPN : PCB-${PROJECTID}${BOARDID}${BRANCHID}-${REQID}${REVID}00		ID: ${BOARDID}	Branch: ${BRANCHID}\nRequirements: ${REQID}		Revision: ${REVID}"
+	(tbtext "IPN : PCB-${PROJECTID}${BOARDID}${BRANCHID}-${REQID}${REVID}00\n"
 		(name "")
-		(pos 97.6122 14.4272)
+		(pos 90.17 114.935 ltcorner)
+		(font
+			(face "Carlito")
+		)
+		(maxlen 63.5)
+	)
+	(tbtext "Assembly\nVariant"
+		(name "")
+		(pos 80.01 120.65 ltcorner)
+		(font
+			(face "Carlito")
+		)
+	)
+	(tbtext "IPN : PBA-${PROJECTID}${BOARDID}${BRANCHID}-${REQID}${REVID}${VARIANT}${VARREV}\nID: ${VARIANT}		Revision: ${REVID} 		Git: ${GIT_COMMIT_HASH}"
+		(name "")
+		(pos 90.17 120.65 ltcorner)
 		(font
 			(face "Carlito")
 		)
@@ -540,22 +555,7 @@
 	)
 	(line
 		(name "")
-		(start 110.3122 8.0772)
-		(end 35.3822 8.0772)
-	)
-	(tbtext "${GIT_COMMIT_HASH}"
-		(name "")
-		(pos 97.6122 5.5372)
-		(font
-			(face "Carlito")
-		)
-		(maxlen 63.5)
-	)
-	(tbtext "Git"
-		(name "")
-		(pos 109.0422 5.5372)
-		(font
-			(face "Carlito")
-		)
+		(start 110.9472 10.8458)
+		(end 36.0172 10.8458)
 	)
 )
