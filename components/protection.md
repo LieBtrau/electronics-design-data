@@ -1,10 +1,25 @@
-# Determining optimal protection
+# Determining TVS protection
+
 ## Standard [IEC 61000-4-5](https://rtpcorp.com/wp-content/uploads/2021/04/IEC61000-4-5.pdf)
 * 1.2µs/50µs open-circuit voltage waveform
 * 8/20µs short-circuit current waveform
+  * Peak-pulse current $I_{peak}$ is in the datasheets typically defined for a 8/20 µs current waveform
 
 Line-to-line coupling : 18µF in series with 2Ω -> Iout = Vout/2Ω.  So for a 6kV pulse, Iout = 3kA.
 Line-to-ground coupling : 9µF in series with 12Ω -> Iout = Vout/12Ω.  So for a 6kV pulse, Iout = 500A.
+
+## Standard IEC 61643-21
+Standard for testing TVS diodes
+
+* 10/1000 µs current waveform
+
+Check the peak pulse power rating curve, where $P_{PP}$ is set out as a function of $t_{d}$, the pulse width.  When no curve is given, assume that $P_{PP} * t_{d} = cte$.  
+
+example : An 8/20 µs TVS of 37.6 kW $P_{PP}$, will only handle 5 kW $P_{PP}$ at a 1000 µs pulse.
+
+# TVS
+* Unidirectional switch-on time : 5 ps
+* Bidirectional switch-on time : 5 ns
 
 # PTC fuses
 * Use as secondary protection for Li-Ion batteries
