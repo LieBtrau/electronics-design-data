@@ -142,3 +142,13 @@ Fill empty areas with copper pour
 * All parts available or ordered (check lead times!)
 * PDF of schematic created after gerbers, so that it reflects the final design
 * If this is a revision, record changes to the schematic in a table or in nearby documentation
+
+# Release
+* Tag the commit (otherwise it's very hard to recover later on)
+* Create a release in github with all the necessary documentation and data to order the PCB.
+  * Gerber data
+  * BoM
+  * PnP
+  * Schematic
+  * Assembly drawing (top + bottom)
+* You can release multiple PCBs in the same project.  Just make sure the names are unique.
