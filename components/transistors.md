@@ -28,6 +28,9 @@
 ## Low voltage, low current
 * BC856B : 65V/100mA, no direct LCSC equivalent in their Basic category.
 
+## Low voltage, low current, matched pair
+* BCM857BS-7-F : JLCPCB C105896
+
 ## Low voltage, medium current (Ic <= 1A)
 * S8550 (500mA) : JLCPCB Basic part
 * SS8550 (1A) : JLCPCB Basic part
