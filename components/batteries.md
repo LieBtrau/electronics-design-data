@@ -4,20 +4,11 @@
 * cost
 * energy density (Wh/kg)
 * temperature range
-* safety (short circuit, crush, drop, heating)
+* safety (short circuit, crush, drop, heating) (UN38.3, IEC 62133)
 * shelf life (self-discharge)
 * availability
 * peak current delivery at low temperatures
 * discharge voltage curve (flat or not)
-
-# NiMH : 1.2V
-
-Use batteries from Japan(e.g. Panasonic Eneloop, Ikea Ladda, Amazon basic black/silver), not from China
-
-Use low-self discharge types (Varta Ready2Use, ...) : comparison
-
-* high self discharge: not suitable for long runtime, low power
-* limited temperature range, especially cold
 
 # Alkaline (Zn-MnO2) : 1.5V
 ## Characteristics
@@ -25,7 +16,7 @@ Use low-self discharge types (Varta Ready2Use, ...) : comparison
 * available everywhere
 * heavy
 * not rechargeable
-* high internal resistance at cold temperatures
+* high internal resistance, rises at cell drains, even worse at cold temperatures
 
 At the end of its lifetime it leaks its highly corrosive contents which eats away your electronics.
 
@@ -33,24 +24,14 @@ At the end of its lifetime it leaks its highly corrosive contents which eats awa
 * AAA : Aldi : Topcraft Ultra Alkaline (1.2Ah)
 * AA : Aldi : [Topcraft Ultra Alkaline (2.6Ah)](https://lygte-info.dk/review/batteries2012/Top%20Craft%20Ultra%20Alkaline%20AA%20UK.html)
 
-# Lithium (Li) : coin cell 3.0V
-* CR2032
-* not rechargeable
-* high internal resistance, not suitable for > 15 mA current draw
+# NiMH : 1.2V
+Use batteries from Japan(e.g. Panasonic Eneloop, Ikea Ladda, Amazon basic black/silver), not from China
 
-# Lithium Ion Coin Cell
-* LIR2450
-* 3.7V, can cause damage to 3.0V devices
-* rechargeable
-* higher discharge current than lithium coin cell (200mA max)
+Use low-self discharge types (Varta Ready2Use, ...) : comparison
 
-# Lithium Thionyl Chloride (LiSOCI2) Battery : 3.6V
-
-* (e.g. Xeno XL-060F AA)
-* wide temperature range
-* low self-discharge
-* high internal resistance, not suitable for high current draw.  Can be fixed with supercap, see  [A Long-Lifetime, Cost-Competitive Solution in Smart
-Meters Based on the TPS61094](https://www.ti.com/lit/an/slvaf41a/slvaf41a.pdf?ts=1700888594827)
+* high self discharge : not suitable for long runtime, low power
+* limited temperature range, especially cold
+* low internal resistance, good for high loads
 
 # LiFeS2 (1.5V, performance upgrade to alkaline)
 ## Characteristics
@@ -65,8 +46,25 @@ Meters Based on the TPS61094](https://www.ti.com/lit/an/slvaf41a/slvaf41a.pdf?ts
 * Brico.be : [AAA : Energizer Ultimate Lithium](https://lygte-info.dk/review/batteries2012/Energizer%20Ultimate%20Lithium%20AAA%202019%20UK.html) : 1.3Ah
 * Brico.be (€16/10pcs) : [AA : Energizer Ultimate Lithium](https://lygte-info.dk/review/batteries2012/Energizer%20Ultimate%20Lithium%20AA%20UK.html) : 3Ah
 
-# 18650 Li-Ion LiFePO4 (LFP): 3.3V
+# Lithium (Li) : coin cell 3.0V
+* CR2032
+* not rechargeable
+* high internal resistance, not suitable for > 15 mA current draw
 
+# Lithium Ion Coin Cell
+* LIR2450
+* 3.7V, can cause damage to 3.0V devices
+* rechargeable
+* higher discharge current than lithium coin cell (200mA max)
+
+# Lithium Thionyl Chloride (LiSOCI2) Battery : 3.6V
+* (e.g. Xeno XL-060F AA)
+* wide temperature range
+* low self-discharge
+* high internal resistance, not suitable for high current draw.  Can be fixed with supercap, see  [A Long-Lifetime, Cost-Competitive Solution in Smart
+Meters Based on the TPS61094](https://www.ti.com/lit/an/slvaf41a/slvaf41a.pdf?ts=1700888594827)
+
+# 18650 Li-Ion LiFePO4 (LFP): 3.3V
 * safer than LiNiCoMnO2
 * damaging temperatures : 
   * + 80 °C : SEI decomposition (Solid Electrolyte Interface)
@@ -76,6 +74,7 @@ Meters Based on the TPS61094](https://www.ti.com/lit/an/slvaf41a/slvaf41a.pdf?ts
 * [HTCFR18650-1800mAh-3.2V](https://enerpower.de/wp/wp-content/uploads/2019/07/Technical-Specifications-HTCFR18650-1800mAh-3.2V-EN.pdf) : 1800mAh, LiFePO4, at [nkon.nl](https://eu.nkon.nl/heter-18650-1800mah-5-4a.html) (€1.99)
 
 # 18650 Li-Ion LiNiCoMnO2 : 3.7V
+Don't use non-protected cells in a consumer product.  Protected cells will be slightly longer, so unprotected cells will likely not make (good) contact.
 
 * great energy density
 * Limited temperature range
@@ -91,11 +90,9 @@ Meters Based on the TPS61094](https://www.ti.com/lit/an/slvaf41a/slvaf41a.pdf?ts
 * [Nkon.nl search engine](https://www.nkon.nl/rechargeable/li-ion/18650-size/price/0-7/protectie-circuit-/zonder/min.-capaciteit-in-mah-/3250-3500/op-voorraad/op-voorraad.html)
 
 ## Samsung INR18650-35E
-
 * [Samsung INR18650-35E](https://eu.nkon.nl/rechargeable/li-ion/18650-size/samsung-inr18650-35e.html) : 3400mAh, 3.6V~3.7V, discharge >=2.65V
 
 ## Panasonic NCR18650B
-
 * [datasheet](https://www.imrbatteries.com/content/panasonic_ncr18650b-2.pdf) : 1.6A charge current, max. discharge current : 2C (=2x3.2AH = 6.4A)
 * Tinytronics.nl : €7/pce
 * [bol.com](https://www.bol.com/be/nl/p/4-stuks-flat-top-panasonic-3350mah-ncr18650b-3-7v-6-7a-18650-batterij/9200000095441149/?referrer=socialshare_pdp_www) : €24/4pcs
