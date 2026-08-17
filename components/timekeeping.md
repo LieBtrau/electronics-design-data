@@ -27,6 +27,7 @@
 * bSelva : PCF8523 : 200nA timekeeping current
 
 ## Temperature compensated, for industrial applications
+* [Microcrystal RV-3032-C7](https://www.microcrystal.com/en/products/real-time-clock-rtc-modules/rv-3032-c7)
 * Epson RX8901CE
 
 # Crystals
