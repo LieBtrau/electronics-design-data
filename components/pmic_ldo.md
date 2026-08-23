@@ -1,8 +1,8 @@
 For low power applications, consider a low Iq buck converter instead of an LDO.  e.g. TPS62840 : Iq=60nA, Vinmax=6.5V, Iout=600mA.
 
 # SOT23-5
-## 3V3, low Iout, low Iq
-* Holtek HT7533 (100mA out, 2.5µA Iq) : SOT23-3
+## 1V8, low Iout, ultra-low Iq
+TPS7A0218DBV, 200 mA out, 25 nA Iq
 
 ## 3V3, low Iout, ultra-low Iq
 * Package : SOT23-5
@@ -21,6 +21,9 @@ For low power applications, consider a low Iq buck converter instead of an LDO. 
   * Ablic S-1318D30-M5T1U4
   * Diodes AP7354-30W5-7
   * Toshiba TCR3UF30A,LM(CT (good transient response)
+
+## 3V3, low Iout, low Iq
+* Holtek HT7533 (100mA out, 2.5µA Iq) : SOT23-3
 
 ## 3V3, high Iout, low Iq
 XC6220 : LCSC C86534
