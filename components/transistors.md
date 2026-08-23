@@ -35,6 +35,9 @@
 * S8550 (500mA) : JLCPCB Basic part
 * SS8550 (1A) : JLCPCB Basic part
 
+# BJT combo : NPN + PNP
+* xx3946x : 3904 + 3906 (40 V, 200 mA) in a single package, available from different vendors
+
 # NMOS
 ## Depletion
 * BSS169 : 100V/170mA
