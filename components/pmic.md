@@ -54,12 +54,27 @@
 
 * For higher voltages (>24V), but requires external N-MOSFETs (only starts at 4V):
   * AP74700QW6-7
-  * TPS65R01Q-S6TR-S
   * LM74700QDBVRQ1, LM74700QDBVTQ1
+  * TPS65R01Q-S6TR-S
   * NCV68061SNAIT1G : only -18V blocking
 
  NCV68061SNAIT1G can also be used for reverse polarity protection when configured correctly.  It will continue to block reverse polarity, but they will allow current to flow in both directions when the MOSFETs are turned on.  This is ideal for reverse polarity protection on battery-powered devices, where the battery current needs to flow in both directions (charging and discharging).  See [AND90146/D](https://www.onsemi.com/download/application-notes/pdf/and90146-d.pdf) for details.
 
+## including OVLO
+### External FETs
+* Diodes AP74502, TI LM74502
+
+### All-in-one : eFuse
+#### High voltage
+* TPS26600
+  * 4.5V - 60 V, max. 2 A
+  * reverse current flow blocked
+  * input reverse polarity protected
+  * adjustable current limit
+  * programmable UVLO
+  * programmable OVLO
+
+#### Low voltage
 * [LM73100](https://www.ti.com/product/LM7310/part-details/LM73100RPWR)
   * Input voltage : 2.7V to 23V
   * reverse current flow blocked
@@ -76,6 +91,7 @@ For zero Iq : LM74610-Q1 Zero IQ Reverse Polarity Protection Smart Diode Control
 * expensive (€1.50)
 
 # LED Driver
+## 16-channels
 4.4mm wide TSSOP-24 package, 16 outputs, max. 5.5V, serializable via SPI
 * ST STP16CPC26XTR
 * TI TLC5928PWPR (with LED error detection)
