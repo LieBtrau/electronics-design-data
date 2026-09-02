@@ -95,7 +95,10 @@
 # EMC
 * Consider over-voltage/ polarity input protection if you or your user can screw this up
 * Consider short-circuit protection on the outputs (especially on downstream USB-ports)
-
+* noisy ICs must have a ferrite bead between their power supply and their local decoupling caps.
+* power plane to edge : 
+    * add gnd ring on all layers and add via stitching to that ring : every 2mm
+    
 # Safety
 * Do you need to include fuses for protection/safety anywhere? Li-Ion needs a fuse.
 
