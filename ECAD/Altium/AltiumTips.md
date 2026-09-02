@@ -14,7 +14,10 @@ Go to Tools -> Annotation -> Board level annotate
 * Accept Changes 
 * Close
 
-
+# Disable supply nets
+<figure>
+    <img src="./Altium_disable_supplynets.png" width="800px"/>
+</figure>
 
 # FFC
 1. Split lines:
