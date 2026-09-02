@@ -55,6 +55,7 @@ see IPC_7352, 3.3
 
 # Flex PCB
 [JLCPCB design tips](https://jlcpcb.com/blog/flex-pcb-design-tips)
+[45 Must-Know Flex PCB Design Tips You Can't Afford to Miss!](https://jlcpcb.com/blog/must-know-flex-pcb-tips-45)
 
 # Layer stackup
 ## 6 Layer stackup
