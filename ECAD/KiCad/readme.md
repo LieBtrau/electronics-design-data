@@ -91,3 +91,6 @@ Make sure to configure the path KICAD_SCRIPT_DIR in the preferences to point to 
 
 # Variant management
 Included in KiCad as of version 10 : see [KiCad docs](https://docs.kicad.org/10.0/en/eeschema/eeschema.html#schematic-design-variants)
+
+## Rename a variant
+Schematic -> Tools -> Bulk Edit Symbol Fields... -> click the pencil on the down left side of the window.
