@@ -9,7 +9,7 @@
     * width = 0.25mm
     * radius = 0.01mm
   * Do not place on bare copper (or vias)
-  * Inverted text for pin labels of the connectors
+  * Inverted text for pin labels of the connectors.  KiCad calls this "knockout".
   * True-Type sans-serif Font : Century Gothic or League Spartan, at least 1.5mm high
 
  # Usability
@@ -31,10 +31,19 @@
 * 8x8mm silkscreen area for 2D barcode (and mark it in the fab notes, so that other fabs understand what it is)
 * Serial - number field (so that it can be manually filled in with a felt pen)
 * QC-field (so that it can be checked after validation testing the specific unit)
+
+## Altium
 ```	
 .board_name
 .board_revision.-.VersionControl_RevNumberShort
 ```
+
+## KiCad
+```
+PCB-${PROJECTID}${BOARDID}${BRANCHID}-${REQID}${REVID}▮0
+Git : ${GIT_COMMIT_HASH}
+```
+KiCad Font, Thickness 0.3 mm, Width & Height 1.5 mm
 
 # Fabrication data
 For Pb-free, at least TG155 is required.  For Pb solder, TG135 is sufficient.
