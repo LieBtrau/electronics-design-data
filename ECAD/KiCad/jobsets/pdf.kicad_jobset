@@ -16,7 +16,7 @@
       "description": "Script : Export Assembly Drawing : variant A",
       "id": "08aa775d-9547-4ace-94ad-1d3a579f4269",
       "settings": {
-        "command": "$(KICAD_SCRIPT_DIR)/assy2pdf.sh ${PROJECTNAME} PBA-${PROJECTID}${BOARDID}${BRANCHID}-${REQID}${REVID}A${VARREV} \"A\"",
+        "command": "$(KICAD_SCRIPT_DIR)/assy2pdf.sh ${PROJECTNAME} PBA-${PROJECTID}${BOARDID}${BRANCHID}-${REQID}${REVID}A${VARREV} A",
         "description": "",
         "ignore_exit_code": false,
         "output_filename": "08aa775d-9547-4ace-94ad-1d3a579f4269.log",
