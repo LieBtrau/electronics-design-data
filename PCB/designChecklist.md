@@ -89,12 +89,16 @@
     * POR connected with a diode to peripheral reset line (cathode to POR).  This way, when POR goes low, it will also pull down the peripheral reset line.
     * Connect a GPIO of the MCU to the peripheral reset line with a diode (cathode to GPIO).  This way, the MCU can reset the peripherals after it has started up.
     * Add a pull-up resistor on the peripheral reset line and on the POR line.
+    * Be careful when loading the reset line with too much pull-ups.  Some supervisory ICs have very weak pull down gates.  An intermediate buffer might be needed.
 * Add a **reset button** (or make sure the programmer has one), otherwise you'll end up unplugging and replugging your USB-port or your programmer all the time.
 * **Latchup current protection** by adding NMOS (gates to VCC, sources to the MCU, drains to debug interface pins) and add pull-up resistors on the MCU side (1K for RX input, 100K for TX output).
 
-# EMC
-* Consider over-voltage/ polarity input protection if you or your user can screw this up
+# Design for fail
+* Consider over-voltage/ polarity input protection if you or your user can screw this up. eFuse has it all in one package.
 * Consider short-circuit protection on the outputs (especially on downstream USB-ports)
+* All wires in a connector should be protected from damage when being connected to each other (e.g. in the case of cable shorts).
+
+# EMC
 * noisy ICs must have a ferrite bead between their power supply and their local decoupling caps.
 * power plane to edge : 
     * add gnd ring on all layers and add via stitching to that ring : every 2mm
@@ -138,7 +142,7 @@ Fill empty areas with copper pour
 # Identification
 * Board name
 * Board revision
-* GIT commit hash, can be placed after the board revision
+* GIT commit hash, can be concatenated to the board revision
 * JLCPCB : 8x8mm Datamatrix-code window and order number.  Indicate this also in the fab notes, so that other fabs understand what it is (and use the provided silkscreen area)
 
 # Almost done checklist
