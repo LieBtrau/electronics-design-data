@@ -84,6 +84,10 @@ I use the following variables:
 # Output file generation
 I created three [jobsets](https://github.com/LieBtrau/electronics-design-data/tree/master/ECAD/KiCad/jobsets): generating PDF info, generating gerbers and generating assembly data.  Each of these jobsets calls [script](https://github.com/LieBtrau/electronics-design-data/tree/master/ECAD/KiCad/scripts) that executes a kicad-cli command with a predefined set of parameters.  This makes it easy to generate all output files in a reproducible way.  A git-commit hash is automatically inserted into the title block of the schematic and PCB and into the file names of the output files.
 
+1. Open the jobset file in KiCad (which will update the project file)
+2. Revert the local change on the project file (or your output data will be "dirty")
+3. Now you can run the jobset file.
+
 Make sure to configure the path KICAD_SCRIPT_DIR in the preferences to point to the folder where the scripts are stored.
 
 * interactive HTML BoM : install the plugin
