@@ -92,6 +92,7 @@
     * Be careful when loading the reset line with too much pull-ups.  Some supervisory ICs have very weak pull down gates.  An intermediate buffer might be needed.
 * Add a **reset button** (or make sure the programmer has one), otherwise you'll end up unplugging and replugging your USB-port or your programmer all the time.
 * **Latchup current protection** by adding NMOS (gates to VCC, sources to the MCU, drains to debug interface pins) and add pull-up resistors on the MCU side (1K for RX input, 100K for TX output).
+* Add **DC voltage level on the signal nets** for discrete analog circuitry to allow for easy design verification.
 
 # Design for fail
 * Consider over-voltage/ polarity input protection if you or your user can screw this up. eFuse has it all in one package.
