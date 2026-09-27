@@ -7,9 +7,6 @@
 * Void Ag plated soldering surfaces (e.g. on high current connectors or ceramic filters)
 * Use battery holder instead of soldering batteries on the PCB.  Batteries will get shorted during wave soldering.
 
-# Footprint design
-* no solder paste on test points
-
 # Visual Design Best Practices
 * Power supplies use supply symbols (not wires) with useful names.
 * Positive supplies point up, ground and negative supplies point down. Always.
@@ -69,6 +66,8 @@
   * Easy for a fast measurement on a broken unit
   * Test point on reset is useful for functional testing.
   * Label these pins in silkscreen with the expected voltage (so VCC becomes +3.3V), so they can be measured without needing a schematic.
+* **Test points on IO connectors**
+* **Test points on debug connectors**
 * **Test point to put firmware into production mode**
   * During the test, you might want to use the customer firmware.  By adding a test point to put the firmware into production mode, you can avoid having to reflash the firmware after each test.
 * **Programming pads and bootstrap manipulation** 
@@ -97,7 +96,7 @@
 # Design for fail
 * Consider over-voltage/ polarity input protection if you or your user can screw this up. eFuse has it all in one package.
 * Consider short-circuit protection on the outputs (especially on downstream USB-ports)
-* All wires in a connector should be protected from damage when being connected to each other (e.g. in the case of cable shorts).
+* All signals in a connector should be protected against shorting each other out (e.g due to cable being crushed).
 
 # EMC
 * noisy ICs must have a ferrite bead between their power supply and their local decoupling caps.
@@ -106,6 +105,12 @@
     
 # Safety
 * Do you need to include fuses for protection/safety anywhere? Li-Ion needs a fuse.
+
+# PCB layout
+* keep electrolytical capacitors (also EDLCs) away from heat sources.
+
+## Footprint design
+* no solder paste on test points
 
 # DfM
 ## Origin
