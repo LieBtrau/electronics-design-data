@@ -1,5 +1,8 @@
 # Shielding
 ## RFI shield clip
+* hard to solder with a soldering iron.  Hot plate/air recommended
+* place at least two on each side, otherwise the shielding will wiggle.  But the [RED Beet 2.0](https://www.8devices.com/products/red-beet-2-0) manages it with only one clip on each side.
+
 ### **6.50x0.8x1.28 mm, 0.15 mm slit**
 * [Xunpu ASP-X1208-CB1](https://www.lcsc.com/product-detail/C30605059.html)
 * SC6508128-15TC
@@ -26,12 +29,16 @@
 * Harwin s0971-46r : 5.8x1.1x2.10 mm, 0.20 mm slit
 
 ## One-piece shielding
+To be used with the RFI shielding clips.
+
 TE -2 : CRS (cold rolled steel) : matte Sn finish
 TE -4 : Al : matte Sn finish
 
 * [TE 2118708-2](https://www.te.com/en/product-2118708-2.html) : 26x26x5.08, 0.20 mm wall thickness
 
 ## Two-piece shielding
+Mechanically more stable than the RFI shielding clips and no open slots between the housing and the PCB.
+
 ### 29 x 18 mm
 * 2118728-2 : 7mm high shielding frame
 * no cover on LCSC
@@ -39,7 +46,7 @@ TE -4 : Al : matte Sn finish
 ### **26 x 26 mm**
 Common size, also available from other suppliers.
 
-* 2118718-2 : 5.08mm high shielding frame, 0.20 mm wall thickness
+* [2118718-2](https://www.lcsc.com/product-detail/C5213792.html) : 5.08mm high shielding frame, 0.20 mm wall thickness
 * 2118717-4 : cover
 * 2118717-2 : cover
 
