@@ -1,17 +1,23 @@
-# KiCon design checklist
-[Checklist for Schematics v2026-02-15](https://docs.google.com/document/d/1gCPILcrdGZJjRzIDSL-b3ezVReeK5S-7raeub1RohyE/edit?pli=1&tab=t.0#heading=h.gjdgxs) : http://github.com/andrewgreenberg
-([Video from KiCon 2025](https://youtu.be/X0hd_v8qRiY))
 
-# Part selection
+# Library design
+## Part selection
 * Avoid Au plated soldering surfaces.  Selective Sn plating is better.
 * Void Ag plated soldering surfaces (e.g. on high current connectors or ceramic filters)
 * Use battery holder instead of soldering batteries on the PCB.  Batteries will get shorted during wave soldering.
+
+## Footprint design
+* no solder paste on test points
+
+## Schematic Symbols
+* All symbols are schematic symbols, not packages (inputs on left, outputs on right, power on top and bottom)
+  * IOCP model (Input, Output, Power, and Control) is a good way to think about this.  
+* Pins have correct electrical rule check (ERC) direction (inputs, outputs, passives, etc)
+* Components with symbolic shapes use those shapes (e.g, opamps are triangles)
 
 # Visual Design Best Practices
 * Power supplies use supply symbols (not wires) with useful names.
 * Positive supplies point up, ground and negative supplies point down. Always.
 * All important nets are descriptively named.
-  * on an SMPS, name the switching node "SW_Vx" and feedback node "FB_Vx" (where Vx is the voltage of the supply), so that it's clear what they are and what they do.
 * Functional blocks are clearly labeled (plenty of whitespace around it, or maybe even a box)
 * Schematic contains a hyperlink to the design notes.  One design note per functional block.
 * There's a frame around the schematic
@@ -21,15 +27,7 @@
 * Route wires at a consistent distance from each other and avoid crossing net wires as possible.
 * Groups of nets above about ≥ 4 nets collected into buses
 
-# Schematic Symbols
-* All symbols are schematic symbols, not packages (inputs on left, outputs on right, power on top and bottom)
-  * IOCP model (Input, Output, Power, and Control) is a good way to think about this.  
-* Pins have correct electrical rule check (ERC) direction (inputs, outputs, passives, etc)
-* Components with symbolic shapes use those shapes (e.g, opamps are triangles)
-
 # Part values
-* Capacitors have the appropriate voltage (usually ≥ 2x working voltage) and specify dielectric type if necessary
-* Special case capacitors marked with power and tolerance
 * Power dissipation checked on all resistors
 * Special case resistors marked with power and tolerance
 * Layout features that are circuit elements (e.g., copper inductor) are labeled in the schematic
@@ -37,7 +35,7 @@
 # Design for Fail
 * Group components in separable modularly powered blocks and use zero ohm resistors or cuttable jumpers to disconnect (especially for switching power supplies!)
 * Unused pins (especially GPIO) should  go to usable test points. Consider adding some random pull-up and pull-down resistors connected to a test point on the board too.
-* Consider somehow encoding your PCB hardware revision in hardware (GPIO pullups, resistor divider on ADC-pin, etc)
+* Consider somehow encoding your PCB hardware revision in hardware (GPIO pullups, resistor divider on ADC-pin, EEPROM, etc)
 
 # Circuit Gotchas
 * MOSFETs oriented correctly WRT the body diode (!), with note if intentionally forward conducting
@@ -48,9 +46,6 @@
   * free-wheeling diodes or TVS added?
   * especially on low power designs : the kick-back energy can raise the supply voltage above the maximum that some components can tolerate.  Make sure there's enough local capacitance to suck it up, or add a series diode in the power supply rail.
 * Transformers : check polarity of the windings
-* Unused inputs must not be left floating, especially for digital inputs and ADC-pins.
-* Small, low ESR (e.g., ceramic) bypass capacitors on all IC supplies (check datasheet for values)
-* Do not use NP0 for decoupling capacitors, because they have a very low ESR and can cause nasty resonances.  Use X7R instead.
 * Check voltage inputs and outputs match across power domains (e.g., 5V to 3.3V)
   * In mixed IO-level designs, add the IO-voltage to the port name.
 * Check that powered-off domains are not phantom powered by their inputs from other circuits (including test circuits, like UARTs)
@@ -60,6 +55,35 @@
 ## Copy-paste errors
 * Have you checked for ‘double names’? For example, you have a net named VCC and a net named 5V. You really intended for them to be the same net but accidentally used different names on different sheets or on the same sheet, leaving them unconnected. The same can be true for AGND, DGND, or GND. 
 * Check the net names very carefully. Some PCB design packages don’t warn you if there are names that are already in use. This can lead to unwanted connections. 
+
+## Circuit items
+### Capacitors
+* Capacitors have the appropriate voltage (usually ≥ 2x working voltage) and specify dielectric type if necessary
+* Special case capacitors marked with power and tolerance
+* Small, low ESR (e.g., ceramic) bypass capacitors on all IC supplies (check datasheet for values)
+* Do not use NP0 for decoupling capacitors, because they have a very low ESR and can cause nasty resonances.  Use X7R instead.
+
+### Power supplies
+* on an SMPS, name the switching node "SW_Vx" and feedback node "FB_Vx" (where Vx is the voltage of the supply), so that it's clear what they are and what they do.
+
+### Power supply monitoring
+* System reset should not be allowed to come high before all supplies are within range.
+* Be careful when loading the reset line with too many pull-ups.  Some supervisory ICs have very weak pull down gates.  An intermediate buffer might be needed.
+* Add **power supply monitor** on logic voltage rail
+  * Atmel MCU already have this on-chip (brown-out detection).  Be sure to enable it in the fuses.
+  * Most other chips on your board don't.  So add a voltage monitor to make sure /RST remains low until all supply rails are ok, to avoid undefined behavior.
+  * Some PoLs have a power-good output that can be used for this purpose.
+  * You can use a peripheral reset line:
+    * POR from supervisor IC connects to /RST of MCU.
+    * POR connected with a diode to peripheral reset line (cathode to POR).  This way, when POR goes low, it will also pull down the peripheral reset line.
+    * Connect a GPIO of the MCU to the peripheral reset line with a diode (cathode to GPIO).  This way, the MCU can reset the peripherals after it has started up.
+    * Add a pull-up resistor on the peripheral reset line and on the POR line.
+
+### Filters
+* Design for acceptable attenuation at highest frequency of interest.  (e.g. 1st order audio filter at 20 kHz already gives 3 dB attenuation there.  You probably don't want so much attenuation there already.  25 kHz to 30 kHz is a better value.).  Take into account that filters can be cascaded, further reducing the desired output in the passband if the corner frequency is too low.
+
+### digital IO
+* Unused inputs must not be left floating, especially for digital inputs and ADC-pins.
 
 # DfT
 * **Test points for GND, VCC, RST and other important signals**
@@ -79,24 +103,12 @@
 * Write your hardware test plan before doing the PCB-layout.  You'll notice that you'll need features that you hadn't thought of before.
 * Add **power LED** : it's always nice to know when a board is lingering on your desk whether it's powered or not.
   * 300 µA for a status LED is enough.
-* Add **power supply monitor** on logic voltage rail
-  * Atmel MCU already have this on-chip (brown-out detection).  Be sure to enable it in the fuses.
-  * Most other chips on your board don't.  So add a voltage monitor to make sure /RST remains low until all supply rails are ok, to avoid undefined behavior.
-  * Some PoLs have a power-good output that can be used for this purpose.
-  * You can use a peripheral reset line:
-    * POR from supervisor IC connects to /RST of MCU.
-    * POR connected with a diode to peripheral reset line (cathode to POR).  This way, when POR goes low, it will also pull down the peripheral reset line.
-    * Connect a GPIO of the MCU to the peripheral reset line with a diode (cathode to GPIO).  This way, the MCU can reset the peripherals after it has started up.
-    * Add a pull-up resistor on the peripheral reset line and on the POR line.
-    * Be careful when loading the reset line with too much pull-ups.  Some supervisory ICs have very weak pull down gates.  An intermediate buffer might be needed.
 * Add a **reset button** (or make sure the programmer has one), otherwise you'll end up unplugging and replugging your USB-port or your programmer all the time.
 * **Latchup current protection** by adding NMOS (gates to VCC, sources to the MCU, drains to debug interface pins) and add pull-up resistors on the MCU side (1K for RX input, 100K for TX output).
 * Add **DC voltage level on the signal nets** for discrete analog circuitry to allow for easy design verification.
 
 # Design for fail
 * Consider over-voltage/ polarity input protection if you or your user can screw this up. eFuse has it all in one package.
-* Consider short-circuit protection on the outputs (especially on downstream USB-ports)
-* All signals in a connector should be protected against shorting each other out (e.g due to cable being crushed).
 
 # EMC
 * noisy ICs must have a ferrite bead between their power supply and their local decoupling caps.
@@ -105,12 +117,11 @@
     
 # Safety
 * Do you need to include fuses for protection/safety anywhere? Li-Ion needs a fuse.
+* All signals in a connector should be protected against shorting each other out (e.g due to cable being crushed).
+* Consider short-circuit protection on the outputs (especially on downstream USB-ports)
 
 # PCB layout
 * keep electrolytical capacitors (also EDLCs) away from heat sources.
-
-## Footprint design
-* no solder paste on test points
 
 # DfM
 ## Origin
@@ -165,3 +176,8 @@ Fill empty areas with copper pour
   * Schematic
   * Assembly drawing (top + bottom)
 * You can release multiple PCBs in the same project.  Just make sure the names are unique.
+
+# References
+## KiCon design checklist
+[Checklist for Schematics v2026-02-15](https://docs.google.com/document/d/1gCPILcrdGZJjRzIDSL-b3ezVReeK5S-7raeub1RohyE/edit?pli=1&tab=t.0#heading=h.gjdgxs) : http://github.com/andrewgreenberg
+([Video from KiCon 2025](https://youtu.be/X0hd_v8qRiY))
