@@ -22,12 +22,22 @@ You generally need extra mechanical ways to fix your boards, such as card guides
 ## Western Manufacturers:
 * Wuerth
 * Keystone
-* InSail
+* [In-saiL](https://www.in-sail.com/en)
 * Mac8 (Comdes)
-* PennEngineering (PEM)
+* [PennEngineering](https://www.pemnet.com/eu/)
 
 ## Eastern Manufacturers:
-* LCSC Shuntian
+[LCSC Home → Products → (Maintenance, Repair & Operations)→ Hardware, Fasteners, Accessoires → Board Spacers, Standoffs](https://www.lcsc.com/category/1989.html)
+
+### SMD spacers
+* [XFCN Connectors Co., Ltd](https://www.xfconn.com/)
+  * [XFCN TS30556-1153](https://www.lcsc.com/product-detail/C54900377.html) : €0.17/pce
+* [Dongguan Bozhong New Energy Materials Co., Ltd. , DGBZ or BZXC](https://www.dgbzxny.com)
+* [Shenzhen Yiyuan Technology Co., Ltd.](https://www.yiyuanxny.com/en-US/)
+
+
+### Hex standoff male-female
+* Shuntian (on LCSC)
   * Shuntian M3x10+6Cu (LCSC Part#: C551322)
   * [Shuntian M3x7+4Br](https://www.lcsc.com/product-detail/C39675863.html) : good for 1.27mm B2B with 0.8 mm thick PCBs
 
