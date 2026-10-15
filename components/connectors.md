@@ -138,6 +138,15 @@ Make footprint compatible to:
 * Bat Wireless BWSMA-KE-P001, LCSC C496550
 * DOSIN-806-0134, LCSC C709670
 
+## BNC right angle
+BNC is ideal for antenna connections : easy connect and disconnect.
+A BNC telescopic antenna is probably also sturdier than an SMA one and doesn't drop down so quickly.
+
+* [Dosinconn DOSIN-801-0078](https://jlcpcb.com/partdetail/dosinconn-DOSIN_8010078/C709676)
+  * with screw thread, so can be used to mount PCB to a panel
+  * 3.5 mm bossing avoids having to mount the connector on the edge of the board.
+  * single source :-(
+
 # Board to board 
 ## Rectangular connectors
 2.00 mm and 2.54 mm are still cheap, abundant and available in multiple mating heights
