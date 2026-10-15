@@ -23,8 +23,8 @@ These values are not critical and are given only as guidelines. Although it migh
 
 # Signal inductor
 ## Air core inductor (Q > 100 @100MHz)
-### Size 4248 (4.2x4.8mm) : ≤ 150nH
-* Wuerth WE-CAIR : 4248 : 100nH, 120nH, ~~150nH~~
+### Size 4248 (4.2x4.8mm) : 22 nH ≤ L ≤ 150 nH
+* Wuerth WE-CAIR : 4248 : 100 nH, 120 nH, ~~150nH~~
 * [Sunltech SCA1812H](https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8590442902670647296) (JLCPCB) : 100nH, ~~120nH~~ (exists, but NA at JLCPCB), 150nH
 * [Abracon AIAC-1812](https://abracon.com/Magnetics/chips/AIAC-1812.pdf): 100nH, 120nH, ~~150nH~~
 * [Bourns AC4842R](https://www.bourns.com/docs/product-datasheets/ac4842r.pdf) : ≤ 150nH
@@ -46,12 +46,12 @@ These values are not critical and are given only as guidelines. Although it migh
 
 ## Ceramic core inductor (Q < 100 @100MHz)
 ### 1008-size (2520 metric) : typ < 10 µH
-* Abracon AISC-1008
+* Guangdong Fenghua FHW1008UC : LCSC
+* MYX MWI1008UC, MWI1008IF : LCSC
+* Abracon AISC-1008 : LCSC
 * Wuerth WE-KI 1008, WE-RFI, WE-RFH
-* Murata LQW2UASR
+* Murata LQW2UASR : LCSC
 * Laird IWC1008
-* Guangdong Fenghua FHW1008UC
-* MYX MWI1008UC, MWI1008IF
 * Coilcraft 1008PSM
 
 ### 1210-size (3225 metric) : typ > 10 µH
