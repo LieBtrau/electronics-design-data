@@ -25,6 +25,7 @@ These values are not critical and are given only as guidelines. Although it migh
 ## Air core inductor (Q > 100 @100MHz)
 ### Size 4248 (4.2x4.8mm) : 22 nH ≤ L ≤ 150 nH
 * Wuerth WE-CAIR : 4248 : 100 nH, 120 nH, ~~150nH~~
+* XR XRSMS1812
 * [Sunltech SCA1812H](https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8590442902670647296) (JLCPCB) : 100nH, ~~120nH~~ (exists, but NA at JLCPCB), 150nH
 * [Abracon AIAC-1812](https://abracon.com/Magnetics/chips/AIAC-1812.pdf): 100nH, 120nH, ~~150nH~~
 * [Bourns AC4842R](https://www.bourns.com/docs/product-datasheets/ac4842r.pdf) : ≤ 150nH
