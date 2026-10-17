@@ -37,6 +37,10 @@
 After bad experiences with AliExpress SMA-IPEX, RG316 cables, let's see what LCSC has to offer.
 
 * SMA-male to IPEX, 300mm : Kinghelm KH-SMAJ-IPEX-RG1.37-B300 : LCSC C18186698, €0.7 : no problems thus far.
+* IPEX to IPEX, 50 mm : KHA(RG1.37)-TX50B-IPEX, LCSC C7541884
+* IPEX to IPEX, 50 mm : KHA(RG1.37)-TX100B-IPEX, LCSC C7541889
+* BNC to BNC, 1000 mm, HL2-BNCJ-BNCJ-RG174-1000mm,, LCSC C53696882
+
 
 # Cable tie
 * [RS Pro Cable Tie: hook & loop](https://benl.rs-online.com/web/p/cable-ties/1797167)
