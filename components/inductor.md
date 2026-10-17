@@ -16,10 +16,17 @@ Then go to the P<sub>TOT</sub>-column and reduce maximum value until less than 1
 # RFC (radio frequency choke)
 J.J.Carr: Secrets of RF Circuit Design :
 * <10MHz : 2.5mH
-* 10MHz -> 30MHz : 1mH
-* 30MHz -> 100MHz : 100µH
-* 100MHz -> 300MHz : 10µH
-These values are not critical and are given only as guidelines. Although it might be a bit tricky to get a 1-mH RFC to operate well at 100 MHz, there is no really hard boundary for these bands.
+* 10MHz → 30MHz : 1mH
+* 30MHz → 100MHz : 100µH
+* 100MHz → 300MHz : 10µH
+
+These values are not critical and are given only as guidelines. Although it might be a bit tricky to get a 1 mH RFC to operate well at 100 MHz, there is no really hard boundary for these bands.
+
+* Bourns CPW3230A
+* muRata LQW32FT
+  * Murata LQW32FT470M0HL : FIXED IND 47uH 300mA 900mΩ 1210 (LCSC C907956)
+* KOHERelec ACMA3225POC-470M : 47 µH, 0.9 Ω, 300 mA, SRF = 30 MHz (LCSC C42408080, not available at JLCPCB)
+* TDK ADL3225V-470MT-TL000
 
 # Signal inductor
 ## Air core inductor (Q > 100 @100MHz)
@@ -46,8 +53,13 @@ These values are not critical and are given only as guidelines. Although it migh
 * Abracon AIAC-4125C (Mouser, Digikey)
 
 ## non air-core inductor
-* Use ceramic for RF signal inductors because of the higher Q (lower core losses).
+* Ceramic
+  * Use ceramic for RF signal inductors (oscillators)
+  * higher Q (lower core losses).
 * Ferrite inductors are better for higher power handling.
+  * might be suitable for use in filters.
+
+For RF applications, Rdc is much less important.  At higher frequencies, the core losses will exceed the Rdc losses.
 
 ### 1008-size (2520 metric)
 If PCB area allows it, choose 1210 size inductors for higher Q.
@@ -74,11 +86,11 @@ Preferred size for signal inductors because higher Q than equivalent 1008 induct
 
 #### Ceramic core : 3.9 nH to 10 µH
 * APV AHW3225C
-  * AHW3225C-6R8 : 6.8 µH, 40 MHz SRF, 9.0 ohm Rdc
-* FH FHW1210HC
-  * FHW1210HC6R8 : 6.8 µH, 55 MHz SRF, 8.0 ohm Rdc, Q > 20 @ 7.9 MHz
+  * AHW3225C-6R8JTF : 6.8 µH, 40 MHz SRF, 9.0 ohm Rdc, Q = 15 @ 7.9 MHz
+* **FH FHW1210HC**
+  * FHW1210HC6R8JGT : 6.8 µH, 55 MHz SRF, 8.0 ohm Rdc, Q > 20 @ 7.9 MHz
 * MYX MWI1210UC
-  * MWI1210UC6R8 : 6.8 µH, 40 MHz SRF, 9.0 ohm Rdc
+  * MWI1210UC6R8JST-HF : 6.8 µH, 40 MHz SRF, 9.0 ohm Rdc, Q = 15 @ 7.9 MHz
 
 #### Ferrite core : 120 nH to 560 µH
 * APV AHW3225F
@@ -88,22 +100,13 @@ Preferred size for signal inductors because higher Q than equivalent 1008 induct
 * MYX MWI1210IF
   * MWI1210IF6R8 : 6.8 µH, 35 MHz SRF, 1.5 ohm Rdc
 
-
-#### Unknown core
-* Bourns CPW3230A
-* muRata LQW32FT
-  * Murata LQW32FT470M0HL : FIXED IND 47uH 300mA 900mΩ 1210 (LCSC C907956)
-* KOHERelec ACMA3225POC-470M : 47 µH, 0.9 Ω, 300 mA, SRF = 30 MHz (LCSC C42408080, not available at JLCPCB)
-* TDK ADL3225V-470MT-TL000
-* ~~AHW3225F~~ : inferior part due to much higher DC resistance
-
 # Power inductor
 7x7mm, 7x6.6mm is a common size for power inductors
 
 | Value [µH] | Saturation current [A] | Size [mm x mm] | DC-resistance [ohm] | Type |
 |------------|--------------------|------|---------------|------|
 | 3.3 | 4.5 | 7 x 7 x 4 | 17.2m | WE 744311330, LCSC C167219 |
-| 10 | 1.5A -> 3.5A | 4.0x4.0 (1616) | <0.5 | LCSC C167879 <br/>Tai Tech HPC 4018NF-100M<br/>Abracon ASPI-4030S-100M-T |
+| 10 | 1.5A → 3.5A | 4.0x4.0 (1616) | <0.5 | LCSC C167879 <br/>Tai Tech HPC 4018NF-100M<br/>Abracon ASPI-4030S-100M-T |
 | 33 | 2.5A | 7x6.6mm | 0.31 | LCSC C177245|
 
 # Ferrite beads
