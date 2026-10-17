@@ -25,8 +25,8 @@ These values are not critical and are given only as guidelines. Although it migh
 ## Air core inductor (Q > 100 @100MHz)
 ### Size 4248 (4.2x4.8mm) : 22 nH ≤ L ≤ 150 nH
 * Wuerth WE-CAIR : 4248 : 100 nH, 120 nH, ~~150nH~~
-* XR XRSMS1812
-* [Sunltech SCA1812H](https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8590442902670647296) (JLCPCB) : 100nH, ~~120nH~~ (exists, but NA at JLCPCB), 150nH
+* XR XRSMS1812 (JLCPCB) : 22 nH to 150 nH
+* [Sunltech SCA1812H](https://www.lcsc.com/datasheet/C5178936.pdf) (JLCPCB) : 100nH, ~~120nH~~ (exists, but NA at JLCPCB), 150nH
 * [Abracon AIAC-1812](https://abracon.com/Magnetics/chips/AIAC-1812.pdf): 100nH, 120nH, ~~150nH~~
 * [Bourns AC4842R](https://www.bourns.com/docs/product-datasheets/ac4842r.pdf) : ≤ 150nH
 * [Walsin LSI293A](https://www.passivecomponent.com/wp-content/uploads/inductor/LSI293A.pdf) : ≤ 120nH
@@ -45,19 +45,51 @@ These values are not critical and are given only as guidelines. Although it migh
 ### Other sizes
 * Abracon AIAC-4125C (Mouser, Digikey)
 
-## Ceramic core inductor (Q < 100 @100MHz)
-### 1008-size (2520 metric) : typ < 10 µH
-* Guangdong Fenghua FHW1008UC : LCSC
-* MYX MWI1008UC, MWI1008IF : LCSC
+## non air-core inductor
+* Use ceramic for RF signal inductors because of the higher Q (lower core losses).
+* Ferrite inductors are better for higher power handling.
+
+### 1008-size (2520 metric)
+If PCB area allows it, choose 1210 size inductors for higher Q.
+
+#### Ceramic core : 3.9 nH to 10 µH
+* Guangdong Fenghua FHW1008UC
+  * FHW1008UC6R8 : 6.8 µH, 50 MHz SRF, 8.20 ohm Rdc, Q > 18 @ 7.9 MHz
+* MYX MWI1008UC
+
+#### Ferrite core : 120 nH to 220 µH
+* FH FHW1008IF
+  * FHW1008IF6R8 : 6.8 µH, 35 MHz SRF, 2.00 ohm Rdc, Q > 12 @ 7.96 MHz
+* MYX MWI1008IF
+
+### Unknown core material
 * Abracon AISC-1008 : LCSC
 * Wuerth WE-KI 1008, WE-RFI, WE-RFH
 * Murata LQW2UASR : LCSC
 * Laird IWC1008
 * Coilcraft 1008PSM
 
-### 1210-size (3225 metric) : typ > 10 µH
-About 10x less Rdc than 1008 inductor of the same value.
+### 1210-size (3225 metric)
+Preferred size for signal inductors because higher Q than equivalent 1008 inductor.
 
+#### Ceramic core : 3.9 nH to 10 µH
+* APV AHW3225C
+  * AHW3225C-6R8 : 6.8 µH, 40 MHz SRF, 9.0 ohm Rdc
+* FH FHW1210HC
+  * FHW1210HC6R8 : 6.8 µH, 55 MHz SRF, 8.0 ohm Rdc, Q > 20 @ 7.9 MHz
+* MYX MWI1210UC
+  * MWI1210UC6R8 : 6.8 µH, 40 MHz SRF, 9.0 ohm Rdc
+
+#### Ferrite core : 120 nH to 560 µH
+* APV AHW3225F
+  * AHW3225F-6R8 : 6.8 µH, 35 MHz SRF, 1.5 ohm Rdc
+* FH FHW1210IF
+  * FHW1210IF6R8 : 6.8 µH, 35 MHz SRF, 1.5 ohm Rdc, Q > 12 @ 7.9 MHz
+* MYX MWI1210IF
+  * MWI1210IF6R8 : 6.8 µH, 35 MHz SRF, 1.5 ohm Rdc
+
+
+#### Unknown core
 * Bourns CPW3230A
 * muRata LQW32FT
   * Murata LQW32FT470M0HL : FIXED IND 47uH 300mA 900mΩ 1210 (LCSC C907956)
