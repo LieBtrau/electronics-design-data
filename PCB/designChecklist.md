@@ -118,7 +118,9 @@
 # Safety
 * Do you need to include fuses for protection/safety anywhere? Li-Ion needs a fuse.
 * All signals in a connector should be protected against shorting each other out (e.g due to cable being crushed).
-* Consider short-circuit protection on the outputs (especially on downstream USB-ports)
+* Consider short-circuit protection on the output connectors (especially on downstream USB-ports)
+* All on-board power supplies must be short-circuit safe.
+* Power dip should not cause unpredictable behavior (so add power supply monitors where needed, also on analog power supply rails)
 
 # PCB layout
 * keep electrolytical capacitors (also EDLCs) away from heat sources.
