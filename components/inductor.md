@@ -13,21 +13,6 @@ Use Wuerth Red-Expert Power Inductor : Losses calculator.
 * ΔI<sub>L</sub> = 0.15A
 Then go to the P<sub>TOT</sub>-column and reduce maximum value until less than 100 items are left.  After that, you can sort that column from low to high to find the best inductor.
 
-# RFC (radio frequency choke)
-J.J.Carr: Secrets of RF Circuit Design :
-* <10MHz : 2.5mH
-* 10MHz → 30MHz : 1mH
-* 30MHz → 100MHz : 100µH
-* 100MHz → 300MHz : 10µH
-
-These values are not critical and are given only as guidelines. Although it might be a bit tricky to get a 1 mH RFC to operate well at 100 MHz, there is no really hard boundary for these bands.
-
-* Bourns CPW3230A
-* muRata LQW32FT
-  * Murata LQW32FT470M0HL : FIXED IND 47uH 300mA 900mΩ 1210 (LCSC C907956)
-* KOHERelec ACMA3225POC-470M : 47 µH, 0.9 Ω, 300 mA, SRF = 30 MHz (LCSC C42408080, not available at JLCPCB)
-* TDK ADL3225V-470MT-TL000
-
 # Signal inductor
 ## Air core inductor (Q > 100 @100MHz)
 ### Size 4248 (4.2x4.8mm) : 22 nH ≤ L ≤ 150 nH
@@ -52,39 +37,27 @@ These values are not critical and are given only as guidelines. Although it migh
 ### Other sizes
 * Abracon AIAC-4125C (Mouser, Digikey)
 
-## non air-core inductor
-* Ceramic
-  * Use ceramic for RF signal inductors (oscillators)
-  * higher Q (lower core losses).
-* Ferrite inductors are better for higher power handling.
-  * might be suitable for use in filters.
+## Ceramic-core inductor
+* Non-magnetic properties (µ_r=1).  Its main purpose is to provide a form for the coil.
+* Ceramic has a very low thermal coefficient of expansion. 
+* high inductance stability over the operating temperature ranges.  Use ceramic for RF signal inductors (oscillators)
+* higher Q (lower core losses).
 
 For RF applications, Rdc is much less important.  At higher frequencies, the core losses will exceed the Rdc losses.
 
-### 1008-size (2520 metric)
+### 1008-size (2520 metric) : 3.9 nH to 10 µH
 If PCB area allows it, choose 1210 size inductors for higher Q.
 
-#### Ceramic core : 3.9 nH to 10 µH
 * Guangdong Fenghua FHW1008UC
   * FHW1008UC6R8 : 6.8 µH, 50 MHz SRF, 8.20 ohm Rdc, Q > 18 @ 7.9 MHz
 * MYX MWI1008UC
-
-#### Ferrite core : 120 nH to 220 µH
-* FH FHW1008IF
-  * FHW1008IF6R8 : 6.8 µH, 35 MHz SRF, 2.00 ohm Rdc, Q > 12 @ 7.96 MHz
-* MYX MWI1008IF
-
-### Unknown core material
 * Abracon AISC-1008 : LCSC
-* Wuerth WE-KI 1008, WE-RFI, WE-RFH
-* Murata LQW2UASR : LCSC
 * Laird IWC1008
-* Coilcraft 1008PSM
+* Wuerth WE-KI 1008
 
-### 1210-size (3225 metric)
+### 1210-size (3225 metric) : 3.9 nH to 10 µH
 Preferred size for signal inductors because higher Q than equivalent 1008 inductor.
 
-#### Ceramic core : 3.9 nH to 10 µH
 * APV AHW3225C
   * AHW3225C-6R8JTF : 6.8 µH, 40 MHz SRF, 9.0 ohm Rdc, Q = 15 @ 7.9 MHz
 * **FH FHW1210HC**
@@ -92,22 +65,54 @@ Preferred size for signal inductors because higher Q than equivalent 1008 induct
 * MYX MWI1210UC
   * MWI1210UC6R8JST-HF : 6.8 µH, 40 MHz SRF, 9.0 ohm Rdc, Q = 15 @ 7.9 MHz
 
-#### Ferrite core : 120 nH to 560 µH
+## Powdered iron
+* inherent air gap through coating of the iron particles
+  * soft saturation
+  * lower permeability
+* better temperature stability than ferrite
+
+# RFC (radio frequency choke)
+J.J.Carr: Secrets of RF Circuit Design :
+* <10MHz : 2.5mH
+* 10MHz → 30MHz : 1mH
+* 30MHz → 100MHz : 100µH
+* 100MHz → 300MHz : 10µH
+
+These values are not critical and are given only as guidelines. Although it might be a bit tricky to get a 1 mH RFC to operate well at 100 MHz, there is no really hard boundary for these bands.
+
+* Bourns CPW3230A
+* muRata LQW32FT
+  * Murata LQW32FT470M0HL : FIXED IND 47uH 300mA 900mΩ 1210 (LCSC C907956)
+* KOHERelec ACMA3225POC-470M : 47 µH, 0.9 Ω, 300 mA, SRF = 30 MHz (LCSC C42408080, not available at JLCPCB)
+* TDK ADL3225V-470MT-TL000
+
+* Ferrite inductors are better for higher power handling.
+* might be suitable for use in EMC filters.
+
+## Toroidal cores
+Applications of ferrite cores: EMI suppression, RF transformers
+
+* Type 43 :
+  * inductors up to 1MHz (tested)
+  * EMI suppression 20MHz - 250MHz (Fair-Rite data sheet)
+* Type 61 :
+  * inductors up to 20MHz (tested)
+* Type 67 :
+  * inductors up to 75MHz (tested)
+* [Wire length calculator](http://www.calculatoredge.com/electronics/coilwinding.htm#toroid)
+  
+## 1008-size (2520 metric) : 120 nH to 220 µH
+* FH FHW1008IF
+  * FHW1008IF6R8 : 6.8 µH, 35 MHz SRF, 2.00 ohm Rdc, Q > 12 @ 7.96 MHz
+* MYX MWI1008IF
+
+## 1210-size (3225 metric) : 120 nH to 560 µH
 * APV AHW3225F
   * AHW3225F-6R8 : 6.8 µH, 35 MHz SRF, 1.5 ohm Rdc
 * FH FHW1210IF
   * FHW1210IF6R8 : 6.8 µH, 35 MHz SRF, 1.5 ohm Rdc, Q > 12 @ 7.9 MHz
 * MYX MWI1210IF
   * MWI1210IF6R8 : 6.8 µH, 35 MHz SRF, 1.5 ohm Rdc
-
-# Power inductor
-7x7mm, 7x6.6mm is a common size for power inductors
-
-| Value [µH] | Saturation current [A] | Size [mm x mm] | DC-resistance [ohm] | Type |
-|------------|--------------------|------|---------------|------|
-| 3.3 | 4.5 | 7 x 7 x 4 | 17.2m | WE 744311330, LCSC C167219 |
-| 10 | 1.5A → 3.5A | 4.0x4.0 (1616) | <0.5 | LCSC C167879 <br/>Tai Tech HPC 4018NF-100M<br/>Abracon ASPI-4030S-100M-T |
-| 33 | 2.5A | 7x6.6mm | 0.31 | LCSC C177245|
 
 # Ferrite beads
 [Shall We Use a Ferrite Bead in Power Rail or Not? | Explained by Eric Bogatin](https://youtu.be/HaLMjVkKYMw?t=267):
@@ -196,16 +201,12 @@ It might be better to use a LAN pulse transformer instead for that purpose.  It'
 * Bourns SM453230-231N7YP (not fully footprint compatible)
 * Pulse : TC1G00P, TC5G00P
 
-# Toroidal cores
-## Material
-### Ferrite
-Applications of ferrite cores: EMI suppression, RF transformers
+# Power inductor
+7x7mm, 7x6.6mm is a common size for power inductors
 
-* Type 43 :
-  * inductors up to 1MHz (tested)
-  * EMI suppression 20MHz - 250MHz (Fair-Rite data sheet)
-* Type 61 :
-  * inductors up to 20MHz (tested)
-* Type 67 :
-  * inductors up to 75MHz (tested)
-* [Wire length calculator](http://www.calculatoredge.com/electronics/coilwinding.htm#toroid)
+| Value [µH] | Saturation current [A] | Size [mm x mm] | DC-resistance [ohm] | Type |
+|------------|--------------------|------|---------------|------|
+| 3.3 | 4.5 | 7 x 7 x 4 | 17.2m | WE 744311330, LCSC C167219 |
+| 10 | 1.5A → 3.5A | 4.0x4.0 (1616) | <0.5 | LCSC C167879 <br/>Tai Tech HPC 4018NF-100M<br/>Abracon ASPI-4030S-100M-T |
+| 33 | 2.5A | 7x6.6mm | 0.31 | LCSC C177245|
+
