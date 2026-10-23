@@ -64,6 +64,7 @@
 * Do not use NP0 for decoupling capacitors, because they have a very low ESR and can cause nasty resonances.  Use X7R instead.
 
 ### Power supplies
+* inrush current should be limited (current rating for connectors, power supply feeding your design)
 * on an SMPS, name the switching node "SW_Vx" and feedback node "FB_Vx" (where Vx is the voltage of the supply), so that it's clear what they are and what they do.
 
 ### Power supply monitoring
