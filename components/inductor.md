@@ -15,6 +15,8 @@ Then go to the P<sub>TOT</sub>-column and reduce maximum value until less than 1
 
 # Signal inductor
 ## Air core inductor (Q > 100 @100MHz)
+Air core inductors have higher Q (about x2) than ceramic inductors of the same value.
+
 ### Size 4248 (4.2x4.8mm) : 22 nH ≤ L ≤ 150 nH
 * Wuerth WE-CAIR : 4248 : 100 nH, 120 nH, ~~150nH~~
 * XR XRSMS1812 (JLCPCB) : 22 nH to 150 nH
