@@ -61,7 +61,8 @@ Where "f" is the frequency of the signal you want to analyze, e.g. 1kHz.
 
 2. Runs fourier analysis for 10 harmonics and 100 cycles
 3. The options are set to 7 digits and no downsampling
-4. Be sure to set the time step small enough, otherwise the FFT will not be accurate and show too high harmonics.
+4. Disable "Quadratic interpolate uncompressed data"
+5. Be sure to set the time step small enough, otherwise the FFT will not be accurate and show too high harmonics.
 
 For audio signals in general applications, a THD of 1% is acceptable.
 
