@@ -48,7 +48,7 @@ Air core inductors have higher Q (about x2) than ceramic inductors of the same v
 For RF applications, Rdc is much less important.  At higher frequencies, the core losses will exceed the Rdc losses.
 
 ### 1008-size (2520 metric) : 3.9 nH to 10 µH
-If PCB area allows it, choose 1210 size inductors for higher Q.
+Compare for Q with 1210 size, but most of the time, the difference is small.
 
 * Guangdong Fenghua FHW1008UC
   * FHW1008UC6R8 : 6.8 µH, 50 MHz SRF, 8.20 ohm Rdc, Q > 18 @ 7.9 MHz
@@ -58,7 +58,7 @@ If PCB area allows it, choose 1210 size inductors for higher Q.
 * Wuerth WE-KI 1008
 
 ### 1210-size (3225 metric) : 3.9 nH to 10 µH
-Preferred size for signal inductors because higher Q than equivalent 1008 inductor.
+Compare for Q with 1008 size, but most of the time, the difference is small.
 
 * APV AHW3225C
   * AHW3225C-6R8JTF : 6.8 µH, 40 MHz SRF, 9.0 ohm Rdc, Q = 15 @ 7.9 MHz
@@ -67,7 +67,7 @@ Preferred size for signal inductors because higher Q than equivalent 1008 induct
 * MYX MWI1210UC
   * MWI1210UC6R8JST-HF : 6.8 µH, 40 MHz SRF, 9.0 ohm Rdc, Q = 15 @ 7.9 MHz
 
-## Powdered iron
+## Carbonyl Iron Powder
 * inherent air gap through coating of the iron particles
   * soft saturation
   * lower permeability
@@ -204,6 +204,16 @@ It might be better to use a LAN pulse transformer instead for that purpose.  It'
 * Pulse : TC1G00P, TC5G00P
 
 # Power inductor
+## Materials
+### Ferrite
+< 0.5 T, hard saturation
+* MnZn < 500 kHz
+* NiZn < 1 MHz
+
+### Carbonyl Iron Powder (CIP)
+* < 1 T, soft saturation
+* higher frequencies
+
 7x7mm, 7x6.6mm is a common size for power inductors
 
 | Value [µH] | Saturation current [A] | Size [mm x mm] | DC-resistance [ohm] | Type |
