@@ -10,7 +10,13 @@
 * peak current delivery at low temperatures
 * discharge voltage curve (flat or not)
 
-# Alkaline (Zn-MnO2) : 1.5V
+# Zinc-Carbon (Zn-MnO2) : 1.5 V
+* Known as "heavy duty" or "super heavy duty" cells.
+* Electrolyte : Ammonium chloride or Zn chloride 
+* Use : low-drain or intermittent-use devices such as remote controls, clocks
+* Cheaper than alkaline but inferior in all other aspects.
+
+# Alkaline (Zn-MnO2) : 1.5 V
 ## Characteristics
 * Cheap
 * available everywhere
@@ -61,8 +67,7 @@ Use low-self discharge types (Varta Ready2Use, ...) : comparison
 * (e.g. Xeno XL-060F AA)
 * wide temperature range
 * low self-discharge
-* high internal resistance, not suitable for high current draw.  Can be fixed with supercap, see  [A Long-Lifetime, Cost-Competitive Solution in Smart
-Meters Based on the TPS61094](https://www.ti.com/lit/an/slvaf41a/slvaf41a.pdf?ts=1700888594827)
+* high internal resistance, not suitable for high current draw.  Can be fixed with supercap, see  [A Long-Lifetime, Cost-Competitive Solution in Smart Meters Based on the TPS61094](https://www.ti.com/lit/an/slvaf41a/slvaf41a.pdf?ts=1700888594827)
 
 # 18650 Li-Ion LiFePO4 (LFP): 3.3V
 * safer than LiNiCoMnO2
