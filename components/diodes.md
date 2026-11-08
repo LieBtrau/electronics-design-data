@@ -23,4 +23,4 @@ low leakage types for small signal use: BAT41, BAS70
 
 # Zener
 * SOD-523 leaves enough choice and is compatible in placement with 0603.
-* The 5V1, 5V6 and 6V2 zener diodes have a zero-temperature coefficient if their working current is set correctly.  Check the "Temperature coefficient as a function of working current" graphs in the datasheet.
+* The 5V1, 5V6 and 6V2 zener diodes have a zero-temperature coefficient if their working current is set correctly.  Check the "Temperature coefficient as a function of working current" graphs in the datasheet.  Typical tempco is -0.5 mV/K (i.e. 100 ppm/K), which is comparable to standard LDO.
