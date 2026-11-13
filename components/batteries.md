@@ -31,13 +31,20 @@ At the end of its lifetime it leaks its highly corrosive contents which eats awa
 * AA : Aldi : [Topcraft Ultra Alkaline (2.6Ah)](https://lygte-info.dk/review/batteries2012/Top%20Craft%20Ultra%20Alkaline%20AA%20UK.html)
 
 # NiMH : 1.2V
-Use batteries from Japan(e.g. Panasonic Eneloop, Ikea Ladda, Amazon basic black/silver), not from China
+Use batteries from Japan, not from China
+* -20 °C to 50 °C (Eneloop Pro)
+* low internal resistance, good for high loads
 
-Use low-self discharge types (Varta Ready2Use, ...) : comparison
-
+## Standard types
 * high self discharge : not suitable for long runtime, low power
 * limited temperature range, especially cold
-* low internal resistance, good for high loads
+
+### NiMH-LSD
+LSD : Low-Self Discharge types
+* [Varta (Ready2Use)](https://www.nkon.nl/en/4-aa-varta-recharge-accu-in-blister.html)
+* [Duracell](https://www.nkon.nl/en/4-aa-duracell-turbo-blister.html)
+* [Eneloop Pro BK-3HCDE (2450 mAh AA)](https://www.nkon.nl/en/4-aa-eneloop-pro-in-case.html)
+* Ikea Ladda
 
 # LiFeS2 (1.5V, performance upgrade to alkaline)
 ## Characteristics
