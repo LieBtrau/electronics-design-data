@@ -51,6 +51,7 @@ For RF applications, Rdc is much less important.  At higher frequencies, the cor
 Compare for Q with 1210 size, but most of the time, the difference is small.
 
 * Guangdong Fenghua FHW1008UC
+  * FHW1008UC1R8JGT : 1.8 µH, 160 MHz SRF, 2.8 ohm Rdc, Q = 28 @ 50 MHz
   * FHW1008UC6R8 : 6.8 µH, 50 MHz SRF, 8.20 ohm Rdc, Q > 18 @ 7.9 MHz
 * MYX MWI1008UC
 * Abracon AISC-1008 : LCSC
@@ -63,6 +64,7 @@ Compare for Q with 1008 size, but most of the time, the difference is small.
 * APV AHW3225C
   * AHW3225C-6R8JTF : 6.8 µH, 40 MHz SRF, 9.0 ohm Rdc, Q = 15 @ 7.9 MHz
 * **FH FHW1210HC**
+  * FH FHW1210HC1R8JGT : 1.8 µH, 160 MHz SRF, 2.25 ohm Rdc, Q = 30 @ 50 MHz
   * FHW1210HC6R8JGT : 6.8 µH, 55 MHz SRF, 8.0 ohm Rdc, Q > 20 @ 7.9 MHz
 * MYX MWI1210UC
   * MWI1210UC6R8JST-HF : 6.8 µH, 40 MHz SRF, 9.0 ohm Rdc, Q = 15 @ 7.9 MHz
@@ -128,7 +130,7 @@ Applications of ferrite cores: EMI suppression, RF transformers
 Trilogy of inductors, section "applications" explains where to use what ferrite bead.  The older version of the book on archive.org shows which component values to use.
 
 ## Low current power rails and analog signals
-* WE 742792662 : 0603, 1kOhm, 100MHz, 830mA, 300mohm
+* WE 742792662 : 0603, 1kOhm, 100MHz, 830mA, 300mohm (LCSC C304312)
   * unsuitable for fast edges : 4.8µH at 5MHz, 3.7µH at 10MHz : this really distorts the signal
   * use on low current power rails for analog signals
 
