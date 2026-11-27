@@ -22,5 +22,6 @@ Check out the 3808 family : Diodes PT7M3808, TI TPS3808
 # Adjustable voltage supervisor (with 0.4V reference) with manual reset input
 * TPS3808G01DBVR (JLCPCB C19653 : €0.38)
 * PT7M3808G01TAEX (JLCPCB C780887 : €0.50)
-* MIC2790N-04VD6
 * MP6400DJ-01
+* MIC2790H-04VD6
+
