@@ -86,6 +86,11 @@ Where "osc_out" is the node you want to measure the frequency from.
 Where "Rout" is the output resistor (50ohm) and "Vin" is the input voltage source (with built-in 50ohm series resistor).
 Then you can select what traces to plot in the simulation window: S11, S21, Zin, Zout, ...
 
+# Noise analysis
+[Noise Analysis Using LTspice Tutorial](https://www.allaboutcircuits.com/technical-articles/Noise-Analysis-Using-LTspice-Tutorial/)
+Make sure the first amplifier in the chain is a low noise type because that's the one with the highest impact on total noise figure.
+Click Ctrl on the trace to get the total noise voltage within the analyzed frequency band.
+
 ## Antenna impedance measurement
 For verification of a matching network you designed with [Mantaro impedance calculators](https://www.mantaro.com/resources/impedance-calculators.php).
 
